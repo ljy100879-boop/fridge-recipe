@@ -60,6 +60,8 @@ def main():
             errors.append(f"{rid}: time_min 값 오류")
         if not r["steps"]:
             errors.append(f"{rid}: 조리 단계 없음")
+        if not r.get("servings") or not r.get("tip"):
+            errors.append(f"{rid}: servings 또는 tip 없음")
         seen = set()
         required_main = 0
         for item in r["ingredients"]:

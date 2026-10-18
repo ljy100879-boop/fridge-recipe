@@ -1,409 +1,1018 @@
 [
-  { "id": "egg-fried-rice", "title": "계란볶음밥", "emoji": "🍳", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "egg", "amount": "2개" }, { "id": "onion", "amount": "1/4개" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "양파를 잘게 다진다." }, { "text": "기름 두른 팬에 양파를 볶다가 계란을 풀어 넣고 스크램블한다.", "timer_sec": 120 }, { "text": "밥을 넣고 센 불에서 고슬고슬하게 볶는다.", "timer_sec": 180 }, { "text": "팬 가장자리에 간장을 둘러 향을 내고 소금으로 간을 맞춘다." }] },
-
-  { "id": "egg-roll", "title": "계란말이", "emoji": "🥚", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "egg", "amount": "3개" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "carrot", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란을 풀고 소금으로 간한다. 있으면 다진 파·당근을 섞는다." }, { "text": "약불로 달군 팬에 기름을 얇게 두르고 계란물의 1/3을 붓는다." }, { "text": "반쯤 익으면 한쪽 끝부터 돌돌 말고, 남은 계란물을 나눠 부으며 이어 만다.", "timer_sec": 300 }, { "text": "한 김 식힌 뒤 먹기 좋게 썬다." }] },
-
-  { "id": "soy-egg-rice", "title": "간장계란밥", "emoji": "🍚", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "egg", "amount": "1개" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "약간" }, { "id": "laver", "amount": "약간", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "팬에 기름을 두르고 계란 프라이를 반숙으로 만든다.", "timer_sec": 120 }, { "text": "따뜻한 밥 위에 계란 프라이를 올린다." }, { "text": "간장과 참기름을 두르고 김·깨를 뿌려 비벼 먹는다." }] },
-
-  { "id": "steamed-egg", "title": "전자레인지 계란찜", "emoji": "🥚", "image": "", "time_min": 8, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "egg", "amount": "2개" }, { "id": "salt", "amount": "약간" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "내열 그릇에 계란과 물(계란과 같은 양)을 넣고 곱게 푼다." }, { "text": "소금으로 간하고 있으면 다진 파를 올린다." }, { "text": "랩을 씌워 구멍을 몇 개 낸다." }, { "text": "전자레인지에 2분 30초 돌린 뒤 1분 뜸 들인다.", "timer_sec": 210 }] },
-
-  { "id": "scrambled-eggs", "title": "스크램블 에그", "emoji": "🍳", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "egg", "amount": "2개" }, { "id": "butter", "amount": "1조각" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "milk", "amount": "2큰술", "optional": true }],
-    "steps": [{ "text": "계란에 소금(있으면 우유)을 넣고 푼다." }, { "text": "약불에 버터를 녹이고 계란물을 붓는다." }, { "text": "주걱으로 천천히 저어 몽글하게 익으면 불을 끈다.", "timer_sec": 90 }, { "text": "후추를 뿌려 마무리한다." }] },
-
-  { "id": "kimchi-fried-rice", "title": "김치볶음밥", "emoji": "🍚", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "kimchi", "amount": "1/2컵" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "egg", "amount": "1개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "gochugaru", "amount": "1/2큰술", "optional": true }],
-    "steps": [{ "text": "김치를 잘게 썬다." }, { "text": "기름 두른 팬에 김치와 설탕을 넣고 충분히 볶는다.", "timer_sec": 180 }, { "text": "밥을 넣고 김치와 고루 섞이도록 볶는다.", "timer_sec": 180 }, { "text": "참기름을 두르고, 있으면 계란 프라이를 올린다." }] },
-
-  { "id": "tuna-mayo-rice", "title": "참치마요덮밥", "emoji": "🐟", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "tuna_can", "amount": "1/2캔" }, { "id": "mayonnaise", "amount": "2큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "laver", "amount": "약간", "optional": true }, { "id": "onion", "amount": "1/4개", "optional": true }],
-    "steps": [{ "text": "참치의 기름을 뺀다." }, { "text": "간장과 설탕을 섞어 소스를 만든다." }, { "text": "밥 위에 참치를 올리고 소스와 마요네즈를 뿌린다." }, { "text": "김가루를 뿌려 비벼 먹는다." }] },
-
-  { "id": "ham-egg-rice", "title": "스팸계란덮밥", "emoji": "🥓", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "ham", "amount": "1/3캔" }, { "id": "egg", "amount": "1개" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "약간" }],
-    "steps": [{ "text": "햄을 도톰하게 썰어 팬에 노릇하게 굽는다.", "timer_sec": 180 }, { "text": "간장과 설탕을 넣고 졸이듯 햄에 묻힌다." }, { "text": "계란 프라이를 만든다.", "timer_sec": 120 }, { "text": "밥 위에 햄과 계란을 올린다." }] },
-
-  { "id": "egg-ramen", "title": "계란 파 라면", "emoji": "🍜", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "ramen", "amount": "1봉지" }, { "id": "egg", "amount": "1개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "물 550ml를 끓인다." }, { "text": "면과 스프를 넣고 끓인다.", "timer_sec": 240 }, { "text": "불을 끄기 30초 전에 계란과 파를 넣는다." }] },
-
-  { "id": "cheese-ramen", "title": "치즈라면", "emoji": "🧀", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "ramen", "amount": "1봉지" }, { "id": "cheese", "amount": "1장" }, { "id": "egg", "amount": "1개", "optional": true }],
-    "steps": [{ "text": "물 500ml를 끓인다." }, { "text": "면과 스프를 넣고 끓인다.", "timer_sec": 240 }, { "text": "그릇에 담고 치즈를 올려 녹인다." }] },
-
-  { "id": "kimchi-ramen", "title": "김치라면", "emoji": "🍜", "image": "", "time_min": 6, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "ramen", "amount": "1봉지" }, { "id": "kimchi", "amount": "1/3컵" }, { "id": "egg", "amount": "1개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "물 550ml에 김치를 넣고 먼저 끓인다.", "timer_sec": 60 }, { "text": "면과 스프를 넣고 끓인다.", "timer_sec": 240 }, { "text": "있으면 계란과 파를 넣고 마무리한다." }] },
-
-  { "id": "kimchi-bibim-guksu", "title": "김치비빔국수", "emoji": "🍜", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "somen", "amount": "1인분" }, { "id": "kimchi", "amount": "1/3컵" }, { "id": "gochujang", "amount": "1큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "vinegar", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "cucumber", "amount": "약간", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "김치를 잘게 썰어 고추장·설탕·식초·참기름과 섞는다." }, { "text": "끓는 물에 소면을 삶는다.", "timer_sec": 180 }, { "text": "찬물에 비벼 헹구고 물기를 꼭 짠다." }, { "text": "양념에 면을 넣고 비빈다." }] },
-
-  { "id": "soy-bibim-guksu", "title": "간장비빔국수", "emoji": "🍜", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "somen", "amount": "1인분" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "egg", "amount": "1개", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "간장·설탕·참기름을 섞어 양념을 만든다." }, { "text": "끓는 물에 소면을 삶는다.", "timer_sec": 180 }, { "text": "찬물에 헹궈 물기를 뺀다." }, { "text": "양념에 비비고, 있으면 계란 프라이와 깨를 올린다." }] },
-
-  { "id": "aglio-olio", "title": "알리오 올리오", "emoji": "🍝", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "spaghetti", "amount": "1인분" }, { "id": "minced_garlic", "amount": "1큰술" }, { "id": "olive_oil", "amount": "4큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "chili", "amount": "1개", "optional": true }],
-    "steps": [{ "text": "소금 넣은 끓는 물에 면을 삶는다. 면수는 한 국자 남긴다.", "timer_sec": 480 }, { "text": "약불에 올리브유와 마늘을 넣어 향을 낸다.", "timer_sec": 120 }, { "text": "면과 면수를 넣고 섞어 소스를 유화시킨다." }, { "text": "소금·후추로 간한다." }] },
-
-  { "id": "egg-toast", "title": "길거리 계란 토스트", "emoji": "🍞", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "bread", "amount": "2장" }, { "id": "egg", "amount": "1개" }, { "id": "butter", "amount": "1조각" }, { "id": "sugar", "amount": "1작은술" }, { "id": "cabbage", "amount": "한 줌", "optional": true }, { "id": "cheese", "amount": "1장", "optional": true }, { "id": "ketchup", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란을 풀고 있으면 채 썬 양배추를 섞는다." }, { "text": "버터 두른 팬에 식빵을 노릇하게 굽는다.", "timer_sec": 120 }, { "text": "계란물을 식빵 크기로 부쳐 익힌다.", "timer_sec": 120 }, { "text": "식빵 사이에 계란·치즈를 넣고 설탕·케첩을 뿌린다." }] },
-
-  { "id": "french-toast", "title": "프렌치토스트", "emoji": "🍞", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "bread", "amount": "2장" }, { "id": "egg", "amount": "1개" }, { "id": "milk", "amount": "50ml" }, { "id": "sugar", "amount": "1큰술" }, { "id": "butter", "amount": "1조각" }],
-    "steps": [{ "text": "계란·우유·설탕을 섞는다." }, { "text": "식빵을 계란물에 앞뒤로 적신다." }, { "text": "버터 두른 팬에서 약불로 앞뒤 노릇하게 굽는다.", "timer_sec": 240 }] },
-
-  { "id": "ham-cheese-sandwich", "title": "햄치즈 샌드위치", "emoji": "🥪", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "bread", "amount": "2장" }, { "id": "ham", "amount": "2장" }, { "id": "cheese", "amount": "1장" }, { "id": "mayonnaise", "amount": "1큰술" }, { "id": "mustard", "amount": "약간", "optional": true }, { "id": "lettuce", "amount": "2장", "optional": true }],
-    "steps": [{ "text": "식빵 한 면에 마요네즈(있으면 머스터드)를 바른다." }, { "text": "햄·치즈·상추를 올리고 덮는다." }, { "text": "반으로 잘라 먹는다." }] },
-
-  { "id": "pan-fried-tofu", "title": "두부부침", "emoji": "🧈", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "tofu", "amount": "1/2모" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "gochugaru", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "두부를 1cm 두께로 썰어 키친타월로 물기를 뺀 뒤 소금을 뿌린다." }, { "text": "기름 두른 팬에 앞뒤로 노릇하게 부친다.", "timer_sec": 480 }, { "text": "간장에 다진 파·고춧가루를 섞어 양념장을 곁들인다." }] },
-
-  { "id": "stir-fried-potato", "title": "감자채볶음", "emoji": "🥔", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "potato", "amount": "2개" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "pepper", "amount": "약간", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "감자를 얇게 채 썰어 찬물에 헹궈 전분을 뺀다." }, { "text": "기름 두른 팬에 감자채(와 양파)를 볶는다.", "timer_sec": 420 }, { "text": "소금으로 간하고 깨를 뿌린다." }] },
-
-  { "id": "fish-cake-stir-fry", "title": "어묵볶음", "emoji": "🍢", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "fish_cake", "amount": "3장" }, { "id": "onion", "amount": "1/2개" }, { "id": "soy_sauce", "amount": "1.5큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "어묵과 양파를 한입 크기로 썬다." }, { "text": "기름 두른 팬에 양파를 볶다가 어묵을 넣는다.", "timer_sec": 180 }, { "text": "간장·설탕을 넣고 수분이 없어질 때까지 볶는다.", "timer_sec": 120 }, { "text": "깨를 뿌려 마무리한다." }] },
-
-  { "id": "sausage-stir-fry", "title": "소시지 야채볶음", "emoji": "🌭", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "sausage", "amount": "10개" }, { "id": "onion", "amount": "1/2개" }, { "id": "ketchup", "amount": "2큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "bell_pepper", "amount": "1/2개", "optional": true }, { "id": "oyster_sauce", "amount": "1/2큰술", "optional": true }],
-    "steps": [{ "text": "소시지에 칼집을 내고 양파·파프리카를 썬다." }, { "text": "기름 두른 팬에 소시지와 채소를 볶는다.", "timer_sec": 240 }, { "text": "케첩·설탕(·굴소스)을 넣고 고루 섞어 볶는다.", "timer_sec": 60 }] },
-
-  { "id": "bean-sprouts-namul", "title": "콩나물무침", "emoji": "🌱", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "bean_sprouts", "amount": "1봉지" }, { "id": "salt", "amount": "1/2작은술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "콩나물을 씻어 냄비에 물 반 컵과 함께 뚜껑 덮고 익힌다.", "timer_sec": 300 }, { "text": "찬물에 헹구지 말고 체에 밭쳐 식힌다." }, { "text": "소금·마늘·참기름·파를 넣고 무친다." }] },
-
-  { "id": "spinach-namul", "title": "시금치나물", "emoji": "🥬", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "spinach", "amount": "1단" }, { "id": "salt", "amount": "약간" }, { "id": "soy_sauce", "amount": "1/2큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "끓는 소금물에 시금치를 30초 데친다.", "timer_sec": 30 }, { "text": "찬물에 헹궈 물기를 꼭 짠다." }, { "text": "간장·마늘·참기름·깨를 넣고 무친다." }] },
-
-  { "id": "cucumber-salad", "title": "오이무침", "emoji": "🥒", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "cucumber", "amount": "1개" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "vinegar", "amount": "1큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "salt", "amount": "약간" }, { "id": "minced_garlic", "amount": "1/2작은술" }, { "id": "sesame", "amount": "약간", "optional": true }, { "id": "onion", "amount": "1/4개", "optional": true }],
-    "steps": [{ "text": "오이를 어슷 썰어 소금에 5분 절인다.", "timer_sec": 300 }, { "text": "물기를 가볍게 짠다." }, { "text": "고춧가루·식초·설탕·마늘을 넣고 무친다." }] },
-
-  { "id": "kimchi-pancake", "title": "김치전", "emoji": "🥞", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "kimchi", "amount": "1컵" }, { "id": "flour", "amount": "1/2컵" }, { "id": "cooking_oil", "amount": "3큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "sugar", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "김치를 잘게 썰고 밀가루와 물 1/2컵을 섞어 반죽한다." }, { "text": "기름을 넉넉히 두른 팬에 반죽을 얇게 편다." }, { "text": "중불에서 앞뒤로 바삭하게 부친다.", "timer_sec": 480 }] },
-
-  { "id": "egg-soup", "title": "계란국", "emoji": "🍲", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "egg", "amount": "2개" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "minced_garlic", "amount": "1/2작은술", "optional": true }],
-    "steps": [{ "text": "물 3컵을 끓이고 간장·소금으로 간한다.", "timer_sec": 240 }, { "text": "계란을 풀어 둘러 넣고 젓지 않는다." }, { "text": "계란이 떠오르면 파를 넣고 불을 끈다.", "timer_sec": 60 }] },
-
-  { "id": "tuna-rice-ball", "title": "참치마요 주먹밥", "emoji": "🍙", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "tuna_can", "amount": "1/2캔" }, { "id": "mayonnaise", "amount": "1.5큰술" }, { "id": "laver", "amount": "1장" }, { "id": "salt", "amount": "약간" }, { "id": "sesame_oil", "amount": "1/2큰술" }],
-    "steps": [{ "text": "밥에 소금과 참기름을 넣고 섞는다." }, { "text": "기름 뺀 참치와 마요네즈를 섞는다." }, { "text": "밥에 참치마요를 넣고 동그랗게 뭉친다." }, { "text": "김으로 감싸거나 김가루를 묻힌다." }] },
-
-  { "id": "butter-soy-rice", "title": "버터간장밥", "emoji": "🍚", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "butter", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "egg", "amount": "1개", "optional": true }, { "id": "laver", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "뜨거운 밥 위에 버터를 올려 녹인다." }, { "text": "간장을 둘러 비빈다." }, { "text": "있으면 계란 노른자와 김을 올린다." }] },
-
-  { "id": "tteokbokki", "title": "떡볶이", "emoji": "🌶️", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "rice_cake", "amount": "300g" }, { "id": "gochujang", "amount": "2큰술" }, { "id": "sugar", "amount": "1.5큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "fish_cake", "amount": "2장", "optional": true }, { "id": "green_onion", "amount": "1/2대", "optional": true }, { "id": "gochugaru", "amount": "1큰술", "optional": true }],
-    "steps": [{ "text": "떡은 물에 헹구고 어묵·파는 먹기 좋게 썬다." }, { "text": "물 2컵에 고추장·설탕·간장(·고춧가루)을 풀어 끓인다." }, { "text": "떡과 어묵을 넣고 국물이 걸쭉해질 때까지 졸인다.", "timer_sec": 420 }, { "text": "파를 넣고 1분 더 끓인다.", "timer_sec": 60 }] },
-
-  { "id": "soy-tteokbokki", "title": "간장떡볶이", "emoji": "🍡", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "rice_cake", "amount": "300g" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "onion", "amount": "1/2개", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "떡을 끓는 물에 살짝 데쳐 말랑하게 한다.", "timer_sec": 60 }, { "text": "기름 두른 팬에 양파와 떡을 볶는다.", "timer_sec": 180 }, { "text": "간장·설탕을 넣고 윤기 나게 볶는다.", "timer_sec": 120 }, { "text": "참기름·깨로 마무리한다." }] },
-
-  { "id": "corn-cheese", "title": "콘치즈", "emoji": "🌽", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "canned_corn", "amount": "1캔" }, { "id": "cheese", "amount": "1/2컵" }, { "id": "mayonnaise", "amount": "2큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "butter", "amount": "1조각", "optional": true }],
-    "steps": [{ "text": "옥수수콘의 물기를 뺀다." }, { "text": "마요네즈·설탕과 섞는다." }, { "text": "버터 두른 팬(또는 내열 그릇)에 담고 치즈를 올린다." }, { "text": "뚜껑 덮어 약불(전자레인지 2분)에 치즈를 녹인다.", "timer_sec": 180 }] },
-
-  { "id": "butter-potato", "title": "전자레인지 버터감자", "emoji": "🥔", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "potato", "amount": "2개" }, { "id": "butter", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "sugar", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "감자를 씻어 반으로 자르고 랩을 씌운다." }, { "text": "전자레인지에 6~7분 돌린다.", "timer_sec": 420 }, { "text": "십자로 칼집을 내고 버터·소금(·설탕)을 올린다." }] },
-
-  { "id": "baked-sweet-potato", "title": "전자레인지 군고구마", "emoji": "🍠", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "sweet_potato", "amount": "2개" }, { "id": "butter", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "고구마를 씻어 물기가 남은 채로 키친타월로 감싼다." }, { "text": "전자레인지에 3분 돌리고 뒤집어 3분 더 돌린다.", "timer_sec": 360 }, { "text": "젓가락이 쑥 들어가면 완성." }] },
-
-  { "id": "banana-toast", "title": "바나나 토스트", "emoji": "🍌", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "bread", "amount": "1장" }, { "id": "banana", "amount": "1개" }, { "id": "butter", "amount": "1조각" }, { "id": "honey", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "버터 두른 팬에 식빵을 굽는다.", "timer_sec": 120 }, { "text": "바나나를 얇게 썰어 올린다." }, { "text": "있으면 꿀을 뿌린다." }] },
-
-  { "id": "lettuce-geotjeori", "title": "상추겉절이", "emoji": "🥬", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "lettuce", "amount": "한 줌" }, { "id": "gochugaru", "amount": "1/2큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "vinegar", "amount": "1/2큰술" }, { "id": "sugar", "amount": "1/2작은술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }],
-    "steps": [{ "text": "상추를 씻어 물기를 털고 손으로 뜯는다." }, { "text": "양념 재료를 모두 섞는다." }, { "text": "먹기 직전에 상추에 양념을 넣고 살살 버무린다." }] },
-
-  { "id": "tomato-egg-stir-fry", "title": "토마토 계란볶음", "emoji": "🍅", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "tomato", "amount": "1개" }, { "id": "egg", "amount": "2개" }, { "id": "sugar", "amount": "1/2작은술" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "토마토를 한입 크기로 썬다." }, { "text": "기름 두른 팬에 계란을 반숙으로 볶아 덜어 둔다.", "timer_sec": 60 }, { "text": "같은 팬에 토마토를 볶다가 설탕·소금을 넣는다.", "timer_sec": 120 }, { "text": "계란을 다시 넣고 살짝 섞는다." }] },
-
-  { "id": "cabbage-egg-pancake", "title": "양배추 계란전", "emoji": "🥞", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "cabbage", "amount": "1/6통" }, { "id": "egg", "amount": "2개" }, { "id": "flour", "amount": "3큰술" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "mayonnaise", "amount": "약간", "optional": true }, { "id": "ketchup", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "양배추를 가늘게 채 썬다." }, { "text": "계란·밀가루·소금과 섞어 반죽한다." }, { "text": "기름 두른 팬에 동그랗게 펴서 앞뒤로 부친다.", "timer_sec": 480 }, { "text": "마요네즈·케첩을 뿌려 먹는다." }] },
-
-  { "id": "zucchini-stir-fry", "title": "애호박볶음", "emoji": "🥒", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "zucchini", "amount": "1/2개" }, { "id": "salt", "amount": "약간" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "애호박을 반달 모양으로 썬다." }, { "text": "기름 두른 팬에 마늘과 애호박을 볶는다.", "timer_sec": 240 }, { "text": "소금으로 간하고 깨를 뿌린다." }] },
-
-  { "id": "zucchini-pancake", "title": "애호박전", "emoji": "🥞", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "zucchini", "amount": "1개" }, { "id": "egg", "amount": "2개" }, { "id": "flour", "amount": "3큰술" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "2큰술" }],
-    "steps": [{ "text": "애호박을 0.5cm 두께로 동그랗게 썰고 소금을 살짝 뿌린다." }, { "text": "밀가루를 앞뒤로 묻힌다." }, { "text": "풀어 둔 계란물에 담갔다가 기름 두른 팬에 부친다.", "timer_sec": 360 }] },
-
-  { "id": "butter-mushroom", "title": "버섯 버터간장구이", "emoji": "🍄", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "mushroom", "amount": "2줌" }, { "id": "butter", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "pepper", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "버섯을 먹기 좋게 찢거나 썬다." }, { "text": "버터 녹인 팬에 버섯을 센 불로 굽는다.", "timer_sec": 240 }, { "text": "간장을 둘러 섞고 후추를 뿌린다." }] },
-
-  { "id": "enoki-pancake", "title": "팽이버섯전", "emoji": "🍄", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "enoki", "amount": "1봉지" }, { "id": "egg", "amount": "2개" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "팽이버섯 밑동을 자르고 잘게 썬다." }, { "text": "계란·소금·파와 섞는다." }, { "text": "기름 두른 팬에 한 숟갈씩 떠서 앞뒤로 부친다.", "timer_sec": 360 }] },
-
-  { "id": "mung-sprouts-stir-fry", "title": "숙주볶음", "emoji": "🌱", "image": "", "time_min": 7, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "mung_sprouts", "amount": "1봉지" }, { "id": "oyster_sauce", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "pepper", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "숙주를 씻어 물기를 뺀다." }, { "text": "기름 두른 팬에 마늘을 볶아 향을 낸다." }, { "text": "센 불에 숙주와 굴소스를 넣고 1분만 빠르게 볶는다.", "timer_sec": 60 }] },
-
-  { "id": "stir-fried-kimchi", "title": "볶음김치", "emoji": "🥬", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "kimchi", "amount": "2컵" }, { "id": "sugar", "amount": "1큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "pork", "amount": "100g", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "김치를 한입 크기로 썬다." }, { "text": "기름 두른 팬에 (돼지고기와) 김치·설탕을 넣고 볶는다.", "timer_sec": 360 }, { "text": "참기름·깨를 넣고 마무리한다." }] },
-
-  { "id": "tofu-kimchi", "title": "두부김치", "emoji": "🧈", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "tofu", "amount": "1모" }, { "id": "kimchi", "amount": "1.5컵" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "pork", "amount": "100g", "optional": true }, { "id": "salt", "amount": "약간" }],
-    "steps": [{ "text": "두부를 소금 넣은 끓는 물에 데쳐 썬다.", "timer_sec": 180 }, { "text": "기름 두른 팬에 김치(와 돼지고기)·설탕을 볶는다.", "timer_sec": 360 }, { "text": "참기름을 두르고 두부와 함께 담는다." }] },
-
-  { "id": "simple-udon", "title": "간단 우동", "emoji": "🍜", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "udon", "amount": "1봉지" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "mirin", "amount": "1큰술" }, { "id": "fish_cake", "amount": "1장", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "egg", "amount": "1개", "optional": true }],
-    "steps": [{ "text": "물 2컵에 간장·맛술을 넣고 끓인다.", "timer_sec": 180 }, { "text": "우동면과 어묵을 넣고 2분 끓인다.", "timer_sec": 120 }, { "text": "파·계란을 올려 마무리한다." }] },
-
-  { "id": "stir-fried-udon", "title": "볶음우동", "emoji": "🍜", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "noodle",
-    "ingredients": [{ "id": "udon", "amount": "1봉지" }, { "id": "cabbage", "amount": "한 줌" }, { "id": "onion", "amount": "1/4개" }, { "id": "oyster_sauce", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "sausage", "amount": "4개", "optional": true }],
-    "steps": [{ "text": "우동면을 끓는 물에 30초 데쳐 풀어 둔다.", "timer_sec": 30 }, { "text": "기름 두른 팬에 양파·양배추(·소시지)를 볶는다.", "timer_sec": 180 }, { "text": "면과 굴소스·간장·설탕을 넣고 센 불에 볶는다.", "timer_sec": 120 }] },
-
-  { "id": "egg-salad-sandwich", "title": "에그마요 샌드위치", "emoji": "🥪", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "bread", "amount": "2장" }, { "id": "egg", "amount": "2개" }, { "id": "mayonnaise", "amount": "2큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "sugar", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란을 완숙으로 삶는다.", "timer_sec": 600 }, { "text": "껍질을 벗겨 포크로 으깬다." }, { "text": "마요네즈·소금·후추(·설탕)와 섞는다." }, { "text": "식빵 사이에 넣고 자른다." }] },
-
-  { "id": "tortilla-pizza", "title": "또띠아 피자", "emoji": "🍕", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "tortilla", "amount": "1장" }, { "id": "ketchup", "amount": "2큰술" }, { "id": "cheese", "amount": "1컵" }, { "id": "sausage", "amount": "3개", "optional": true }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "canned_corn", "amount": "2큰술", "optional": true }, { "id": "bell_pepper", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "또띠아에 케첩을 얇게 바른다." }, { "text": "있는 토핑을 올리고 치즈를 덮는다." }, { "text": "약불 팬에 뚜껑 덮고 치즈가 녹을 때까지 굽는다.", "timer_sec": 420 }] },
-
-  { "id": "tuna-salad", "title": "참치 샐러드", "emoji": "🥗", "image": "", "time_min": 7, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "tuna_can", "amount": "1캔" }, { "id": "onion", "amount": "1/4개" }, { "id": "mayonnaise", "amount": "2큰술" }, { "id": "pepper", "amount": "약간" }, { "id": "canned_corn", "amount": "2큰술", "optional": true }, { "id": "cucumber", "amount": "1/3개", "optional": true }],
-    "steps": [{ "text": "양파를 잘게 다져 찬물에 담가 매운맛을 뺀다." }, { "text": "참치의 기름을 뺀다." }, { "text": "모든 재료를 마요네즈·후추와 섞는다." }] },
-
-  { "id": "coleslaw", "title": "양배추 코울슬로", "emoji": "🥗", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "cabbage", "amount": "1/6통" }, { "id": "mayonnaise", "amount": "3큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "vinegar", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "carrot", "amount": "약간", "optional": true }, { "id": "canned_corn", "amount": "2큰술", "optional": true }],
-    "steps": [{ "text": "양배추(와 당근)를 잘게 썬다." }, { "text": "소금을 살짝 뿌려 5분 두고 물기를 짠다.", "timer_sec": 300 }, { "text": "마요네즈·설탕·식초를 넣고 버무린다." }] },
-
-  { "id": "cucumber-cold-soup", "title": "오이냉국", "emoji": "🥒", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "cucumber", "amount": "1개" }, { "id": "vinegar", "amount": "3큰술" }, { "id": "sugar", "amount": "2큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "salt", "amount": "1작은술" }, { "id": "seaweed", "amount": "한 줌", "optional": true }, { "id": "gochugaru", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "오이를 채 썰고, 미역은 물에 불린다." }, { "text": "찬물 3컵에 식초·설탕·간장·소금을 녹인다." }, { "text": "오이·미역을 넣고 얼음을 띄운다." }] },
-
-  { "id": "boiled-eggs", "title": "반숙 삶은 계란", "emoji": "🥚", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "egg", "amount": "4개" }, { "id": "salt", "amount": "약간" }],
-    "steps": [{ "text": "끓는 물에 소금을 조금 넣고 실온의 계란을 넣는다." }, { "text": "7분 삶는다 (완숙은 10분).", "timer_sec": 420 }, { "text": "찬물에 바로 담가 식힌 뒤 껍질을 벗긴다." }] },
-
-  { "id": "onion-egg-rice", "title": "양파 계란덮밥", "emoji": "🍛", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "egg", "amount": "2개" }, { "id": "onion", "amount": "1/2개" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "mirin", "amount": "1큰술", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "양파를 채 썬다." }, { "text": "작은 팬에 물 1/2컵·간장·설탕(·맛술)과 양파를 넣고 끓인다.", "timer_sec": 240 }, { "text": "계란을 대충 풀어 둘러 넣고 뚜껑 덮어 반숙으로 익힌다.", "timer_sec": 60 }, { "text": "밥 위에 올리고 파를 뿌린다." }] },
-
-  { "id": "pork-soy-stir-fry", "title": "돼지고기 간장볶음", "emoji": "🥩", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "pork", "amount": "200g" }, { "id": "onion", "amount": "1/2개" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "sesame_oil", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "간장·설탕·마늘을 섞어 양념을 만든다." }, { "text": "기름 두른 팬에 돼지고기를 볶는다.", "timer_sec": 240 }, { "text": "양파와 양념을 넣고 졸이듯 볶는다.", "timer_sec": 180 }, { "text": "파·참기름으로 마무리한다." }] },
-
-  { "id": "beef-mushroom-stir-fry", "title": "소고기 버섯볶음", "emoji": "🍄", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "beef", "amount": "150g" }, { "id": "mushroom", "amount": "한 줌" }, { "id": "soy_sauce", "amount": "1.5큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "pepper", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "소고기에 간장·설탕·마늘·참기름을 버무려 둔다." }, { "text": "달군 팬에 소고기를 볶는다.", "timer_sec": 180 }, { "text": "버섯(과 양파)을 넣고 숨이 죽을 때까지 볶는다.", "timer_sec": 180 }] },
-
-  { "id": "bacon-mung-sprouts", "title": "베이컨 숙주볶음", "emoji": "🥓", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "bacon", "amount": "4줄" }, { "id": "mung_sprouts", "amount": "1봉지" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "pepper", "amount": "약간" }, { "id": "minced_garlic", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "베이컨을 한입 크기로 썬다." }, { "text": "팬에 베이컨을 바삭하게 볶는다.", "timer_sec": 180 }, { "text": "숙주와 간장을 넣고 센 불에 1분 볶고 후추를 뿌린다.", "timer_sec": 60 }] },
-
-  { "id": "ham-fried-rice", "title": "햄 야채볶음밥", "emoji": "🍚", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "ham", "amount": "1/4캔" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "salt", "amount": "약간" }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "carrot", "amount": "약간", "optional": true }, { "id": "egg", "amount": "1개", "optional": true }],
-    "steps": [{ "text": "햄과 채소를 잘게 깍둑 썬다." }, { "text": "기름 두른 팬에 햄과 채소를 볶는다.", "timer_sec": 180 }, { "text": "밥을 넣고 볶다가 소금으로 간한다.", "timer_sec": 180 }] },
-
-  { "id": "shrimp-fried-rice", "title": "새우볶음밥", "emoji": "🍤", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "shrimp", "amount": "10마리" }, { "id": "egg", "amount": "1개" }, { "id": "green_onion", "amount": "1/3대" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "salt", "amount": "약간" }, { "id": "oyster_sauce", "amount": "1/2큰술", "optional": true }],
-    "steps": [{ "text": "새우를 해동하고 파를 송송 썬다." }, { "text": "기름에 파를 볶아 파기름을 낸다.", "timer_sec": 60 }, { "text": "새우를 볶다가 계란을 넣어 스크램블한다.", "timer_sec": 120 }, { "text": "밥을 넣고 볶아 소금(·굴소스)으로 간한다.", "timer_sec": 180 }] },
-
-  { "id": "garlic-butter-shrimp", "title": "마늘버터 새우구이", "emoji": "🦐", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "shrimp", "amount": "15마리" }, { "id": "butter", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }],
-    "steps": [{ "text": "새우의 물기를 닦고 소금·후추를 뿌린다." }, { "text": "버터를 녹이고 마늘을 볶아 향을 낸다." }, { "text": "새우를 넣고 붉게 익을 때까지 굽는다.", "timer_sec": 180 }] },
-
-  { "id": "pan-fried-dumplings", "title": "바삭 군만두", "emoji": "🥟", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "frozen_dumpling", "amount": "8개" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "soy_sauce", "amount": "약간", "optional": true }, { "id": "vinegar", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "기름 두른 팬에 냉동만두를 올린다." }, { "text": "물 3큰술을 넣고 뚜껑 덮어 익힌다.", "timer_sec": 240 }, { "text": "뚜껑을 열고 바닥이 바삭해질 때까지 굽는다.", "timer_sec": 120 }, { "text": "간장·식초를 섞어 곁들인다." }] },
-
-  { "id": "dumpling-soup", "title": "만둣국", "emoji": "🥟", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "frozen_dumpling", "amount": "8개" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "egg", "amount": "1개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "minced_garlic", "amount": "1/2작은술", "optional": true }],
-    "steps": [{ "text": "물 3컵을 끓이고 간장·소금·마늘로 간한다.", "timer_sec": 240 }, { "text": "만두를 넣고 떠오를 때까지 끓인다.", "timer_sec": 300 }, { "text": "계란을 풀어 넣고 파를 올린다." }] },
-
-  { "id": "bean-sprouts-soup", "title": "콩나물국", "emoji": "🍲", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "bean_sprouts", "amount": "1봉지" }, { "id": "salt", "amount": "1작은술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "gochugaru", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "물 4컵에 씻은 콩나물을 넣고 뚜껑을 덮어 끓인다.", "timer_sec": 420 }, { "text": "마늘과 소금으로 간한다." }, { "text": "파(·고춧가루)를 넣고 1분 더 끓인다.", "timer_sec": 60 }] },
-
-  { "id": "fish-cake-soup", "title": "어묵탕", "emoji": "🍢", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "fish_cake", "amount": "4장" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "radish", "amount": "약간", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "chili", "amount": "1개", "optional": true }],
-    "steps": [{ "text": "물 4컵에 (나박 썬 무를 넣고) 끓인다.", "timer_sec": 300 }, { "text": "어묵을 꼬치에 끼우거나 썰어 넣는다." }, { "text": "간장·소금으로 간하고 5분 더 끓인다.", "timer_sec": 300 }, { "text": "파·고추를 넣는다." }] },
-
-  { "id": "mini-gimbap", "title": "꼬마김밥", "emoji": "🍙", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "laver", "amount": "2장" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "carrot", "amount": "약간", "optional": true }, { "id": "ham", "amount": "약간", "optional": true }, { "id": "pickled_radish", "amount": "약간", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "밥에 참기름·소금·깨를 섞는다." }, { "text": "김을 4등분한다." }, { "text": "김 위에 밥을 얇게 펴고 있는 속재료를 올려 돌돌 만다." }, { "text": "참기름을 살짝 바른다." }] },
-
-  { "id": "simple-bibimbap", "title": "계란 고추장 비빔밥", "emoji": "🍲", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "egg", "amount": "1개" }, { "id": "gochujang", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "cooking_oil", "amount": "약간" }, { "id": "kimchi", "amount": "약간", "optional": true }, { "id": "lettuce", "amount": "약간", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란 프라이를 만든다.", "timer_sec": 120 }, { "text": "밥 위에 있는 채소·김치를 썰어 올린다." }, { "text": "계란 프라이·고추장·참기름을 올리고 비빈다." }] },
-
-  { "id": "broccoli-sesame", "title": "브로콜리 참깨무침", "emoji": "🥦", "image": "", "time_min": 7, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "broccoli", "amount": "1송이" }, { "id": "salt", "amount": "약간" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "sesame", "amount": "1큰술", "optional": true }],
-    "steps": [{ "text": "브로콜리를 한입 크기로 자른다." }, { "text": "끓는 소금물에 1분 데쳐 찬물에 헹군다.", "timer_sec": 60 }, { "text": "소금·참기름·깨를 넣고 무친다." }] },
-
-  { "id": "eggplant-stir-fry", "title": "가지볶음", "emoji": "🍆", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "eggplant", "amount": "2개" }, { "id": "soy_sauce", "amount": "1.5큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "가지를 어슷하게 썬다." }, { "text": "기름 두른 팬에 마늘·파를 볶아 향을 낸다." }, { "text": "가지를 넣고 숨이 죽을 때까지 볶는다.", "timer_sec": 240 }, { "text": "간장·설탕을 넣고 1분 더 볶는다.", "timer_sec": 60 }] },
-
-  { "id": "cheese-omelet", "title": "치즈 오믈렛", "emoji": "🧀", "image": "", "time_min": 8, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "egg", "amount": "3개" }, { "id": "cheese", "amount": "1장" }, { "id": "butter", "amount": "1조각" }, { "id": "salt", "amount": "약간" }, { "id": "milk", "amount": "2큰술", "optional": true }, { "id": "ketchup", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란·소금(·우유)을 곱게 푼다." }, { "text": "버터 녹인 팬에 계란물을 붓고 가장자리를 안쪽으로 모은다.", "timer_sec": 60 }, { "text": "반쯤 익으면 치즈를 올리고 반으로 접는다.", "timer_sec": 60 }] },
-
-  { "id": "rice-cake-skewers", "title": "떡꼬치", "emoji": "🍢", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "rice_cake", "amount": "20개" }, { "id": "ketchup", "amount": "2큰술" }, { "id": "gochujang", "amount": "1큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "oligosaccharide", "amount": "1큰술", "optional": true }],
-    "steps": [{ "text": "떡을 데쳐 꼬치에 끼운다.", "timer_sec": 60 }, { "text": "케첩·고추장·설탕(·올리고당)과 물 2큰술로 소스를 끓인다.", "timer_sec": 60 }, { "text": "기름 두른 팬에 떡꼬치를 노릇하게 굽는다.", "timer_sec": 300 }, { "text": "소스를 앞뒤로 바른다." }] },
-
-  { "id": "hot-dog-toast", "title": "소시지 핫도그 토스트", "emoji": "🌭", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack",
-    "ingredients": [{ "id": "bread", "amount": "2장" }, { "id": "sausage", "amount": "2개" }, { "id": "ketchup", "amount": "약간" }, { "id": "mustard", "amount": "약간", "optional": true }, { "id": "cheese", "amount": "1장", "optional": true }],
-    "steps": [{ "text": "소시지에 칼집을 내 팬에 굽는다.", "timer_sec": 180 }, { "text": "식빵을 밀대로 납작하게 밀고 소시지(·치즈)를 올려 만다." }, { "text": "팬에 굴려 가며 노릇하게 굽고 케첩·머스터드를 뿌린다.", "timer_sec": 120 }] },
-
-  { "id": "chicken-salad", "title": "닭가슴살 샐러드", "emoji": "🥗", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "chicken", "amount": "1덩이" }, { "id": "lettuce", "amount": "한 줌" }, { "id": "olive_oil", "amount": "2큰술" }, { "id": "vinegar", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "tomato", "amount": "1개", "optional": true }, { "id": "honey", "amount": "1작은술", "optional": true }],
-    "steps": [{ "text": "닭가슴살을 끓는 물에 10분 삶는다.", "timer_sec": 600 }, { "text": "한 김 식혀 결대로 찢는다." }, { "text": "올리브유·식초·소금·후추(·꿀)로 드레싱을 만든다." }, { "text": "채소 위에 닭가슴살을 올리고 드레싱을 뿌린다." }] },
-
-  { "id": "tuna-kimchi-stir-fry", "title": "참치 김치볶음", "emoji": "🐟", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side",
-    "ingredients": [{ "id": "tuna_can", "amount": "1캔" }, { "id": "kimchi", "amount": "1.5컵" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "sesame_oil", "amount": "1/2큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }],
-    "steps": [{ "text": "김치를 썬다." }, { "text": "참치 기름을 팬에 붓고 김치·설탕(·양파)을 볶는다.", "timer_sec": 300 }, { "text": "참치를 넣고 1분 더 볶은 뒤 참기름을 두른다.", "timer_sec": 60 }] },
-
-  { "id": "jeyuk", "title": "제육볶음", "emoji": "🥩", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "pork", "amount": "300g" }, { "id": "onion", "amount": "1/2개" }, { "id": "gochujang", "amount": "2큰술" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "green_onion", "amount": "1/2대", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "고추장·고춧가루·간장·설탕·마늘을 섞어 양념을 만든다." }, { "text": "돼지고기를 양념에 10분 재운다.", "timer_sec": 600 }, { "text": "양파·파를 썬다." }, { "text": "기름 두른 팬에 고기를 센 불로 볶는다.", "timer_sec": 300 }, { "text": "양파·파를 넣고 숨이 죽을 때까지 볶고 깨를 뿌린다.", "timer_sec": 120 }] },
-
-  { "id": "kimchi-stew", "title": "김치찌개", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "kimchi", "amount": "2컵" }, { "id": "pork", "amount": "150g" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "tofu", "amount": "1/2모", "optional": true }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "김치·돼지고기·두부·양파를 먹기 좋게 썬다." }, { "text": "냄비에 기름을 두르고 돼지고기와 김치를 볶는다.", "timer_sec": 300 }, { "text": "물 3컵, 고춧가루, 마늘을 넣고 끓인다.", "timer_sec": 600 }, { "text": "두부·양파를 넣고 5분 더 끓인다.", "timer_sec": 300 }, { "text": "파를 넣고 불을 끈다." }] },
-
-  { "id": "doenjang-stew", "title": "된장찌개", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "doenjang", "amount": "2큰술" }, { "id": "tofu", "amount": "1/2모" }, { "id": "zucchini", "amount": "1/3개" }, { "id": "onion", "amount": "1/4개" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "potato", "amount": "1/2개", "optional": true }, { "id": "chili", "amount": "1개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "애호박·양파·감자·두부를 깍둑 썬다." }, { "text": "물 3컵에 된장을 풀고 감자를 넣어 끓인다.", "timer_sec": 420 }, { "text": "애호박·양파·마늘을 넣고 끓인다.", "timer_sec": 300 }, { "text": "두부를 넣고 3분 더 끓인다.", "timer_sec": 180 }, { "text": "고추·파를 넣어 마무리한다." }] },
-
-  { "id": "seaweed-soup", "title": "소고기 미역국", "emoji": "🍲", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "seaweed", "amount": "한 줌" }, { "id": "beef", "amount": "100g" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "salt", "amount": "약간" }],
-    "steps": [{ "text": "미역을 찬물에 10분 불려 헹구고 썬다.", "timer_sec": 600 }, { "text": "냄비에 참기름을 두르고 소고기를 볶는다.", "timer_sec": 180 }, { "text": "미역을 넣고 함께 볶는다.", "timer_sec": 120 }, { "text": "물 5컵을 붓고 15분 끓인다.", "timer_sec": 900 }, { "text": "간장·마늘·소금으로 간한다." }] },
-
-  { "id": "potato-pancake", "title": "감자전", "emoji": "🥔", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "potato", "amount": "3개" }, { "id": "salt", "amount": "약간" }, { "id": "cooking_oil", "amount": "3큰술" }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "chili", "amount": "1개", "optional": true }],
-    "steps": [{ "text": "감자를 강판에 간다 (양파도 함께 갈면 갈변이 덜하다)." }, { "text": "체에 밭쳐 물기를 빼고, 가라앉은 전분만 다시 섞는다.", "timer_sec": 300 }, { "text": "소금으로 간한다." }, { "text": "기름을 넉넉히 두르고 얇게 펴서 앞뒤로 바삭하게 부친다.", "timer_sec": 480 }] },
-
-  { "id": "omurice", "title": "오므라이스", "emoji": "🍳", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "1공기" }, { "id": "egg", "amount": "2개" }, { "id": "onion", "amount": "1/4개" }, { "id": "ketchup", "amount": "3큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "salt", "amount": "약간" }, { "id": "ham", "amount": "약간", "optional": true }, { "id": "carrot", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "양파·당근·햄을 잘게 썬다." }, { "text": "기름 두른 팬에 채소와 햄을 볶는다.", "timer_sec": 180 }, { "text": "밥과 케첩 2큰술을 넣고 볶아 소금으로 간한다.", "timer_sec": 180 }, { "text": "다른 팬에 계란물을 얇게 부쳐 지단을 만든다.", "timer_sec": 120 }, { "text": "볶음밥을 지단으로 감싸 접시에 담는다." }, { "text": "케첩을 뿌린다." }] },
-
-  { "id": "curry-rice", "title": "카레라이스", "emoji": "🍛", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "2공기" }, { "id": "curry", "amount": "100g" }, { "id": "potato", "amount": "1개" }, { "id": "carrot", "amount": "1/2개" }, { "id": "onion", "amount": "1개" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "pork", "amount": "150g", "optional": true }],
-    "steps": [{ "text": "감자·당근·양파·고기를 깍둑 썬다." }, { "text": "기름 두른 냄비에 고기와 양파를 볶는다.", "timer_sec": 180 }, { "text": "감자·당근을 넣고 볶는다.", "timer_sec": 120 }, { "text": "물 3컵을 붓고 감자가 익을 때까지 끓인다.", "timer_sec": 900 }, { "text": "불을 줄이고 카레가루를 풀어 걸쭉해질 때까지 저으며 끓인다.", "timer_sec": 300 }, { "text": "밥 위에 붓는다." }] },
-
-  { "id": "cream-pasta", "title": "베이컨 크림파스타", "emoji": "🍝", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "noodle",
-    "ingredients": [{ "id": "spaghetti", "amount": "1인분" }, { "id": "milk", "amount": "300ml" }, { "id": "bacon", "amount": "3줄" }, { "id": "butter", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "cheese", "amount": "1장", "optional": true }, { "id": "mushroom", "amount": "한 줌", "optional": true }, { "id": "onion", "amount": "1/4개", "optional": true }],
-    "steps": [{ "text": "소금 넣은 끓는 물에 면을 7분 삶는다.", "timer_sec": 420 }, { "text": "버터에 마늘·베이컨·양파·버섯을 볶는다.", "timer_sec": 180 }, { "text": "우유를 붓고 약불로 끓인다. (치즈를 넣으면 더 진하다)", "timer_sec": 180 }, { "text": "면을 넣고 소스가 걸쭉해질 때까지 졸인다.", "timer_sec": 120 }, { "text": "소금·후추로 간한다." }] },
-
-  { "id": "tomato-pasta", "title": "생토마토 파스타", "emoji": "🍅", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "noodle",
-    "ingredients": [{ "id": "spaghetti", "amount": "1인분" }, { "id": "tomato", "amount": "3개" }, { "id": "onion", "amount": "1/2개" }, { "id": "minced_garlic", "amount": "1큰술" }, { "id": "olive_oil", "amount": "3큰술" }, { "id": "salt", "amount": "약간" }, { "id": "sugar", "amount": "약간", "optional": true }, { "id": "cheese", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "토마토에 칼집을 내 데친 뒤 껍질을 벗기고 다진다.", "timer_sec": 60 }, { "text": "올리브유에 마늘·양파를 볶는다.", "timer_sec": 180 }, { "text": "토마토를 넣고 으깨며 10분 졸인다.", "timer_sec": 600 }, { "text": "그동안 면을 삶는다.", "timer_sec": 480 }, { "text": "소스에 면을 버무리고 소금(·설탕)으로 간한다." }] },
-
-  { "id": "japchae", "title": "잡채", "emoji": "🍜", "image": "", "time_min": 40, "difficulty": "hard", "meal_type": "side",
-    "ingredients": [{ "id": "glass_noodle", "amount": "150g" }, { "id": "spinach", "amount": "1/2단" }, { "id": "carrot", "amount": "1/2개" }, { "id": "onion", "amount": "1/2개" }, { "id": "soy_sauce", "amount": "4큰술" }, { "id": "sugar", "amount": "2큰술" }, { "id": "sesame_oil", "amount": "2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "beef", "amount": "100g", "optional": true }, { "id": "mushroom", "amount": "한 줌", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "당면을 찬물에 30분 불린다.", "timer_sec": 1800 }, { "text": "시금치를 데쳐 소금·참기름으로 무친다.", "timer_sec": 30 }, { "text": "당근·양파·버섯을 채 썬다." }, { "text": "채소를 각각 소금 간해 볶아 둔다.", "timer_sec": 300 }, { "text": "소고기를 간장·설탕·마늘에 버무려 볶는다.", "timer_sec": 180 }, { "text": "당면을 끓는 물에 6분 삶아 건진다.", "timer_sec": 360 }, { "text": "팬에 당면과 간장·설탕을 넣고 볶아 간이 배게 한다.", "timer_sec": 120 }, { "text": "모든 재료를 합쳐 참기름·깨로 버무린다." }] },
-
-  { "id": "dakbokkeumtang", "title": "닭볶음탕", "emoji": "🍗", "image": "", "time_min": 50, "difficulty": "hard", "meal_type": "side",
-    "ingredients": [{ "id": "chicken", "amount": "1마리" }, { "id": "potato", "amount": "2개" }, { "id": "carrot", "amount": "1/2개" }, { "id": "onion", "amount": "1개" }, { "id": "gochujang", "amount": "2큰술" }, { "id": "gochugaru", "amount": "3큰술" }, { "id": "soy_sauce", "amount": "4큰술" }, { "id": "sugar", "amount": "2큰술" }, { "id": "minced_garlic", "amount": "1.5큰술" }, { "id": "green_onion", "amount": "1대", "optional": true }],
-    "steps": [{ "text": "닭을 끓는 물에 데쳐 헹군다.", "timer_sec": 300 }, { "text": "감자·당근·양파를 큼직하게 썬다." }, { "text": "고추장·고춧가루·간장·설탕·마늘로 양념장을 만든다." }, { "text": "냄비에 닭과 물 4컵, 양념장 절반을 넣고 끓인다.", "timer_sec": 900 }, { "text": "감자·당근과 남은 양념을 넣는다." }, { "text": "중불로 감자가 익을 때까지 끓인다.", "timer_sec": 900 }, { "text": "양파를 넣고 국물이 자작해질 때까지 졸인다.", "timer_sec": 600 }, { "text": "파를 넣고 마무리한다." }] },
-
-  { "id": "bulgogi", "title": "소불고기", "emoji": "🥩", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "beef", "amount": "300g" }, { "id": "onion", "amount": "1/2개" }, { "id": "soy_sauce", "amount": "3큰술" }, { "id": "sugar", "amount": "1.5큰술" }, { "id": "minced_garlic", "amount": "1큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "pepper", "amount": "약간" }, { "id": "green_onion", "amount": "1/2대", "optional": true }, { "id": "carrot", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "소고기의 핏물을 키친타월로 닦는다." }, { "text": "간장·설탕·마늘·참기름·후추로 양념을 만든다." }, { "text": "고기와 양파를 양념에 20분 재운다.", "timer_sec": 1200 }, { "text": "달군 팬에 센 불로 볶는다.", "timer_sec": 300 }, { "text": "파를 넣고 섞는다." }] },
-
-  { "id": "teriyaki-chicken", "title": "데리야끼 치킨", "emoji": "🍗", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "chicken", "amount": "2덩이" }, { "id": "soy_sauce", "amount": "3큰술" }, { "id": "sugar", "amount": "1.5큰술" }, { "id": "mirin", "amount": "2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "닭다리살의 두꺼운 부분에 칼집을 낸다." }, { "text": "간장·설탕·맛술·마늘·물 3큰술로 소스를 만든다." }, { "text": "기름 두른 팬에 껍질 쪽부터 노릇하게 굽는다.", "timer_sec": 420 }, { "text": "뒤집어 뚜껑 덮고 속까지 익힌다.", "timer_sec": 300 }, { "text": "소스를 붓고 윤기 나게 졸인다.", "timer_sec": 180 }, { "text": "썰어서 파를 뿌린다." }] },
-
-  { "id": "braised-potato", "title": "감자조림", "emoji": "🥔", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "potato", "amount": "2개" }, { "id": "soy_sauce", "amount": "3큰술" }, { "id": "sugar", "amount": "1.5큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "oligosaccharide", "amount": "1큰술", "optional": true }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "감자를 깍둑 썰어 찬물에 헹군다." }, { "text": "기름 두른 팬에 감자를 2분 볶는다.", "timer_sec": 120 }, { "text": "물 1컵·간장·설탕을 넣고 뚜껑 덮어 끓인다.", "timer_sec": 600 }, { "text": "뚜껑을 열고 국물을 졸인다.", "timer_sec": 300 }, { "text": "올리고당·깨로 윤기를 낸다." }] },
-
-  { "id": "braised-tofu", "title": "두부조림", "emoji": "🧈", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "tofu", "amount": "1모" }, { "id": "soy_sauce", "amount": "3큰술" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "두부를 도톰하게 썰어 물기를 뺀다." }, { "text": "기름 두른 팬에 앞뒤로 노릇하게 부친다.", "timer_sec": 360 }, { "text": "간장·고춧가루·설탕·마늘·물 1/2컵으로 양념장을 만든다." }, { "text": "두부 위에 양념장을 끼얹으며 졸인다.", "timer_sec": 300 }, { "text": "파를 올린다." }] },
-
-  { "id": "soy-braised-eggs", "title": "계란장조림", "emoji": "🥚", "image": "", "time_min": 35, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "egg", "amount": "8개" }, { "id": "soy_sauce", "amount": "1/2컵" }, { "id": "sugar", "amount": "3큰술" }, { "id": "chili", "amount": "2개", "optional": true }, { "id": "minced_garlic", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란을 완숙으로 삶는다.", "timer_sec": 600 }, { "text": "찬물에 식혀 껍질을 벗긴다." }, { "text": "냄비에 물 1.5컵·간장·설탕(·고추·마늘)을 넣고 끓인다." }, { "text": "계란을 넣고 굴려 가며 중약불로 졸인다.", "timer_sec": 1200 }] },
-
-  { "id": "gimbap", "title": "기본 김밥", "emoji": "🍙", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "rice",
-    "ingredients": [{ "id": "rice", "amount": "2공기" }, { "id": "laver", "amount": "4장" }, { "id": "egg", "amount": "3개" }, { "id": "ham", "amount": "4줄" }, { "id": "carrot", "amount": "1/2개" }, { "id": "cucumber", "amount": "1/2개" }, { "id": "salt", "amount": "약간" }, { "id": "sesame_oil", "amount": "2큰술" }, { "id": "cooking_oil", "amount": "2큰술" }, { "id": "pickled_radish", "amount": "4줄", "optional": true }],
-    "steps": [{ "text": "밥에 소금·참기름을 섞어 식힌다." }, { "text": "계란을 두툼하게 부쳐 길게 썬다.", "timer_sec": 300 }, { "text": "당근은 채 썰어 볶고, 햄은 구워 둔다.", "timer_sec": 240 }, { "text": "오이를 길게 썰어 소금에 살짝 절인다." }, { "text": "김 위에 밥을 얇게 펴고 속재료를 올린다." }, { "text": "단단하게 말아 참기름을 바르고 썬다." }] },
-
-  { "id": "candied-sweet-potato", "title": "고구마 맛탕", "emoji": "🍠", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "snack",
-    "ingredients": [{ "id": "sweet_potato", "amount": "2개" }, { "id": "sugar", "amount": "4큰술" }, { "id": "cooking_oil", "amount": "1컵" }, { "id": "sesame", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "고구마를 한입 크기로 썰어 물에 담가 전분을 뺀다." }, { "text": "물기를 닦고 160도 기름에 노릇하게 튀긴다.", "timer_sec": 480 }, { "text": "다른 팬에 기름 1큰술과 설탕을 넣고 젓지 않고 녹인다.", "timer_sec": 180 }, { "text": "고구마를 넣고 빠르게 버무린다." }, { "text": "깨를 뿌리고 서로 붙지 않게 펼쳐 식힌다." }] },
-
-  { "id": "potato-salad", "title": "감자 샐러드", "emoji": "🥗", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "potato", "amount": "2개" }, { "id": "egg", "amount": "2개" }, { "id": "mayonnaise", "amount": "4큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "cucumber", "amount": "1/3개", "optional": true }, { "id": "canned_corn", "amount": "3큰술", "optional": true }, { "id": "carrot", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "감자는 껍질을 벗겨 삶고, 계란도 함께 완숙으로 삶는다.", "timer_sec": 900 }, { "text": "감자가 뜨거울 때 으깬다." }, { "text": "오이·당근은 잘게 썰어 소금에 절이고 물기를 짠다." }, { "text": "모든 재료와 마요네즈·설탕·소금·후추를 섞는다." }] },
-
-  { "id": "budae-jjigae", "title": "부대찌개", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "ham", "amount": "1/2캔" }, { "id": "sausage", "amount": "5개" }, { "id": "kimchi", "amount": "1컵" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "gochujang", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "ramen", "amount": "1/2개", "optional": true }, { "id": "tofu", "amount": "1/3모", "optional": true }, { "id": "onion", "amount": "1/4개", "optional": true }, { "id": "cheese", "amount": "1장", "optional": true }],
-    "steps": [{ "text": "햄·소시지·김치·두부·양파를 썬다." }, { "text": "고춧가루·고추장·간장·마늘로 양념장을 만든다." }, { "text": "냄비에 재료를 둘러 담고 양념장을 올린다." }, { "text": "물 3컵을 붓고 끓인다.", "timer_sec": 600 }, { "text": "라면사리·치즈를 넣고 면이 익을 때까지 끓인다.", "timer_sec": 180 }] },
-
-  { "id": "pajeon", "title": "해물파전", "emoji": "🥞", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "green_onion", "amount": "1단" }, { "id": "flour", "amount": "1컵" }, { "id": "egg", "amount": "1개" }, { "id": "cooking_oil", "amount": "3큰술" }, { "id": "salt", "amount": "약간" }, { "id": "squid", "amount": "1/2마리", "optional": true }, { "id": "shrimp", "amount": "한 줌", "optional": true }],
-    "steps": [{ "text": "쪽파(대파)를 팬 길이로 자른다." }, { "text": "밀가루·물 3/4컵·소금으로 반죽한다." }, { "text": "팬에 기름을 두르고 파를 깔고 반죽을 끼얹는다." }, { "text": "해물을 올리고 계란물을 두른다." }, { "text": "앞뒤로 노릇하게 부친다.", "timer_sec": 600 }] },
-
-  { "id": "squid-stir-fry", "title": "오징어볶음", "emoji": "🦑", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "squid", "amount": "1마리" }, { "id": "onion", "amount": "1/2개" }, { "id": "gochujang", "amount": "1.5큰술" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "sugar", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "cooking_oil", "amount": "1큰술" }, { "id": "cabbage", "amount": "한 줌", "optional": true }, { "id": "carrot", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "오징어를 손질해 칼집을 내고 썬다." }, { "text": "양념 재료를 섞는다." }, { "text": "기름 두른 팬에 채소를 먼저 볶는다.", "timer_sec": 120 }, { "text": "오징어와 양념을 넣고 센 불로 빠르게 볶는다.", "timer_sec": 180 }, { "text": "오징어가 오그라들면 바로 불을 끈다." }] },
-
-  { "id": "beef-radish-soup", "title": "소고기무국", "emoji": "🍲", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "beef", "amount": "150g" }, { "id": "radish", "amount": "1/4개" }, { "id": "soy_sauce", "amount": "2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "sesame_oil", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "무를 나박 썬다." }, { "text": "냄비에 참기름을 두르고 소고기를 볶는다.", "timer_sec": 180 }, { "text": "무를 넣고 투명해질 때까지 볶는다.", "timer_sec": 180 }, { "text": "물 5컵을 붓고 끓인다.", "timer_sec": 1200 }, { "text": "간장·마늘·소금으로 간하고 파를 넣는다." }] },
-
-  { "id": "donggeurangttaeng", "title": "동그랑땡", "emoji": "🥩", "image": "", "time_min": 40, "difficulty": "hard", "meal_type": "side",
-    "ingredients": [{ "id": "pork", "amount": "300g" }, { "id": "tofu", "amount": "1/2모" }, { "id": "onion", "amount": "1/2개" }, { "id": "egg", "amount": "2개" }, { "id": "flour", "amount": "1/2컵" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "cooking_oil", "amount": "3큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "carrot", "amount": "약간", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "두부를 면보로 감싸 물기를 꼭 짠다." }, { "text": "양파·당근·파를 아주 잘게 다진다." }, { "text": "다진 돼지고기·두부·채소·마늘·소금·후추를 넣고 치댄다.", "timer_sec": 300 }, { "text": "한입 크기로 동글납작하게 빚는다." }, { "text": "밀가루를 얇게 묻힌다." }, { "text": "풀어 둔 계란물에 담근다." }, { "text": "기름 두른 팬에 중약불로 앞뒤 노릇하게 부친다.", "timer_sec": 600 }, { "text": "키친타월에 올려 기름을 뺀다." }] },
-
-  { "id": "pancakes", "title": "핫케이크", "emoji": "🥞", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "snack",
-    "ingredients": [{ "id": "flour", "amount": "1컵" }, { "id": "egg", "amount": "1개" }, { "id": "milk", "amount": "150ml" }, { "id": "sugar", "amount": "2큰술" }, { "id": "butter", "amount": "1큰술" }, { "id": "banana", "amount": "1개", "optional": true }, { "id": "honey", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "계란·우유·설탕·녹인 버터를 섞는다." }, { "text": "밀가루를 체 쳐 넣고 날가루가 없을 정도로만 섞는다." }, { "text": "약불로 달군 팬에 기름을 닦아 내고 반죽을 한 국자 붓는다." }, { "text": "표면에 기포가 올라오면 뒤집는다.", "timer_sec": 120 }, { "text": "꿀·바나나를 곁들인다." }] },
-
-  { "id": "steak", "title": "소고기 스테이크", "emoji": "🥩", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "beef", "amount": "200g" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }, { "id": "butter", "amount": "1큰술" }, { "id": "olive_oil", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "고기를 실온에 15분 두고 소금·후추를 뿌린다.", "timer_sec": 900 }, { "text": "팬을 연기 날 정도로 달구고 올리브유를 두른다." }, { "text": "한 면당 2분씩 굽는다.", "timer_sec": 240 }, { "text": "버터·마늘을 넣고 녹은 버터를 끼얹는다.", "timer_sec": 60 }, { "text": "5분 레스팅 후 썬다.", "timer_sec": 300 }] },
-
-  { "id": "kimchi-jjim", "title": "돼지고기 김치찜", "emoji": "🍲", "image": "", "time_min": 60, "difficulty": "hard", "meal_type": "side",
-    "ingredients": [{ "id": "kimchi", "amount": "1/4포기" }, { "id": "pork", "amount": "400g" }, { "id": "sugar", "amount": "1큰술" }, { "id": "minced_garlic", "amount": "1큰술" }, { "id": "gochugaru", "amount": "1큰술", "optional": true }, { "id": "onion", "amount": "1/2개", "optional": true }, { "id": "green_onion", "amount": "약간", "optional": true }],
-    "steps": [{ "text": "돼지고기를 큼직하게 썬다." }, { "text": "냄비 바닥에 양파를 깐다." }, { "text": "김치를 포기째 깔고 그 위에 고기를 올린다." }, { "text": "설탕·마늘·고춧가루를 뿌린다." }, { "text": "물 2컵과 김칫국물 1/2컵을 붓는다." }, { "text": "센 불에서 끓어오르면 중약불로 줄인다.", "timer_sec": 600 }, { "text": "뚜껑 덮고 김치가 무를 때까지 푹 끓인다.", "timer_sec": 2400 }, { "text": "파를 올리고 김치를 가위로 잘라 낸다." }] },
-
-  { "id": "potato-soup", "title": "감자 수프", "emoji": "🥣", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "snack",
-    "ingredients": [{ "id": "potato", "amount": "2개" }, { "id": "onion", "amount": "1/2개" }, { "id": "milk", "amount": "400ml" }, { "id": "butter", "amount": "1큰술" }, { "id": "salt", "amount": "약간" }, { "id": "pepper", "amount": "약간" }],
-    "steps": [{ "text": "감자와 양파를 얇게 썬다." }, { "text": "버터에 양파를 투명해질 때까지 볶는다.", "timer_sec": 240 }, { "text": "감자와 물 1컵을 넣고 감자가 익을 때까지 끓인다.", "timer_sec": 900 }, { "text": "우유를 붓고 블렌더(또는 포크)로 곱게 간다." }, { "text": "약불로 데우며 소금·후추로 간한다.", "timer_sec": 180 }] },
-
-  { "id": "jjageuli", "title": "돼지고기 짜글이", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "pork", "amount": "200g" }, { "id": "potato", "amount": "1개" }, { "id": "onion", "amount": "1/2개" }, { "id": "zucchini", "amount": "1/3개" }, { "id": "gochujang", "amount": "1큰술" }, { "id": "gochugaru", "amount": "1큰술" }, { "id": "soy_sauce", "amount": "1큰술" }, { "id": "sugar", "amount": "1/2큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "kimchi", "amount": "1/2컵", "optional": true }],
-    "steps": [{ "text": "고기와 채소를 깍둑 썬다." }, { "text": "냄비에 고기를 볶다가 고추장·고춧가루·간장·설탕·마늘을 넣는다.", "timer_sec": 180 }, { "text": "감자와 물 1.5컵을 넣고 끓인다.", "timer_sec": 600 }, { "text": "양파·애호박(·김치)을 넣고 자작하게 졸인다.", "timer_sec": 420 }] },
-
-  { "id": "spinach-doenjang-soup", "title": "시금치 된장국", "emoji": "🍲", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side",
-    "ingredients": [{ "id": "spinach", "amount": "1/2단" }, { "id": "doenjang", "amount": "1.5큰술" }, { "id": "minced_garlic", "amount": "1/2큰술" }, { "id": "green_onion", "amount": "약간", "optional": true }, { "id": "tofu", "amount": "1/3모", "optional": true }],
-    "steps": [{ "text": "시금치를 다듬어 씻는다." }, { "text": "물 4컵에 된장을 풀어 끓인다.", "timer_sec": 420 }, { "text": "시금치·두부·마늘을 넣고 끓인다.", "timer_sec": 300 }, { "text": "파를 넣고 불을 끈다." }] }
+  { "id": "egg-fried-rice", "title": "계란볶음밥", "emoji": "🍳", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "egg", "amount": "2개"}, {"id": "onion", "amount": "1/4개"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "양파 1/4개를 쌀알 크기로 잘게 다진다. 대파가 있으면 송송 썰어 둔다."},
+      {"text": "팬을 중불로 달궈 식용유 2큰술을 두르고 양파(와 대파)를 1분 볶아 향을 낸다. 한쪽으로 밀고 빈 자리에 계란 2개를 깨 넣어 젓가락으로 빠르게 휘저어 반쯤 익힌다.", "timer_sec": 120},
+      {"text": "밥 1공기를 넣고 센 불로 올려, 주걱으로 밥알을 눌러 펴 가며 계란·양파와 고루 섞일 때까지 볶는다. 밥알이 팬에서 톡톡 튀기 시작하면 된 것이다.", "timer_sec": 180},
+      {"text": "팬 가장자리에 간장 1큰술을 둘러 지글지글 눌어붙듯 향을 낸 다음 전체를 섞고, 맛을 보며 소금으로 간을 마무리한다."}
+    ],
+    "tip": "갓 지은 밥보다 식은 밥이나 냉동밥을 데운 것이 덜 질척여 고슬고슬하게 볶여요." },
+
+  { "id": "egg-roll", "title": "계란말이", "emoji": "🥚", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "egg", "amount": "3개"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "carrot", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 계란 3개와 소금 한 꼬집을 넣고 알끈이 끊어지도록 충분히 푼다. 다진 파·당근이 있으면 1큰술씩 섞는다."},
+      {"text": "팬을 약불로 달군 뒤 키친타월로 기름을 얇게 펴 바르고, 계란물의 1/3을 부어 팬 전체에 고르게 펼친다."},
+      {"text": "윗면이 70% 정도 익어 촉촉할 때 한쪽 끝부터 뒤집개로 2~3번 접듯이 만다. 말린 계란을 팬 끝으로 밀고 빈 곳에 남은 계란물을 부어 앞의 계란말이 밑으로 흘러 들어가게 한 뒤 다시 만다. 이것을 반복한다.", "timer_sec": 300},
+      {"text": "다 말면 김발이나 키친타월로 감싸 모양을 잡고 5분쯤 식힌 뒤 1.5cm 두께로 썬다."}
+    ],
+    "tip": "불이 세면 겉이 타고 갈라져요. 처음부터 끝까지 약불을 유지하는 것이 예쁘게 마는 비결이에요." },
+
+  { "id": "soy-egg-rice", "title": "간장계란밥", "emoji": "🍚", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "egg", "amount": "1개"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "약간"}, {"id": "laver", "amount": "약간", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "팬을 중불로 달궈 식용유를 두르고 계란을 깨 넣는다. 가장자리가 바삭해지고 흰자가 거의 익으면(약 2분) 노른자가 반숙인 상태로 불을 끈다.", "timer_sec": 120},
+      {"text": "따뜻한 밥을 그릇에 담고 계란 프라이를 올린다. 버터가 있으면 밥에 한 조각 올려 녹여도 좋다."},
+      {"text": "간장 1큰술과 참기름 1/2큰술을 두르고 김가루·깨를 뿌린 뒤, 노른자를 터뜨려 고루 비빈다."}
+    ],
+    "tip": "간장은 진간장을 쓰세요. 굴소스를 조금 섞으면 감칠맛이 더 살아요." },
+
+  { "id": "steamed-egg", "title": "전자레인지 계란찜", "emoji": "🥚", "image": "", "time_min": 8, "difficulty": "easy", "meal_type": "side", "servings": "1인분",
+    "ingredients": [{"id": "egg", "amount": "2개"}, {"id": "salt", "amount": "약간"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "깊이가 있는 내열 그릇(머그컵도 가능)에 계란 2개와 같은 양(약 100ml)의 물을 넣고, 거품이 많이 생기지 않게 젓가락으로 곱게 푼다."},
+      {"text": "소금 2꼬집으로 간하고, 다진 파가 있으면 위에 올린다. 체에 한 번 거르면 더 부드럽다."},
+      {"text": "랩을 씌우고 이쑤시개로 구멍을 3~4개 낸다. 김이 빠져야 넘치지 않는다."},
+      {"text": "전자레인지(700W)에 2분 30초 돌린 뒤 꺼내지 말고 1분간 그대로 두어 남은 열로 가운데까지 익힌다. 가운데가 덜 익었으면 20초씩 추가한다.", "timer_sec": 210}
+    ],
+    "tip": "물 대신 우유나 다시마 우린 물을 쓰면 더 고소하고 부드러워요." },
+
+  { "id": "scrambled-eggs", "title": "스크램블 에그", "emoji": "🍳", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "egg", "amount": "2개"}, {"id": "butter", "amount": "1조각"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "milk", "amount": "2큰술", "optional": true}],
+    "steps": [
+      {"text": "볼에 계란 2개, 소금 한 꼬집(우유가 있으면 2큰술)을 넣고 흰자와 노른자가 완전히 섞이도록 푼다."},
+      {"text": "팬을 약불에 올려 버터 한 조각을 녹이고, 거품이 가라앉으면 계란물을 붓는다."},
+      {"text": "10초쯤 기다렸다가 실리콘 주걱으로 바닥을 크게 긁듯이 천천히 저어 덩어리를 만든다. 70~80% 익어 촉촉할 때 바로 불을 끈다(남은 열로 마저 익는다).", "timer_sec": 90},
+      {"text": "접시에 옮겨 후추를 뿌린다. 식빵이나 밥에 곁들인다."}
+    ],
+    "tip": "센 불에서 빠르게 저으면 퍽퍽해져요. 약불·천천히·일찍 불 끄기만 지키면 호텔식처럼 부드러워요." },
+
+  { "id": "kimchi-fried-rice", "title": "김치볶음밥", "emoji": "🍚", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "kimchi", "amount": "1/2컵"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "egg", "amount": "1개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "gochugaru", "amount": "1/2큰술", "optional": true}],
+    "steps": [
+      {"text": "김치 1/2컵을 가위로 잘게 썬다. 김칫국물 1큰술을 따로 덜어 두면 색과 맛이 좋아진다."},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 김치와 설탕 1/2큰술(고춧가루가 있으면 함께)을 넣어 3분간 볶는다. 김치가 반투명해지고 신맛이 날아갈 때까지 충분히 볶는 것이 핵심이다.", "timer_sec": 180},
+      {"text": "밥을 넣고 김칫국물을 둘러 주걱으로 밥알을 펴 가며 3분간 볶는다. 간이 싱거우면 간장을 약간 더한다.", "timer_sec": 180},
+      {"text": "불을 끄고 참기름 1/2큰술을 둘러 섞는다. 그릇에 담아 계란 프라이와 송송 썬 파를 올린다."}
+    ],
+    "tip": "잘 익은 신김치일수록 맛있어요. 김치가 덜 익었다면 식초를 몇 방울 넣어 보세요." },
+
+  { "id": "tuna-mayo-rice", "title": "참치마요덮밥", "emoji": "🐟", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "tuna_can", "amount": "1/2캔"}, {"id": "mayonnaise", "amount": "2큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "laver", "amount": "약간", "optional": true}, {"id": "onion", "amount": "1/4개", "optional": true}],
+    "steps": [
+      {"text": "참치캔을 따서 체에 밭쳐 숟가락으로 꾹 눌러 기름을 충분히 뺀다. 양파가 있으면 잘게 다져 찬물에 5분 담가 매운맛을 뺀다."},
+      {"text": "작은 그릇에 간장 1큰술, 설탕 1/2큰술, 물 1큰술을 넣고 설탕이 녹을 때까지 섞어 소스를 만든다(전자레인지 20초면 빨리 녹는다)."},
+      {"text": "밥 위에 참치(와 양파)를 올리고 소스를 고루 뿌린 다음, 마요네즈를 지그재그로 짠다."},
+      {"text": "김가루나 잘게 부순 조미김을 듬뿍 올리고 비벼 먹는다."}
+    ],
+    "tip": "소스를 팬에 살짝 졸이면 데리야키 같은 단짠맛이 진해져요." },
+
+  { "id": "ham-egg-rice", "title": "스팸계란덮밥", "emoji": "🥓", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "ham", "amount": "1/3캔"}, {"id": "egg", "amount": "1개"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "약간"}],
+    "steps": [
+      {"text": "햄을 1cm 두께로 썰어 마른 팬에 올리고 중불에서 앞뒤로 노릇해질 때까지(약 3분) 굽는다.", "timer_sec": 180},
+      {"text": "약불로 줄이고 간장 1큰술, 설탕 1/2큰술, 물 1큰술을 넣어 햄에 소스가 윤기 나게 묻도록 뒤적이며 졸인다."},
+      {"text": "햄을 덜어 내고 같은 팬에 식용유를 조금 둘러 계란 프라이를 반숙으로 만든다(약 2분).", "timer_sec": 120},
+      {"text": "밥 위에 햄을 가지런히 올리고 팬에 남은 소스를 끼얹은 뒤 계란 프라이를 얹는다."}
+    ],
+    "tip": "햄을 끓는 물에 10초 데치면 짠맛과 기름기가 줄어요." },
+
+  { "id": "egg-ramen", "title": "계란 파 라면", "emoji": "🍜", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "ramen", "amount": "1봉지"}, {"id": "egg", "amount": "1개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 550ml를 붓고 센 불로 끓인다. 파는 송송 썬다."},
+      {"text": "물이 끓으면 면과 스프를 넣고 4분 끓인다. 중간에 면을 젓가락으로 들어 올렸다 내리면 면발이 쫄깃해진다.", "timer_sec": 240},
+      {"text": "불을 끄기 30초 전에 계란을 깨 넣고 젓지 않은 채 익힌 뒤, 파를 올리고 불을 끈다."}
+    ],
+    "tip": "계란을 풀고 싶으면 국물 가장자리에 둘러 넣어야 국물이 탁해지지 않아요." },
+
+  { "id": "cheese-ramen", "title": "치즈라면", "emoji": "🧀", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "ramen", "amount": "1봉지"}, {"id": "cheese", "amount": "1장"}, {"id": "egg", "amount": "1개", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 500ml(평소보다 50ml 적게)를 붓고 끓인다. 치즈가 들어가면 국물이 순해지므로 물을 조금 적게 잡는다."},
+      {"text": "물이 끓으면 면과 스프를 넣고 4분 끓인다. 계란이 있으면 마지막 1분에 넣는다.", "timer_sec": 240},
+      {"text": "그릇에 옮겨 담고 바로 슬라이스 치즈를 올린 뒤, 접시로 30초 덮어 녹인다."}
+    ],
+    "tip": "매운 라면일수록 치즈와 잘 어울려요. 치즈를 국물에 풀면 크림처럼 부드러워져요." },
+
+  { "id": "kimchi-ramen", "title": "김치라면", "emoji": "🍜", "image": "", "time_min": 6, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "ramen", "amount": "1봉지"}, {"id": "kimchi", "amount": "1/3컵"}, {"id": "egg", "amount": "1개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 550ml와 잘게 썬 김치 1/3컵을 넣고 먼저 1분 끓여 김치 맛을 우린다.", "timer_sec": 60},
+      {"text": "면과 스프를 넣고 4분 끓인다. 김치가 짜므로 스프는 2/3만 넣고 맛을 보며 조절한다.", "timer_sec": 240},
+      {"text": "계란을 넣고 30초 더 끓인 뒤 송송 썬 파를 올린다."}
+    ],
+    "tip": "김치를 참기름에 먼저 볶다가 물을 부으면 국물이 훨씬 깊어져요." },
+
+  { "id": "kimchi-bibim-guksu", "title": "김치비빔국수", "emoji": "🍜", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "somen", "amount": "1인분"}, {"id": "kimchi", "amount": "1/3컵"}, {"id": "gochujang", "amount": "1큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "vinegar", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "cucumber", "amount": "약간", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "김치 1/3컵을 잘게 썰어 볼에 담고 고추장 1큰술, 설탕 1큰술, 식초 1큰술, 참기름 1큰술을 넣어 양념을 만든다. 오이가 있으면 채 썬다."},
+      {"text": "냄비에 물을 넉넉히 끓여 소면을 펼쳐 넣고 젓가락으로 저어 붙지 않게 한다. 끓어 넘치려 하면 찬물 반 컵을 붓는다(2~3번 반복, 총 3분).", "timer_sec": 180},
+      {"text": "삶은 면을 찬물에 여러 번 비벼 헹궈 전분기를 없애고, 손으로 꼭 짜 물기를 뺀다."},
+      {"text": "양념에 면을 넣고 골고루 비빈 뒤 그릇에 담고 오이채와 깨를 올린다."}
+    ],
+    "tip": "면을 헹굴 때 얼음물을 쓰면 면발이 훨씬 쫄깃해져요." },
+
+  { "id": "soy-bibim-guksu", "title": "간장비빔국수", "emoji": "🍜", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "somen", "amount": "1인분"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "egg", "amount": "1개", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 간장 2큰술, 설탕 1큰술, 참기름 1큰술을 넣고 설탕이 녹을 때까지 저어 양념을 만든다."},
+      {"text": "끓는 물에 소면을 넣고 3분 삶는다. 끓어오르면 찬물을 조금씩 부어 넘치지 않게 한다.", "timer_sec": 180},
+      {"text": "면을 찬물에 비벼 헹군 뒤 체에 밭쳐 물기를 충분히 뺀다."},
+      {"text": "양념에 면을 비비고 그릇에 담는다. 계란 프라이나 반숙 계란, 깨를 올린다."}
+    ],
+    "tip": "매운 걸 좋아하면 고춧가루를 반 숟가락 더해 보세요. 아이들도 잘 먹는 맛이에요." },
+
+  { "id": "aglio-olio", "title": "알리오 올리오", "emoji": "🍝", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "spaghetti", "amount": "1인분"}, {"id": "minced_garlic", "amount": "1큰술"}, {"id": "olive_oil", "amount": "4큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "chili", "amount": "1개", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 1L와 소금 1큰술을 넣고 끓여 스파게티면을 8분 삶는다. 건지기 전에 면 삶은 물(면수)을 한 국자 따로 덜어 둔다.", "timer_sec": 480},
+      {"text": "면을 삶는 동안 팬에 올리브유 4큰술과 마늘을 넣고 약불에서 2분간 천천히 데운다. 마늘이 연한 갈색이 되면 향이 충분히 난 것이다(타면 쓴맛이 난다). 고추가 있으면 송송 썰어 함께 넣는다.", "timer_sec": 120},
+      {"text": "삶은 면과 면수 3~4큰술을 팬에 넣고 중불에서 30초간 세게 흔들며 섞는다. 기름과 면수가 섞여 소스가 뽀얗게 면에 달라붙으면 된다."},
+      {"text": "맛을 보고 소금·후추로 간을 맞춘다. 파슬리나 치즈가 있으면 뿌린다."}
+    ],
+    "tip": "면수의 전분이 기름과 물을 이어 줘요. 면수를 꼭 남겨 두세요." },
+
+  { "id": "egg-toast", "title": "길거리 계란 토스트", "emoji": "🍞", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "bread", "amount": "2장"}, {"id": "egg", "amount": "1개"}, {"id": "butter", "amount": "1조각"}, {"id": "sugar", "amount": "1작은술"}, {"id": "cabbage", "amount": "한 줌", "optional": true}, {"id": "cheese", "amount": "1장", "optional": true}, {"id": "ketchup", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 계란 1개를 풀고, 양배추가 있으면 가늘게 채 썰어 한 줌 섞는다. 소금 한 꼬집으로 간한다."},
+      {"text": "약불로 달군 팬에 버터를 녹이고 식빵 2장을 앞뒤로 노릇하게(각 1분) 굽는다.", "timer_sec": 120},
+      {"text": "같은 팬에 계란물을 식빵 크기의 네모 모양으로 부어 앞뒤로 익힌다(약 2분).", "timer_sec": 120},
+      {"text": "식빵 한 장 위에 계란, 치즈를 올리고 설탕 1작은술과 케첩을 뿌린 뒤 나머지 식빵을 덮어 반으로 자른다."}
+    ],
+    "tip": "설탕이 들어가야 '길거리 토스트' 맛이 나요. 단맛이 싫으면 설탕 대신 머스터드를 더해 보세요." },
+
+  { "id": "french-toast", "title": "프렌치토스트", "emoji": "🍞", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "bread", "amount": "2장"}, {"id": "egg", "amount": "1개"}, {"id": "milk", "amount": "50ml"}, {"id": "sugar", "amount": "1큰술"}, {"id": "butter", "amount": "1조각"}],
+    "steps": [
+      {"text": "넓은 그릇에 계란 1개, 우유 50ml, 설탕 1큰술을 넣고 설탕이 녹을 때까지 잘 섞는다."},
+      {"text": "식빵을 계란물에 앞뒤로 10초씩 담가 속까지 촉촉하게 적신다."},
+      {"text": "약불로 달군 팬에 버터를 녹이고 식빵을 올려 앞뒤로 2분씩 노릇하게 굽는다. 꿀이나 시럽, 과일을 곁들인다.", "timer_sec": 240}
+    ],
+    "tip": "하루 지나 약간 마른 식빵이 계란물을 더 잘 흡수해서 더 맛있어요." },
+
+  { "id": "ham-cheese-sandwich", "title": "햄치즈 샌드위치", "emoji": "🥪", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "bread", "amount": "2장"}, {"id": "ham", "amount": "2장"}, {"id": "cheese", "amount": "1장"}, {"id": "mayonnaise", "amount": "1큰술"}, {"id": "mustard", "amount": "약간", "optional": true}, {"id": "lettuce", "amount": "2장", "optional": true}],
+    "steps": [
+      {"text": "식빵 2장의 한쪽 면에 마요네즈를 얇게 바른다. 머스터드가 있으면 한쪽에만 살짝 더 바른다."},
+      {"text": "식빵 한 장 위에 상추(물기를 꼭 닦은 것), 햄 2장, 치즈 1장 순서로 올리고 나머지 식빵으로 덮는다."},
+      {"text": "손바닥으로 가볍게 눌러 모양을 잡고 반으로 자른다. 랩으로 감싸 5분 두었다 자르면 깔끔하게 잘린다."}
+    ],
+    "tip": "팬에 버터를 두르고 앞뒤로 구우면 치즈가 녹아 따뜻한 핫샌드위치가 돼요." },
+
+  { "id": "pan-fried-tofu", "title": "두부부침", "emoji": "🧈", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "tofu", "amount": "1/2모"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "gochugaru", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "두부를 1cm 두께로 썰어 키친타월 위에 펼치고 위에도 타월을 덮어 10분쯤 물기를 뺀 뒤, 소금을 앞뒤로 살짝 뿌린다."},
+      {"text": "팬을 중불로 달궈 식용유 2큰술을 두르고 두부를 올려 건드리지 말고 4분 굽는다. 바닥이 노릇해지면 뒤집어 4분 더 굽는다.", "timer_sec": 480},
+      {"text": "간장 1큰술에 다진 파, 고춧가루, 참기름 몇 방울을 섞어 양념장을 만들어 곁들인다."}
+    ],
+    "tip": "두부 물기를 잘 빼야 기름이 덜 튀고 겉이 바삭해져요." },
+
+  { "id": "stir-fried-potato", "title": "감자채볶음", "emoji": "🥔", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "potato", "amount": "2개"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "pepper", "amount": "약간", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "감자 2개의 껍질을 벗겨 0.3cm 두께로 얇게 채 썬다. 찬물에 2~3번 헹궈 전분을 빼고 체에 밭쳐 물기를 뺀다."},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 감자채를 볶는다. 2분 뒤 양파채를 넣고, 감자가 투명해지고 부러지지 않고 휘어질 때까지(약 7분) 볶는다.", "timer_sec": 420},
+      {"text": "소금으로 간하고 후추와 깨를 뿌려 마무리한다."}
+    ],
+    "tip": "감자를 소금물에 10분 담갔다 볶으면 간이 고루 배고 부서지지 않아요." },
+
+  { "id": "fish-cake-stir-fry", "title": "어묵볶음", "emoji": "🍢", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "fish_cake", "amount": "3장"}, {"id": "onion", "amount": "1/2개"}, {"id": "soy_sauce", "amount": "1.5큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "어묵 3장을 한입 크기로 썰고 양파 1/2개는 채 썬다. 어묵을 뜨거운 물에 한 번 헹구면 기름기와 잡내가 빠진다."},
+      {"text": "팬에 식용유 1큰술을 두르고 중불에서 양파를 1분 볶다가 어묵을 넣어 2분 더 볶는다.", "timer_sec": 180},
+      {"text": "간장 1.5큰술, 설탕 1/2큰술, 물 2큰술을 넣고 국물이 거의 없어질 때까지 볶는다.", "timer_sec": 120},
+      {"text": "불을 끄고 참기름 몇 방울과 깨를 뿌린다."}
+    ],
+    "tip": "고춧가루 1/2큰술을 넣으면 매콤한 어묵볶음이 돼요. 도시락 반찬으로 좋아요." },
+
+  { "id": "sausage-stir-fry", "title": "소시지 야채볶음", "emoji": "🌭", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "sausage", "amount": "10개"}, {"id": "onion", "amount": "1/2개"}, {"id": "ketchup", "amount": "2큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "bell_pepper", "amount": "1/2개", "optional": true}, {"id": "oyster_sauce", "amount": "1/2큰술", "optional": true}],
+    "steps": [
+      {"text": "비엔나소시지에 칼집을 2~3개씩 내고, 양파·파프리카는 한입 크기로 썬다."},
+      {"text": "팬에 식용유 1큰술을 두르고 중불에서 소시지를 2분 볶다가 채소를 넣어 2분 더 볶는다.", "timer_sec": 240},
+      {"text": "케첩 2큰술, 설탕 1/2큰술(굴소스가 있으면 1/2큰술)을 넣고 약불에서 1분간 고루 섞어 소스를 입힌다.", "timer_sec": 60}
+    ],
+    "tip": "소시지를 끓는 물에 30초 데쳐 쓰면 기름기가 줄어요." },
+
+  { "id": "bean-sprouts-namul", "title": "콩나물무침", "emoji": "🌱", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "bean_sprouts", "amount": "1봉지"}, {"id": "salt", "amount": "1/2작은술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "콩나물 1봉지를 흐르는 물에 씻어 냄비에 담고 물 1/2컵, 소금 한 꼬집을 넣는다. 뚜껑을 덮고 중불에서 5분 익힌다. 중간에 뚜껑을 열면 비린내가 나니 열지 않는다.", "timer_sec": 300},
+      {"text": "익은 콩나물을 체에 밭쳐 넓게 펼쳐 한 김 식힌다(찬물에 헹구지 않아야 고소하다)."},
+      {"text": "소금 1/2작은술, 다진 마늘 1/2큰술, 참기름 1큰술, 송송 썬 파를 넣고 손으로 살살 무친 뒤 깨를 뿌린다."}
+    ],
+    "tip": "고춧가루 1작은술을 넣으면 빨간 콩나물무침이 돼요." },
+
+  { "id": "spinach-namul", "title": "시금치나물", "emoji": "🥬", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "spinach", "amount": "1단"}, {"id": "salt", "amount": "약간"}, {"id": "soy_sauce", "amount": "1/2큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "시금치 뿌리 부분을 다듬어 씻고, 끓는 물에 소금 1작은술을 넣어 줄기부터 넣고 30초만 데친다.", "timer_sec": 30},
+      {"text": "바로 찬물에 헹궈 식힌 뒤 두 손으로 꼭 짜 물기를 빼고 먹기 좋은 길이로 썬다."},
+      {"text": "간장 1/2큰술, 다진 마늘 1/2큰술, 참기름 1큰술, 깨를 넣고 조물조물 무친다. 싱거우면 소금을 조금 더한다."}
+    ],
+    "tip": "오래 데치면 물러지고 색이 누렇게 변해요. 30초면 충분해요." },
+
+  { "id": "cucumber-salad", "title": "오이무침", "emoji": "🥒", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "cucumber", "amount": "1개"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "vinegar", "amount": "1큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "salt", "amount": "약간"}, {"id": "minced_garlic", "amount": "1/2작은술"}, {"id": "sesame", "amount": "약간", "optional": true}, {"id": "onion", "amount": "1/4개", "optional": true}],
+    "steps": [
+      {"text": "오이를 깨끗이 씻어 0.5cm 두께로 어슷하게 썰고 소금 1/2작은술을 뿌려 5분간 절인다.", "timer_sec": 300},
+      {"text": "오이에서 나온 물을 따라 버리고 손으로 가볍게 짠다. 양파가 있으면 얇게 채 썰어 넣는다."},
+      {"text": "고춧가루 1큰술, 식초 1큰술, 설탕 1/2큰술, 다진 마늘 1/2작은술을 넣어 버무리고 깨를 뿌린다. 바로 먹어야 아삭하다."}
+    ],
+    "tip": "참기름을 몇 방울 넣으면 고소한 맛이, 식초를 더 넣으면 새콤한 맛이 살아나요." },
+
+  { "id": "kimchi-pancake", "title": "김치전", "emoji": "🥞", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2장",
+    "ingredients": [{"id": "kimchi", "amount": "1컵"}, {"id": "flour", "amount": "1/2컵"}, {"id": "cooking_oil", "amount": "3큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "sugar", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "김치 1컵을 잘게 썰어 볼에 담고 밀가루 1/2컵, 물 1/2컵, 김칫국물 2큰술(있으면)을 넣어 주르륵 흐르는 정도로 반죽한다. 양파가 있으면 채 썰어 넣는다."},
+      {"text": "팬을 중불로 달궈 식용유를 넉넉히(3큰술) 두르고 반죽을 얇고 넓게 편다."},
+      {"text": "가장자리가 바삭해지면(약 4분) 뒤집어 뒤집개로 꾹꾹 눌러 가며 4분 더 굽는다. 가장자리에 기름을 조금 더 두르면 더 바삭하다.", "timer_sec": 480}
+    ],
+    "tip": "반죽에 얼음을 한두 개 넣거나 찬물을 쓰면 더 바삭해져요." },
+
+  { "id": "egg-soup", "title": "계란국", "emoji": "🍲", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "egg", "amount": "2개"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "minced_garlic", "amount": "1/2작은술", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 3컵을 붓고 끓으면 간장 1큰술, 소금 1/2작은술, 다진 마늘을 넣어 간을 맞춘다.", "timer_sec": 240},
+      {"text": "계란 2개를 볼에 풀어 끓는 국물 위에 원을 그리며 가늘게 둘러 넣는다. 바로 젓지 말고 10초 기다려야 국물이 맑다."},
+      {"text": "계란이 몽글몽글 떠오르면 송송 썬 파를 넣고 불을 끈다. 후추를 약간 뿌린다.", "timer_sec": 60}
+    ],
+    "tip": "물 대신 멸치·다시마 육수를 쓰면 훨씬 깊은 맛이 나요." },
+
+  { "id": "tuna-rice-ball", "title": "참치마요 주먹밥", "emoji": "🍙", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice", "servings": "2개",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "tuna_can", "amount": "1/2캔"}, {"id": "mayonnaise", "amount": "1.5큰술"}, {"id": "laver", "amount": "1장"}, {"id": "salt", "amount": "약간"}, {"id": "sesame_oil", "amount": "1/2큰술"}],
+    "steps": [
+      {"text": "따뜻한 밥 1공기에 소금 2꼬집, 참기름 1/2큰술을 넣고 주걱으로 자르듯 섞는다."},
+      {"text": "참치의 기름을 꼭 빼고 마요네즈 1.5큰술과 섞는다. 후추를 조금 넣어도 좋다."},
+      {"text": "손에 물을 살짝 묻히고 밥을 반으로 나눠 손바닥에 편 다음, 가운데 참치마요를 넣고 감싸 삼각형이나 동그란 모양으로 단단히 뭉친다."},
+      {"text": "김을 띠 모양으로 잘라 감싸거나, 김을 부숴 겉에 묻힌다."}
+    ],
+    "tip": "랩 위에서 뭉치면 손에 밥이 묻지 않고 모양도 쉽게 잡혀요." },
+
+  { "id": "butter-soy-rice", "title": "버터간장밥", "emoji": "🍚", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "butter", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "egg", "amount": "1개", "optional": true}, {"id": "laver", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "갓 지은 밥이나 전자레인지에 데운 뜨거운 밥 위에 버터 1큰술을 올려 녹인다."},
+      {"text": "간장 1큰술을 둘러 버터가 밥알에 고루 묻도록 비빈다."},
+      {"text": "있으면 날계란 노른자나 반숙 계란, 김가루를 올려 함께 비빈다."}
+    ],
+    "tip": "밥이 뜨거워야 버터가 녹아요. 식은 밥이면 전자레인지에 1분 데워 주세요." },
+
+  { "id": "tteokbokki", "title": "떡볶이", "emoji": "🌶️", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack", "servings": "2인분",
+    "ingredients": [{"id": "rice_cake", "amount": "300g"}, {"id": "gochujang", "amount": "2큰술"}, {"id": "sugar", "amount": "1.5큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "fish_cake", "amount": "2장", "optional": true}, {"id": "green_onion", "amount": "1/2대", "optional": true}, {"id": "gochugaru", "amount": "1큰술", "optional": true}],
+    "steps": [
+      {"text": "떡볶이떡 300g을 물에 헹궈 붙은 것을 떼어 둔다(굳은 떡은 미지근한 물에 10분 불린다). 어묵은 삼각형으로, 대파는 어슷하게 썬다."},
+      {"text": "냄비에 물 2컵, 고추장 2큰술, 설탕 1.5큰술, 간장 1큰술, 고춧가루 1큰술을 넣고 잘 풀어 중불로 끓인다."},
+      {"text": "양념이 끓으면 떡과 어묵을 넣고 자주 저어 가며 7분 졸인다. 국물이 걸쭉해지고 떡이 말랑해지면 된다.", "timer_sec": 420},
+      {"text": "대파를 넣고 1분 더 끓여 마무리한다. 국물이 너무 졸면 물을 조금 더한다.", "timer_sec": 60}
+    ],
+    "tip": "설탕 대신 올리고당을 쓰면 윤기가 나고, 카레가루 반 숟가락을 넣으면 분식집 맛이 나요." },
+
+  { "id": "soy-tteokbokki", "title": "간장떡볶이", "emoji": "🍡", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack", "servings": "2인분",
+    "ingredients": [{"id": "rice_cake", "amount": "300g"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "onion", "amount": "1/2개", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "떡을 끓는 물에 1분 데쳐 말랑하게 만든 뒤 건진다. 양파는 채 썬다.", "timer_sec": 60},
+      {"text": "팬에 식용유 1큰술을 두르고 중불에서 양파와 떡을 3분 볶는다.", "timer_sec": 180},
+      {"text": "간장 2큰술, 설탕 1큰술, 물 3큰술을 넣고 떡에 양념이 배어 윤기가 날 때까지 2분 볶는다.", "timer_sec": 120},
+      {"text": "불을 끄고 참기름 1큰술과 깨를 뿌려 섞는다."}
+    ],
+    "tip": "소고기나 버섯을 함께 볶으면 궁중떡볶이처럼 든든한 한 끼가 돼요." },
+
+  { "id": "corn-cheese", "title": "콘치즈", "emoji": "🌽", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack", "servings": "2인분",
+    "ingredients": [{"id": "canned_corn", "amount": "1캔"}, {"id": "cheese", "amount": "1/2컵"}, {"id": "mayonnaise", "amount": "2큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "butter", "amount": "1조각", "optional": true}],
+    "steps": [
+      {"text": "옥수수콘 통조림을 체에 밭쳐 물기를 충분히 뺀다."},
+      {"text": "볼에 옥수수콘, 마요네즈 2큰술, 설탕 1큰술을 넣고 섞는다."},
+      {"text": "버터를 두른 팬(또는 내열 그릇)에 담아 평평하게 펴고 피자치즈를 위에 넉넉히 덮는다."},
+      {"text": "뚜껑을 덮고 약불에서 3분 정도 치즈가 녹을 때까지 익힌다. 전자레인지라면 2분 돌린다.", "timer_sec": 180}
+    ],
+    "tip": "다진 양파나 피망을 조금 넣으면 느끼함이 줄고 색도 예뻐져요." },
+
+  { "id": "butter-potato", "title": "전자레인지 버터감자", "emoji": "🥔", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "snack", "servings": "1~2인분",
+    "ingredients": [{"id": "potato", "amount": "2개"}, {"id": "butter", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "sugar", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "감자를 껍질째 깨끗이 씻어 반으로 자르고, 물기가 남은 채로 내열 그릇에 담아 랩을 씌운다."},
+      {"text": "전자레인지에 6~7분 돌린다. 젓가락이 쑥 들어가면 익은 것이다. 덜 익었으면 1분씩 추가한다.", "timer_sec": 420},
+      {"text": "자른 면에 십자 칼집을 내고 버터를 올려 녹인 뒤 소금(취향에 따라 설탕)을 뿌린다."}
+    ],
+    "tip": "익힌 감자를 팬에 버터와 함께 한 번 더 구우면 겉이 바삭해져요." },
+
+  { "id": "baked-sweet-potato", "title": "전자레인지 군고구마", "emoji": "🍠", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack", "servings": "2개",
+    "ingredients": [{"id": "sweet_potato", "amount": "2개"}, {"id": "butter", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "고구마를 깨끗이 씻어 물기를 닦지 말고 젖은 키친타월로 감싼다."},
+      {"text": "내열 그릇에 담아 전자레인지에 3분 돌리고, 뒤집어서 3분 더 돌린다(크기가 크면 1~2분 추가).", "timer_sec": 360},
+      {"text": "젓가락으로 찔러 쑥 들어가면 완성이다. 1분 정도 그대로 두었다가 꺼내면 더 촉촉하다."}
+    ],
+    "tip": "에어프라이어가 있으면 200도에서 30~40분 구우면 진짜 군고구마처럼 달아져요." },
+
+  { "id": "banana-toast", "title": "바나나 토스트", "emoji": "🍌", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "bread", "amount": "1장"}, {"id": "banana", "amount": "1개"}, {"id": "butter", "amount": "1조각"}, {"id": "honey", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "약불로 달군 팬에 버터를 녹이고 식빵을 앞뒤로 노릇하게(각 1분) 굽는다.", "timer_sec": 120},
+      {"text": "바나나를 0.5cm 두께로 동그랗게 썰어 식빵 위에 겹쳐 올린다."},
+      {"text": "꿀을 뿌린다. 시나몬 가루나 견과류가 있으면 함께 뿌린다."}
+    ],
+    "tip": "바나나를 팬에 버터로 살짝 구워 올리면 캐러멜처럼 달콤해져요." },
+
+  { "id": "lettuce-geotjeori", "title": "상추겉절이", "emoji": "🥬", "image": "", "time_min": 5, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "lettuce", "amount": "한 줌"}, {"id": "gochugaru", "amount": "1/2큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "vinegar", "amount": "1/2큰술"}, {"id": "sugar", "amount": "1/2작은술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}],
+    "steps": [
+      {"text": "상추를 흐르는 물에 씻어 물기를 털고 먹기 좋은 크기로 손으로 뜯는다. 양파가 있으면 얇게 채 썬다."},
+      {"text": "고춧가루 1/2큰술, 간장 1큰술, 식초 1/2큰술, 설탕 1/2작은술, 참기름 1/2큰술을 섞어 양념을 만든다."},
+      {"text": "먹기 직전에 상추에 양념을 넣고 숨이 죽지 않게 손끝으로 살살 버무린다."}
+    ],
+    "tip": "미리 버무리면 숨이 죽고 물이 생겨요. 고기 구이와 함께 먹기 좋아요." },
+
+  { "id": "tomato-egg-stir-fry", "title": "토마토 계란볶음", "emoji": "🍅", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "tomato", "amount": "1개"}, {"id": "egg", "amount": "2개"}, {"id": "sugar", "amount": "1/2작은술"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "토마토 1개를 8등분 웨지 모양으로 썬다. 계란 2개는 소금 한 꼬집을 넣고 푼다."},
+      {"text": "팬에 식용유 1큰술을 두르고 센 불에서 계란을 부어 크게 저어 반숙 상태(약 1분)로 덜어 둔다.", "timer_sec": 60},
+      {"text": "같은 팬에 식용유 1큰술을 더 두르고 토마토를 넣어 2분 볶다가 설탕 1/2작은술과 소금으로 간한다. 토마토 즙이 살짝 나오면 된다.", "timer_sec": 120},
+      {"text": "덜어 둔 계란을 다시 넣고 10초만 섞어 불을 끈다. 파가 있으면 송송 썰어 뿌린다."}
+    ],
+    "tip": "중국 가정식 '토마토 계란볶음'이에요. 굴소스를 조금 넣으면 감칠맛이 살아나요." },
+
+  { "id": "cabbage-egg-pancake", "title": "양배추 계란전", "emoji": "🥞", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "cabbage", "amount": "1/6통"}, {"id": "egg", "amount": "2개"}, {"id": "flour", "amount": "3큰술"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "mayonnaise", "amount": "약간", "optional": true}, {"id": "ketchup", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "양배추 1/6통을 최대한 가늘게 채 썬다."},
+      {"text": "볼에 양배추, 계란 2개, 밀가루 3큰술, 소금 한 꼬집을 넣고 양배추에 반죽이 고루 묻도록 섞는다."},
+      {"text": "팬을 중약불로 달궈 식용유 2큰술을 두르고 반죽을 1cm 두께로 동그랗게 펴서, 뚜껑을 덮고 4분, 뒤집어서 4분 굽는다.", "timer_sec": 480},
+      {"text": "접시에 담아 마요네즈와 케첩(돈가스 소스가 있으면 함께)을 뿌린다."}
+    ],
+    "tip": "가쓰오부시나 김가루를 뿌리면 오코노미야키 맛이 나요." },
+
+  { "id": "zucchini-stir-fry", "title": "애호박볶음", "emoji": "🥒", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "zucchini", "amount": "1/2개"}, {"id": "salt", "amount": "약간"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "애호박을 반으로 갈라 0.5cm 두께의 반달 모양으로 썬다. 양파가 있으면 채 썬다."},
+      {"text": "팬에 식용유 1큰술을 두르고 중불에서 다진 마늘을 볶다가 향이 나면 애호박(과 양파)을 넣어 4분 볶는다. 애호박이 반투명해지면 된다.", "timer_sec": 240},
+      {"text": "소금으로 간하고 불을 끈 뒤 깨를 뿌린다. 새우젓이 있으면 소금 대신 넣으면 더 맛있다."}
+    ],
+    "tip": "너무 오래 볶으면 물러져요. 살짝 아삭함이 남을 때 불을 끄세요." },
+
+  { "id": "zucchini-pancake", "title": "애호박전", "emoji": "🥞", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "zucchini", "amount": "1개"}, {"id": "egg", "amount": "2개"}, {"id": "flour", "amount": "3큰술"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "2큰술"}],
+    "steps": [
+      {"text": "애호박을 0.5cm 두께로 동그랗게 썰어 소금을 살짝 뿌리고 5분 두었다가 키친타월로 물기를 닦는다."},
+      {"text": "비닐봉지에 밀가루와 애호박을 넣고 흔들어 앞뒤로 얇게 밀가루를 묻힌다."},
+      {"text": "계란 2개를 풀어 애호박을 담갔다가, 기름 두른 팬에 중약불로 앞뒤 3분씩 노릇하게 부친다.", "timer_sec": 360}
+    ],
+    "tip": "밀가루를 얇게 묻혀야 계란옷이 벗겨지지 않아요. 비닐봉지에 넣고 흔들면 편해요." },
+
+  { "id": "butter-mushroom", "title": "버섯 버터간장구이", "emoji": "🍄", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "mushroom", "amount": "2줌"}, {"id": "butter", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "pepper", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "버섯을 젖은 키친타월로 닦고(물에 씻으면 물러진다) 먹기 좋게 찢거나 썬다."},
+      {"text": "팬을 센 불로 달궈 버터 1큰술을 녹이고 버섯을 넓게 펼친 뒤 1분간 건드리지 않고 굽는다. 뒤적이며 3분 더 굽는다.", "timer_sec": 240},
+      {"text": "버섯이 노릇해지면 간장 1큰술을 팬 가장자리에 둘러 섞고 후추를 뿌린다."}
+    ],
+    "tip": "버섯은 처음부터 소금을 넣으면 물이 나와요. 다 구운 뒤에 간하세요." },
+
+  { "id": "enoki-pancake", "title": "팽이버섯전", "emoji": "🍄", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "enoki", "amount": "1봉지"}, {"id": "egg", "amount": "2개"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "팽이버섯 밑동을 2cm 잘라 내고 1cm 길이로 잘게 썬다."},
+      {"text": "볼에 팽이버섯, 계란 2개, 소금 한 꼬집, 다진 파를 넣고 잘 섞는다."},
+      {"text": "팬에 식용유를 두르고 중약불에서 한 숟가락씩 떠 동그랗게 올려 앞뒤로 3분씩 부친다.", "timer_sec": 360}
+    ],
+    "tip": "팽이버섯을 길게 둔 채 계란물을 부어 부치면 바삭한 모양의 전이 돼요." },
+
+  { "id": "mung-sprouts-stir-fry", "title": "숙주볶음", "emoji": "🌱", "image": "", "time_min": 7, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "mung_sprouts", "amount": "1봉지"}, {"id": "oyster_sauce", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "pepper", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "숙주를 흐르는 물에 씻어 체에 밭쳐 물기를 충분히 뺀다."},
+      {"text": "팬을 센 불로 달궈 식용유 1큰술과 다진 마늘 1/2큰술을 넣고 10초 볶아 향을 낸다."},
+      {"text": "숙주와 굴소스 1큰술을 넣고 1분만 빠르게 뒤적여 숨이 살짝 죽으면 바로 불을 끄고 후추를 뿌린다.", "timer_sec": 60}
+    ],
+    "tip": "숙주는 오래 볶으면 물이 생겨요. 센 불에서 1분, 아삭할 때 끝내세요." },
+
+  { "id": "stir-fried-kimchi", "title": "볶음김치", "emoji": "🥬", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "반찬 3~4회분",
+    "ingredients": [{"id": "kimchi", "amount": "2컵"}, {"id": "sugar", "amount": "1큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "pork", "amount": "100g", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "김치 2컵을 한입 크기로 썬다. 돼지고기가 있으면 작게 썬다."},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 (돼지고기를 먼저 익힌 뒤) 김치와 설탕 1큰술을 넣어 6분간 볶는다. 김치가 부드러워지고 신맛이 줄면 된다.", "timer_sec": 360},
+      {"text": "불을 끄고 참기름 1/2큰술, 깨를 넣고 섞는다. 식혀서 밀폐 용기에 담으면 일주일 정도 반찬으로 먹을 수 있다."}
+    ],
+    "tip": "들기름으로 볶으면 더 고소해요." },
+
+  { "id": "tofu-kimchi", "title": "두부김치", "emoji": "🧈", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "tofu", "amount": "1모"}, {"id": "kimchi", "amount": "1.5컵"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "pork", "amount": "100g", "optional": true}, {"id": "salt", "amount": "약간"}],
+    "steps": [
+      {"text": "끓는 물에 소금 한 꼬집을 넣고 두부 1모를 통째로 3분 데친 뒤 건져 1cm 두께로 썬다.", "timer_sec": 180},
+      {"text": "팬에 식용유 1큰술을 두르고 (돼지고기를 먼저 익힌 뒤) 김치 1.5컵과 설탕 1/2큰술을 넣어 6분 볶는다.", "timer_sec": 360},
+      {"text": "불을 끄고 참기름을 둘러 섞은 뒤, 접시 가장자리에 두부를 두르고 가운데 볶음김치를 담는다."}
+    ],
+    "tip": "두부를 데치면 따뜻하고 부드러워져요. 안주로도 좋아요." },
+
+  { "id": "simple-udon", "title": "간단 우동", "emoji": "🍜", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "udon", "amount": "1봉지"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "mirin", "amount": "1큰술"}, {"id": "fish_cake", "amount": "1장", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "egg", "amount": "1개", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 2컵, 간장 2큰술, 맛술 1큰술을 넣고 끓인다. 국물 맛을 보고 싱거우면 소금으로 간한다.", "timer_sec": 180},
+      {"text": "국물이 끓으면 우동면과 어묵을 넣고 면이 풀어질 때까지 2분 끓인다.", "timer_sec": 120},
+      {"text": "그릇에 담고 송송 썬 파, 계란(반숙이나 날계란), 김가루, 고춧가루를 취향대로 올린다."}
+    ],
+    "tip": "다시마 한 장을 넣고 끓이면 국물 맛이 훨씬 깊어져요." },
+
+  { "id": "stir-fried-udon", "title": "볶음우동", "emoji": "🍜", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "udon", "amount": "1봉지"}, {"id": "cabbage", "amount": "한 줌"}, {"id": "onion", "amount": "1/4개"}, {"id": "oyster_sauce", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "sausage", "amount": "4개", "optional": true}],
+    "steps": [
+      {"text": "우동면을 끓는 물에 30초 데쳐 젓가락으로 풀어 건진다. 양배추·양파는 굵게 채 썰고 소시지는 어슷하게 썬다.", "timer_sec": 30},
+      {"text": "팬에 식용유 1큰술을 두르고 센 불에서 양파·양배추·소시지를 3분 볶는다.", "timer_sec": 180},
+      {"text": "우동면과 굴소스 1큰술, 간장 1큰술, 설탕 1/2큰술을 넣고 센 불에서 2분간 빠르게 볶아 양념을 고루 입힌다.", "timer_sec": 120}
+    ],
+    "tip": "가쓰오부시를 올리면 일본식 '야끼우동' 맛이 나요." },
+
+  { "id": "egg-salad-sandwich", "title": "에그마요 샌드위치", "emoji": "🥪", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "bread", "amount": "2장"}, {"id": "egg", "amount": "2개"}, {"id": "mayonnaise", "amount": "2큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "sugar", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "냄비에 계란 2개와 잠길 만큼의 물을 넣고, 끓기 시작하면 10분 삶아 완숙을 만든다.", "timer_sec": 600},
+      {"text": "찬물에 담가 식힌 뒤 껍질을 벗기고 볼에 담아 포크로 잘게 으깬다."},
+      {"text": "마요네즈 2큰술, 소금·후추 약간(단맛을 원하면 설탕 약간)을 넣고 섞는다. 오이가 있으면 잘게 다져 물기를 짜서 넣는다."},
+      {"text": "식빵 한 장 위에 에그마요를 두툼하게 펴 바르고 다른 식빵을 덮어 반으로 자른다."}
+    ],
+    "tip": "머스터드를 조금 넣으면 느끼함이 줄고 맛이 깔끔해져요." },
+
+  { "id": "tortilla-pizza", "title": "또띠아 피자", "emoji": "🍕", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "snack", "servings": "1판",
+    "ingredients": [{"id": "tortilla", "amount": "1장"}, {"id": "ketchup", "amount": "2큰술"}, {"id": "cheese", "amount": "1컵"}, {"id": "sausage", "amount": "3개", "optional": true}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "canned_corn", "amount": "2큰술", "optional": true}, {"id": "bell_pepper", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "또띠아 위에 케첩(또는 토마토소스) 2큰술을 얇게 펴 바른다."},
+      {"text": "소시지, 양파, 옥수수콘, 파프리카 등 있는 재료를 잘게 썰어 올리고 피자치즈를 넉넉히 덮는다."},
+      {"text": "마른 팬에 올려 뚜껑을 덮고 약불에서 7분, 치즈가 녹고 바닥이 바삭해질 때까지 굽는다. 에어프라이어라면 180도에서 7분.", "timer_sec": 420}
+    ],
+    "tip": "또띠아 2장 사이에 치즈를 한 겹 넣으면 더 바삭하고 쫀득한 도우가 돼요." },
+
+  { "id": "tuna-salad", "title": "참치 샐러드", "emoji": "🥗", "image": "", "time_min": 7, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "tuna_can", "amount": "1캔"}, {"id": "onion", "amount": "1/4개"}, {"id": "mayonnaise", "amount": "2큰술"}, {"id": "pepper", "amount": "약간"}, {"id": "canned_corn", "amount": "2큰술", "optional": true}, {"id": "cucumber", "amount": "1/3개", "optional": true}],
+    "steps": [
+      {"text": "양파 1/4개를 잘게 다져 찬물에 5분 담가 매운맛을 뺀 뒤 물기를 꼭 짠다."},
+      {"text": "참치캔을 체에 밭쳐 기름을 꼭 뺀다. 오이가 있으면 잘게 썬다."},
+      {"text": "볼에 참치, 양파, 옥수수콘, 오이, 마요네즈 2큰술, 후추를 넣고 섞는다. 빵이나 크래커에 올리거나 상추에 싸 먹는다."}
+    ],
+    "tip": "레몬즙이나 식초를 몇 방울 넣으면 맛이 산뜻해져요." },
+
+  { "id": "coleslaw", "title": "양배추 코울슬로", "emoji": "🥗", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2~3인분",
+    "ingredients": [{"id": "cabbage", "amount": "1/6통"}, {"id": "mayonnaise", "amount": "3큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "vinegar", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "carrot", "amount": "약간", "optional": true}, {"id": "canned_corn", "amount": "2큰술", "optional": true}],
+    "steps": [
+      {"text": "양배추 1/6통(과 당근 약간)을 가늘게 채 썰거나 잘게 다진다."},
+      {"text": "소금을 살짝 뿌려 5분 절인 뒤 손으로 꼭 짜 물기를 뺀다. 물기를 잘 빼야 싱거워지지 않는다.", "timer_sec": 300},
+      {"text": "마요네즈 3큰술, 설탕 1큰술, 식초 1큰술을 섞어 양배추와 옥수수콘에 버무린다. 냉장고에 30분 두면 맛이 더 잘 어우러진다."}
+    ],
+    "tip": "치킨이나 돈가스 곁들이로 딱이에요." },
+
+  { "id": "cucumber-cold-soup", "title": "오이냉국", "emoji": "🥒", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "cucumber", "amount": "1개"}, {"id": "vinegar", "amount": "3큰술"}, {"id": "sugar", "amount": "2큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "salt", "amount": "1작은술"}, {"id": "seaweed", "amount": "한 줌", "optional": true}, {"id": "gochugaru", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "오이를 가늘게 채 썬다. 미역이 있으면 찬물에 10분 불려 헹군 뒤 먹기 좋게 썬다."},
+      {"text": "큰 그릇에 찬물 3컵, 식초 3큰술, 설탕 2큰술, 간장 1큰술, 소금 1작은술을 넣고 설탕과 소금이 완전히 녹을 때까지 젓는다."},
+      {"text": "오이와 미역을 넣고 얼음을 띄운다. 고춧가루나 깨를 뿌린다. 냉장고에 10분 두면 더 시원하다."}
+    ],
+    "tip": "여름철 입맛 없을 때 좋아요. 새콤달콤한 정도는 식초와 설탕으로 맞추세요." },
+
+  { "id": "boiled-eggs", "title": "반숙 삶은 계란", "emoji": "🥚", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "snack", "servings": "4개",
+    "ingredients": [{"id": "egg", "amount": "4개"}, {"id": "salt", "amount": "약간"}],
+    "steps": [
+      {"text": "계란을 냉장고에서 미리 꺼내 실온에 두고, 냄비에 물을 끓여 소금 한 꼬집을 넣는다."},
+      {"text": "국자로 계란을 하나씩 조심스럽게 넣고 7분 삶는다(완숙은 10분, 더 흐르는 노른자는 6분).", "timer_sec": 420},
+      {"text": "바로 찬물(가능하면 얼음물)에 담가 2분 이상 식힌 뒤 껍질을 벗긴다."}
+    ],
+    "tip": "찬물에 바로 식혀야 껍질이 잘 벗겨지고 노른자 겉이 초록색으로 변하지 않아요." },
+
+  { "id": "onion-egg-rice", "title": "양파 계란덮밥", "emoji": "🍛", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "egg", "amount": "2개"}, {"id": "onion", "amount": "1/2개"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "mirin", "amount": "1큰술", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "양파 1/2개를 0.5cm 두께로 채 썬다."},
+      {"text": "작은 팬에 물 1/2컵, 간장 2큰술, 설탕 1큰술(맛술이 있으면 1큰술)과 양파를 넣고 중불에서 4분, 양파가 투명해질 때까지 끓인다.", "timer_sec": 240},
+      {"text": "계란 2개를 젓가락으로 대충만 풀어(흰자가 조금 보이게) 양파 위에 둘러 붓고 뚜껑을 덮어 1분 익힌다. 계란이 반숙일 때 불을 끈다.", "timer_sec": 60},
+      {"text": "그릇에 밥을 담고 국물째 미끄러뜨리듯 올린 뒤 송송 썬 파를 뿌린다."}
+    ],
+    "tip": "일본식 '다마고동'이에요. 닭고기를 넣으면 '오야꼬동'이 돼요." },
+
+  { "id": "pork-soy-stir-fry", "title": "돼지고기 간장볶음", "emoji": "🥩", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "pork", "amount": "200g"}, {"id": "onion", "amount": "1/2개"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "sesame_oil", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 간장 2큰술, 설탕 1큰술, 다진 마늘 1/2큰술, 물 2큰술을 섞어 양념을 만든다. 양파는 채 썬다."},
+      {"text": "팬에 식용유 1큰술을 두르고 센 불에서 돼지고기를 4분간 볶아 겉면을 익히고 기름이 나오게 한다.", "timer_sec": 240},
+      {"text": "양파와 양념을 넣고 국물이 자작하게 졸아들 때까지 3분 더 볶는다.", "timer_sec": 180},
+      {"text": "송송 썬 파와 참기름을 넣고 섞어 마무리한다. 밥 위에 올려 덮밥으로 먹어도 좋다."}
+    ],
+    "tip": "고기를 양념에 10분 재웠다 볶으면 간이 더 깊게 배요." },
+
+  { "id": "beef-mushroom-stir-fry", "title": "소고기 버섯볶음", "emoji": "🍄", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "beef", "amount": "150g"}, {"id": "mushroom", "amount": "한 줌"}, {"id": "soy_sauce", "amount": "1.5큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "pepper", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "소고기를 키친타월로 눌러 핏물을 뺀 뒤 간장 1.5큰술, 설탕 1/2큰술, 다진 마늘 1/2큰술, 참기름 1/2큰술을 넣어 버무려 10분 재운다."},
+      {"text": "팬을 센 불로 달궈 소고기를 넓게 펼쳐 3분간 볶는다.", "timer_sec": 180},
+      {"text": "버섯(과 양파)을 넣고 버섯 숨이 죽을 때까지 3분 더 볶은 뒤 후추를 뿌린다.", "timer_sec": 180}
+    ],
+    "tip": "소고기는 센 불에서 짧게 볶아야 질겨지지 않아요." },
+
+  { "id": "bacon-mung-sprouts", "title": "베이컨 숙주볶음", "emoji": "🥓", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "bacon", "amount": "4줄"}, {"id": "mung_sprouts", "amount": "1봉지"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "pepper", "amount": "약간"}, {"id": "minced_garlic", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "베이컨 4줄을 3cm 길이로 썰고, 숙주는 씻어 물기를 뺀다."},
+      {"text": "기름을 두르지 않은 팬에 베이컨을 넣고 중불에서 3분간 바삭하게 볶는다. 마늘이 있으면 베이컨 기름에 함께 볶는다.", "timer_sec": 180},
+      {"text": "센 불로 올려 숙주와 간장 1큰술을 넣고 1분만 빠르게 볶은 뒤 후추를 뿌린다.", "timer_sec": 60}
+    ],
+    "tip": "베이컨 기름만으로 충분해요. 식용유를 따로 넣지 않아도 돼요." },
+
+  { "id": "ham-fried-rice", "title": "햄 야채볶음밥", "emoji": "🍚", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "ham", "amount": "1/4캔"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "salt", "amount": "약간"}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "carrot", "amount": "약간", "optional": true}, {"id": "egg", "amount": "1개", "optional": true}],
+    "steps": [
+      {"text": "햄, 양파, 당근을 모두 0.5cm 크기로 잘게 깍둑 썬다."},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 당근→양파→햄 순서로 넣어 3분 볶는다. 계란이 있으면 한쪽에서 스크램블해 섞는다.", "timer_sec": 180},
+      {"text": "밥을 넣고 센 불에서 밥알을 펴 가며 3분 볶고, 소금으로 간한다.", "timer_sec": 180}
+    ],
+    "tip": "케첩 2큰술을 넣으면 오므라이스 밥, 카레가루를 넣으면 카레볶음밥이 돼요." },
+
+  { "id": "shrimp-fried-rice", "title": "새우볶음밥", "emoji": "🍤", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "shrimp", "amount": "10마리"}, {"id": "egg", "amount": "1개"}, {"id": "green_onion", "amount": "1/3대"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "salt", "amount": "약간"}, {"id": "oyster_sauce", "amount": "1/2큰술", "optional": true}],
+    "steps": [
+      {"text": "냉동새우를 찬물에 10분 담가 해동하고 키친타월로 물기를 닦는다. 대파 1/3대는 송송 썬다."},
+      {"text": "팬에 식용유 2큰술과 파를 넣고 중불에서 1분 볶아 파기름을 낸다.", "timer_sec": 60},
+      {"text": "새우를 넣고 붉게 변할 때까지 볶다가, 한쪽으로 밀고 계란을 깨 넣어 스크램블한다(약 2분).", "timer_sec": 120},
+      {"text": "밥을 넣고 센 불에서 3분 볶은 뒤 소금(굴소스가 있으면 1/2큰술)으로 간한다.", "timer_sec": 180}
+    ],
+    "tip": "새우 물기를 잘 닦아야 기름이 튀지 않고 볶음밥이 질척이지 않아요." },
+
+  { "id": "garlic-butter-shrimp", "title": "마늘버터 새우구이", "emoji": "🦐", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "shrimp", "amount": "15마리"}, {"id": "butter", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}],
+    "steps": [
+      {"text": "새우의 물기를 키친타월로 닦고 소금·후추를 살짝 뿌려 둔다."},
+      {"text": "팬을 약불로 달궈 버터 1큰술을 녹이고 다진 마늘 1큰술을 넣어 1분간 향을 낸다. 마늘이 타지 않게 주의한다."},
+      {"text": "중불로 올려 새우를 넣고 앞뒤로 1분 30초씩, 붉게 변하고 동그랗게 말릴 때까지 굽는다.", "timer_sec": 180}
+    ],
+    "tip": "레몬즙을 살짝 뿌리면 레스토랑 맛이 나요. 남은 버터 소스에 빵을 찍어 드세요." },
+
+  { "id": "pan-fried-dumplings", "title": "바삭 군만두", "emoji": "🥟", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "frozen_dumpling", "amount": "8개"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "soy_sauce", "amount": "약간", "optional": true}, {"id": "vinegar", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "팬에 식용유 2큰술을 두르고 냉동만두를 해동하지 않은 채 가지런히 올린다."},
+      {"text": "중불에서 2분간 바닥을 굽고, 물 3큰술을 붓고 바로 뚜껑을 덮어 4분간 쪄 익힌다.", "timer_sec": 240},
+      {"text": "뚜껑을 열고 남은 물기를 날린 뒤 바닥이 바삭해질 때까지 2분 더 굽는다.", "timer_sec": 120},
+      {"text": "간장과 식초를 2:1로 섞고 고춧가루를 조금 뿌려 초간장을 곁들인다."}
+    ],
+    "tip": "물을 넣어 찌듯 익혀야 속까지 익고 겉은 바삭한 군만두가 돼요." },
+
+  { "id": "dumpling-soup", "title": "만둣국", "emoji": "🥟", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "1~2인분",
+    "ingredients": [{"id": "frozen_dumpling", "amount": "8개"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "egg", "amount": "1개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "minced_garlic", "amount": "1/2작은술", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 3컵을 끓이고 간장 1큰술, 소금 1/2작은술, 다진 마늘을 넣어 간한다.", "timer_sec": 240},
+      {"text": "냉동만두를 넣고 중불에서 만두가 떠오를 때까지 5분 끓인다.", "timer_sec": 300},
+      {"text": "계란을 풀어 둘러 넣고 10초 뒤 저은 다음, 송송 썬 파와 김가루를 올린다."}
+    ],
+    "tip": "떡국떡을 한 줌 넣으면 떡만둣국이 돼요." },
+
+  { "id": "bean-sprouts-soup", "title": "콩나물국", "emoji": "🍲", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "bean_sprouts", "amount": "1봉지"}, {"id": "salt", "amount": "1작은술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "gochugaru", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 4컵과 씻은 콩나물을 넣고 뚜껑을 덮은 채 중불에서 7분 끓인다. 비린내가 나지 않게 끓는 동안 뚜껑을 열지 않는다.", "timer_sec": 420},
+      {"text": "다진 마늘 1/2큰술을 넣고 소금으로 간한다(새우젓이 있으면 더 시원하다)."},
+      {"text": "송송 썬 파를 넣고(얼큰하게 먹으려면 고춧가루도) 1분 더 끓인다.", "timer_sec": 60}
+    ],
+    "tip": "해장국으로 좋아요. 청양고추를 넣으면 얼큰해져요." },
+
+  { "id": "fish-cake-soup", "title": "어묵탕", "emoji": "🍢", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "fish_cake", "amount": "4장"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "radish", "amount": "약간", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "chili", "amount": "1개", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 4컵을 붓고, 무가 있으면 나박 썰어 넣어 5분 끓여 국물을 우린다.", "timer_sec": 300},
+      {"text": "어묵을 꼬치에 꽂거나 한입 크기로 썬다. 뜨거운 물에 한 번 헹구면 기름기가 빠진다."},
+      {"text": "국물에 어묵을 넣고 간장 1큰술, 소금으로 간해 5분 더 끓인다.", "timer_sec": 300},
+      {"text": "송송 썬 파와 고추를 넣고 불을 끈다."}
+    ],
+    "tip": "다시마를 한 장 넣고 끓이면 국물이 더 깊어져요." },
+
+  { "id": "mini-gimbap", "title": "꼬마김밥", "emoji": "🍙", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "rice", "servings": "2인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "laver", "amount": "2장"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "carrot", "amount": "약간", "optional": true}, {"id": "ham", "amount": "약간", "optional": true}, {"id": "pickled_radish", "amount": "약간", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "따뜻한 밥에 참기름 1큰술, 소금 2꼬집, 깨를 넣고 주걱으로 자르듯 섞어 간을 한다."},
+      {"text": "김밥김을 가위로 4등분한다."},
+      {"text": "김의 거친 면 위에 밥을 얇게 펴고(김의 2/3 정도), 당근·햄·단무지를 가늘게 썰어 올린 뒤 손가락으로 꼭꼭 눌러 가며 돌돌 만다. 재료가 없으면 밥만 말아도 된다."},
+      {"text": "겉에 참기름을 살짝 발라 그대로 먹는다. 겨자간장에 찍어 먹으면 더 맛있다."}
+    ],
+    "tip": "간장 1큰술 + 식초 1/2큰술 + 설탕 약간 + 겨자를 섞어 찍어 먹어 보세요." },
+
+  { "id": "simple-bibimbap", "title": "계란 고추장 비빔밥", "emoji": "🍲", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "egg", "amount": "1개"}, {"id": "gochujang", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "cooking_oil", "amount": "약간"}, {"id": "kimchi", "amount": "약간", "optional": true}, {"id": "lettuce", "amount": "약간", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "팬에 식용유를 두르고 계란 프라이를 반숙으로 만든다(약 2분).", "timer_sec": 120},
+      {"text": "따뜻한 밥 위에 잘게 썬 김치, 상추 등 있는 채소를 올린다."},
+      {"text": "계란 프라이를 올리고 고추장 1큰술, 참기름 1큰술, 깨를 넣어 골고루 비빈다."}
+    ],
+    "tip": "냉장고 속 나물 반찬을 모두 넣으면 진짜 비빔밥이 돼요." },
+
+  { "id": "broccoli-sesame", "title": "브로콜리 참깨무침", "emoji": "🥦", "image": "", "time_min": 7, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "broccoli", "amount": "1송이"}, {"id": "salt", "amount": "약간"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "sesame", "amount": "1큰술", "optional": true}],
+    "steps": [
+      {"text": "브로콜리를 한입 크기로 송이를 나누고 줄기는 껍질을 벗겨 썬다. 식초 몇 방울을 넣은 물에 5분 담갔다 헹군다."},
+      {"text": "끓는 물에 소금 1작은술을 넣고 브로콜리를 1분 데친 뒤 찬물에 헹궈 물기를 뺀다.", "timer_sec": 60},
+      {"text": "소금 약간, 참기름 1큰술, 깨 1큰술을 넣고 버무린다."}
+    ],
+    "tip": "초고추장(고추장 1 + 식초 1 + 설탕 1/2)에 찍어 먹어도 맛있어요." },
+
+  { "id": "eggplant-stir-fry", "title": "가지볶음", "emoji": "🍆", "image": "", "time_min": 12, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "eggplant", "amount": "2개"}, {"id": "soy_sauce", "amount": "1.5큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "가지 2개를 반으로 갈라 1cm 두께로 어슷하게 썬다."},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 다진 마늘과 파를 30초 볶아 향을 낸다."},
+      {"text": "가지를 넣고 기름을 머금어 부드러워질 때까지 4분 볶는다. 가지가 기름을 너무 많이 먹으면 물을 1큰술씩 넣는다.", "timer_sec": 240},
+      {"text": "간장 1.5큰술, 설탕 1/2큰술을 넣고 1분 더 볶아 마무리한다.", "timer_sec": 60}
+    ],
+    "tip": "가지를 전자레인지에 2분 먼저 익혀 볶으면 기름을 덜 먹어요." },
+
+  { "id": "cheese-omelet", "title": "치즈 오믈렛", "emoji": "🧀", "image": "", "time_min": 8, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "egg", "amount": "3개"}, {"id": "cheese", "amount": "1장"}, {"id": "butter", "amount": "1조각"}, {"id": "salt", "amount": "약간"}, {"id": "milk", "amount": "2큰술", "optional": true}, {"id": "ketchup", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 계란 3개, 소금 한 꼬집(우유가 있으면 2큰술)을 넣고 곱게 푼다."},
+      {"text": "팬을 중약불로 달궈 버터를 녹이고 계란물을 붓는다. 젓가락으로 가장자리를 가운데로 모으듯 저어 1분간 반숙으로 익힌다.", "timer_sec": 60},
+      {"text": "윗면이 촉촉할 때 한쪽에 치즈를 올리고 반으로 접어 30초 더 익힌다. 케첩을 곁들인다.", "timer_sec": 60}
+    ],
+    "tip": "햄, 양파, 버섯을 잘게 썰어 먼저 볶아 넣으면 더 든든해요." },
+
+  { "id": "rice-cake-skewers", "title": "떡꼬치", "emoji": "🍢", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "snack", "servings": "2인분",
+    "ingredients": [{"id": "rice_cake", "amount": "20개"}, {"id": "ketchup", "amount": "2큰술"}, {"id": "gochujang", "amount": "1큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "oligosaccharide", "amount": "1큰술", "optional": true}],
+    "steps": [
+      {"text": "떡을 끓는 물에 1분 데쳐 말랑하게 한 뒤 4~5개씩 꼬치에 끼운다.", "timer_sec": 60},
+      {"text": "작은 냄비에 케첩 2큰술, 고추장 1큰술, 설탕 1큰술, 올리고당 1큰술, 물 2큰술을 넣고 약불에서 1분 끓여 소스를 만든다.", "timer_sec": 60},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 떡꼬치를 앞뒤로 노릇하고 바삭하게(약 5분) 굽는다.", "timer_sec": 300},
+      {"text": "솔이나 숟가락으로 소스를 앞뒤로 바른다. 깨를 뿌려도 좋다."}
+    ],
+    "tip": "떡을 구울 때 너무 자주 뒤집지 마세요. 한 면씩 충분히 구워야 바삭해요." },
+
+  { "id": "hot-dog-toast", "title": "소시지 핫도그 토스트", "emoji": "🌭", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "snack", "servings": "1인분",
+    "ingredients": [{"id": "bread", "amount": "2장"}, {"id": "sausage", "amount": "2개"}, {"id": "ketchup", "amount": "약간"}, {"id": "mustard", "amount": "약간", "optional": true}, {"id": "cheese", "amount": "1장", "optional": true}],
+    "steps": [
+      {"text": "소시지에 칼집을 내 팬에 3분간 굴려 가며 굽는다.", "timer_sec": 180},
+      {"text": "식빵 테두리를 자르고 밀대(또는 컵)로 얇게 민다. 소시지(와 치즈)를 올려 돌돌 말고, 끝부분에 물을 묻혀 붙인다."},
+      {"text": "버터나 기름을 두른 팬에 이음새 부분부터 굴려 가며 2분간 노릇하게 굽고 케첩·머스터드를 뿌린다.", "timer_sec": 120}
+    ],
+    "tip": "말아 둔 빵을 계란물에 굴려 구우면 더 고소해요." },
+
+  { "id": "chicken-salad", "title": "닭가슴살 샐러드", "emoji": "🥗", "image": "", "time_min": 15, "difficulty": "easy", "meal_type": "side", "servings": "1인분",
+    "ingredients": [{"id": "chicken", "amount": "1덩이"}, {"id": "lettuce", "amount": "한 줌"}, {"id": "olive_oil", "amount": "2큰술"}, {"id": "vinegar", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "tomato", "amount": "1개", "optional": true}, {"id": "honey", "amount": "1작은술", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물을 끓여 닭가슴살을 넣고 뚜껑을 덮어 중불에서 10분 삶는다. 통후추나 대파가 있으면 함께 넣어 잡내를 없앤다.", "timer_sec": 600},
+      {"text": "건져서 한 김 식힌 뒤 손으로 결대로 찢는다."},
+      {"text": "올리브유 2큰술, 식초 1큰술, 소금·후추 약간(꿀이 있으면 1작은술)을 섞어 드레싱을 만든다."},
+      {"text": "그릇에 상추와 토마토를 담고 닭가슴살을 올린 뒤 드레싱을 뿌린다."}
+    ],
+    "tip": "시판 훈제 닭가슴살을 쓰면 5분 만에 만들 수 있어요." },
+
+  { "id": "tuna-kimchi-stir-fry", "title": "참치 김치볶음", "emoji": "🐟", "image": "", "time_min": 10, "difficulty": "easy", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "tuna_can", "amount": "1캔"}, {"id": "kimchi", "amount": "1.5컵"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "sesame_oil", "amount": "1/2큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}],
+    "steps": [
+      {"text": "김치 1.5컵을 한입 크기로 썬다. 양파가 있으면 채 썬다."},
+      {"text": "팬에 참치캔의 기름만 먼저 부어 달군 뒤 김치, 설탕 1/2큰술(과 양파)을 넣고 중불에서 5분 볶는다.", "timer_sec": 300},
+      {"text": "참치 살을 넣고 1분 더 볶아 섞은 뒤 불을 끄고 참기름을 두른다.", "timer_sec": 60}
+    ],
+    "tip": "참치 기름으로 볶아야 고소한 맛이 나요. 밥에 올려 덮밥으로 먹어도 좋아요." },
+
+  { "id": "jeyuk", "title": "제육볶음", "emoji": "🥩", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "pork", "amount": "300g"}, {"id": "onion", "amount": "1/2개"}, {"id": "gochujang", "amount": "2큰술"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "green_onion", "amount": "1/2대", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 고추장 2큰술, 고춧가루 1큰술, 간장 1큰술, 설탕 1큰술, 다진 마늘 1큰술을 넣어 양념장을 만든다."},
+      {"text": "돼지고기(앞다리살이나 목살)를 양념장에 버무려 10분 이상 재운다.", "timer_sec": 600},
+      {"text": "양파는 굵게 채 썰고, 대파는 어슷하게 썬다."},
+      {"text": "팬을 센 불로 달궈 식용유를 두르고 고기를 넣어 5분간 볶는다. 처음에는 넓게 펼쳐 건드리지 않아야 불맛이 난다.", "timer_sec": 300},
+      {"text": "고기가 익으면 양파·대파를 넣고 2분 더 볶은 뒤 깨를 뿌린다.", "timer_sec": 120}
+    ],
+    "tip": "마지막에 팬 가장자리에 설탕을 조금 뿌려 그을리면 불맛이 더 살아나요. 상추쌈과 함께 드세요." },
+
+  { "id": "kimchi-stew", "title": "김치찌개", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "2~3인분",
+    "ingredients": [{"id": "kimchi", "amount": "2컵"}, {"id": "pork", "amount": "150g"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "tofu", "amount": "1/2모", "optional": true}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "김치 2컵을 한입 크기로 썰고, 돼지고기는 먹기 좋게, 두부는 도톰하게, 양파는 채 썬다."},
+      {"text": "냄비에 식용유를 두르고 중불에서 돼지고기를 볶다가 겉이 익으면 김치를 넣어 5분간 함께 볶는다.", "timer_sec": 300},
+      {"text": "물 3컵(쌀뜨물이면 더 좋다), 김칫국물 1/2컵, 고춧가루 1큰술, 다진 마늘 1/2큰술을 넣고 10분 끓인다.", "timer_sec": 600},
+      {"text": "두부와 양파를 넣고 5분 더 끓인다. 싱거우면 국간장이나 소금으로 간한다.", "timer_sec": 300},
+      {"text": "어슷 썬 대파를 넣고 불을 끈다."}
+    ],
+    "tip": "푹 익은 신김치를 쓸수록 맛있어요. 쌀뜨물로 끓이면 국물이 부드러워져요." },
+
+  { "id": "doenjang-stew", "title": "된장찌개", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "doenjang", "amount": "2큰술"}, {"id": "tofu", "amount": "1/2모"}, {"id": "zucchini", "amount": "1/3개"}, {"id": "onion", "amount": "1/4개"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "potato", "amount": "1/2개", "optional": true}, {"id": "chili", "amount": "1개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "애호박, 양파, 감자, 두부를 1.5cm 크기로 깍둑 썬다."},
+      {"text": "뚝배기에 물 3컵을 붓고 된장 2큰술을 체에 걸러 푼 뒤, 단단한 감자부터 넣어 7분 끓인다.", "timer_sec": 420},
+      {"text": "애호박, 양파, 다진 마늘을 넣고 5분 끓인다.", "timer_sec": 300},
+      {"text": "두부를 넣고 3분 더 끓인다. 싱거우면 된장을 조금 더 푼다.", "timer_sec": 180},
+      {"text": "청양고추와 대파를 넣고 한소끔 끓여 마무리한다."}
+    ],
+    "tip": "쌀뜨물로 끓이면 국물이 구수해요. 고추장을 1/2큰술 섞으면 감칠맛이 살아나요." },
+
+  { "id": "seaweed-soup", "title": "소고기 미역국", "emoji": "🍲", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "side", "servings": "3~4인분",
+    "ingredients": [{"id": "seaweed", "amount": "한 줌"}, {"id": "beef", "amount": "100g"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "salt", "amount": "약간"}],
+    "steps": [
+      {"text": "건미역 한 줌을 찬물에 10분 불린 뒤 바락바락 주물러 2~3번 헹구고, 물기를 짜서 먹기 좋게 썬다.", "timer_sec": 600},
+      {"text": "냄비에 참기름 1큰술을 두르고 중불에서 소고기를 볶아 겉면을 익힌다(약 3분).", "timer_sec": 180},
+      {"text": "미역을 넣고 국간장 1큰술을 넣어 미역이 부드러워질 때까지 2분 더 볶는다.", "timer_sec": 120},
+      {"text": "물 5컵을 붓고 끓어오르면 중약불로 줄여 15분 이상 푹 끓인다. 오래 끓일수록 국물이 진하다.", "timer_sec": 900},
+      {"text": "다진 마늘을 넣고 나머지 간장과 소금으로 간을 맞춘다."}
+    ],
+    "tip": "미역은 불리면 10배로 늘어나요. 한 줌이면 3~4인분이에요." },
+
+  { "id": "potato-pancake", "title": "감자전", "emoji": "🥔", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "2장",
+    "ingredients": [{"id": "potato", "amount": "3개"}, {"id": "salt", "amount": "약간"}, {"id": "cooking_oil", "amount": "3큰술"}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "chili", "amount": "1개", "optional": true}],
+    "steps": [
+      {"text": "감자 3개(와 양파)의 껍질을 벗겨 강판에 곱게 간다."},
+      {"text": "간 감자를 체에 밭쳐 5분 두고 물기를 뺀다. 받쳐 둔 물의 윗물만 따라 버리고, 바닥에 가라앉은 하얀 전분을 감자에 다시 섞는다.", "timer_sec": 300},
+      {"text": "소금 2꼬집으로 간한다. 청양고추가 있으면 잘게 썰어 넣는다."},
+      {"text": "팬에 식용유를 넉넉히 두르고 중불에서 반죽을 얇게 펴서 앞뒤로 4분씩 바삭하게 부친다.", "timer_sec": 480}
+    ],
+    "tip": "밀가루 없이 감자 전분만으로 부쳐야 쫀득해요. 강판이 없으면 믹서에 갈아도 돼요." },
+
+  { "id": "omurice", "title": "오므라이스", "emoji": "🍳", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "rice", "servings": "1인분",
+    "ingredients": [{"id": "rice", "amount": "1공기"}, {"id": "egg", "amount": "2개"}, {"id": "onion", "amount": "1/4개"}, {"id": "ketchup", "amount": "3큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "salt", "amount": "약간"}, {"id": "ham", "amount": "약간", "optional": true}, {"id": "carrot", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "양파, 당근, 햄을 0.5cm 크기로 잘게 썬다."},
+      {"text": "팬에 식용유 1큰술을 두르고 중불에서 당근→양파→햄 순서로 3분 볶는다.", "timer_sec": 180},
+      {"text": "밥과 케첩 2큰술을 넣고 3분간 고루 볶아 소금으로 간한 뒤 접시에 타원형으로 담는다.", "timer_sec": 180},
+      {"text": "볼에 계란 2개와 소금 한 꼬집을 넣고 풀어, 버터를 두른 팬에 약불로 얇게 부쳐 지단을 만든다(약 2분).", "timer_sec": 120},
+      {"text": "윗면이 아직 촉촉할 때 지단을 볶음밥 위에 덮듯 올리고 가장자리를 밥 아래로 살짝 접어 넣는다."},
+      {"text": "케첩을 뿌리거나, 케첩에 물을 조금 섞어 끓인 소스를 끼얹는다."}
+    ],
+    "tip": "지단을 젓가락으로 휘저어 반숙 스크램블로 올리면 훨씬 부드러운 오므라이스가 돼요." },
+
+  { "id": "curry-rice", "title": "카레라이스", "emoji": "🍛", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "rice", "servings": "2~3인분",
+    "ingredients": [{"id": "rice", "amount": "2공기"}, {"id": "curry", "amount": "100g"}, {"id": "potato", "amount": "1개"}, {"id": "carrot", "amount": "1/2개"}, {"id": "onion", "amount": "1개"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "pork", "amount": "150g", "optional": true}],
+    "steps": [
+      {"text": "감자, 당근, 양파, 고기를 2cm 크기로 깍둑 썬다."},
+      {"text": "냄비에 식용유를 두르고 중불에서 고기와 양파를 3분 볶는다.", "timer_sec": 180},
+      {"text": "감자와 당근을 넣고 2분 더 볶는다.", "timer_sec": 120},
+      {"text": "물 3컵을 붓고 끓어오르면 중약불로 줄여 감자가 젓가락으로 쑥 들어갈 때까지 15분 끓인다.", "timer_sec": 900},
+      {"text": "불을 약하게 줄이고 카레가루를 조금씩 풀어 넣으며, 바닥이 눌지 않게 저어 5분 끓인다.", "timer_sec": 300},
+      {"text": "밥 위에 카레를 넉넉히 붓는다."}
+    ],
+    "tip": "양파를 갈색이 될 때까지 오래 볶으면 단맛이 진해져요. 하루 지난 카레가 더 맛있어요." },
+
+  { "id": "cream-pasta", "title": "베이컨 크림파스타", "emoji": "🍝", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "spaghetti", "amount": "1인분"}, {"id": "milk", "amount": "300ml"}, {"id": "bacon", "amount": "3줄"}, {"id": "butter", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "cheese", "amount": "1장", "optional": true}, {"id": "mushroom", "amount": "한 줌", "optional": true}, {"id": "onion", "amount": "1/4개", "optional": true}],
+    "steps": [
+      {"text": "냄비에 물 1L와 소금 1큰술을 넣고 끓여 스파게티면을 7분 삶는다(봉지 표기 시간보다 1분 짧게).", "timer_sec": 420},
+      {"text": "팬에 버터 1큰술을 녹이고 다진 마늘, 베이컨, 양파, 버섯을 넣어 중불에서 3분 볶는다.", "timer_sec": 180},
+      {"text": "우유 300ml를 붓고(치즈가 있으면 함께 넣고) 약불에서 3분 끓인다. 우유는 센 불에서 끓이면 분리되니 약불을 지킨다.", "timer_sec": 180},
+      {"text": "삶은 면을 넣고 소스가 면에 걸쭉하게 묻을 때까지 2분 졸인다.", "timer_sec": 120},
+      {"text": "소금과 후추로 간한다."}
+    ],
+    "tip": "생크림이 없어도 우유와 치즈로 충분히 크리미해요. 소스가 묽으면 조금 더 졸이세요." },
+
+  { "id": "tomato-pasta", "title": "생토마토 파스타", "emoji": "🍅", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "noodle", "servings": "1인분",
+    "ingredients": [{"id": "spaghetti", "amount": "1인분"}, {"id": "tomato", "amount": "3개"}, {"id": "onion", "amount": "1/2개"}, {"id": "minced_garlic", "amount": "1큰술"}, {"id": "olive_oil", "amount": "3큰술"}, {"id": "salt", "amount": "약간"}, {"id": "sugar", "amount": "약간", "optional": true}, {"id": "cheese", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "토마토 3개의 꼭지 반대쪽에 열십자 칼집을 내 끓는 물에 30초 데친 뒤, 찬물에 담가 껍질을 벗기고 잘게 다진다.", "timer_sec": 60},
+      {"text": "팬에 올리브유 3큰술을 두르고 다진 마늘과 다진 양파를 중약불에서 3분간 볶는다.", "timer_sec": 180},
+      {"text": "토마토를 넣고 주걱으로 으깨 가며 10분간 졸여 소스를 만든다.", "timer_sec": 600},
+      {"text": "그동안 소금물에 스파게티면을 8분 삶는다.", "timer_sec": 480},
+      {"text": "소스에 면과 면수 2큰술을 넣어 버무리고 소금(신맛이 강하면 설탕 약간)으로 간한다. 치즈를 뿌린다."}
+    ],
+    "tip": "잘 익은 토마토일수록 맛있어요. 방울토마토를 반 갈라 써도 돼요." },
+
+  { "id": "japchae", "title": "잡채", "emoji": "🍜", "image": "", "time_min": 40, "difficulty": "hard", "meal_type": "side", "servings": "3~4인분",
+    "ingredients": [{"id": "glass_noodle", "amount": "150g"}, {"id": "spinach", "amount": "1/2단"}, {"id": "carrot", "amount": "1/2개"}, {"id": "onion", "amount": "1/2개"}, {"id": "soy_sauce", "amount": "4큰술"}, {"id": "sugar", "amount": "2큰술"}, {"id": "sesame_oil", "amount": "2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "beef", "amount": "100g", "optional": true}, {"id": "mushroom", "amount": "한 줌", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "당면 150g을 찬물에 30분 불린다.", "timer_sec": 1800},
+      {"text": "시금치를 끓는 소금물에 30초 데쳐 찬물에 헹구고, 물기를 짜서 소금·참기름으로 무친다.", "timer_sec": 30},
+      {"text": "당근, 양파, 버섯을 가늘게 채 썬다."},
+      {"text": "팬에 식용유를 두르고 채소를 하나씩 소금을 조금 넣어 볶아, 넓은 그릇에 펼쳐 식힌다(색이 섞이지 않게 따로 볶는다).", "timer_sec": 300},
+      {"text": "소고기를 간장 1큰술, 설탕 1/2큰술, 다진 마늘로 밑간해 볶는다.", "timer_sec": 180},
+      {"text": "불린 당면을 끓는 물에 6분 삶아 건진다.", "timer_sec": 360},
+      {"text": "팬에 당면, 간장 3큰술, 설탕 1.5큰술을 넣고 2분 볶아 간이 배게 한다.", "timer_sec": 120},
+      {"text": "모든 재료를 큰 볼에 담아 참기름 2큰술, 깨를 넣고 손으로 버무린다. 간을 보고 간장이나 설탕을 더한다."}
+    ],
+    "tip": "당면을 삶은 뒤 바로 간장 양념에 볶아야 불지 않고 색이 고와요." },
+
+  { "id": "dakbokkeumtang", "title": "닭볶음탕", "emoji": "🍗", "image": "", "time_min": 50, "difficulty": "hard", "meal_type": "side", "servings": "3~4인분",
+    "ingredients": [{"id": "chicken", "amount": "1마리"}, {"id": "potato", "amount": "2개"}, {"id": "carrot", "amount": "1/2개"}, {"id": "onion", "amount": "1개"}, {"id": "gochujang", "amount": "2큰술"}, {"id": "gochugaru", "amount": "3큰술"}, {"id": "soy_sauce", "amount": "4큰술"}, {"id": "sugar", "amount": "2큰술"}, {"id": "minced_garlic", "amount": "1.5큰술"}, {"id": "green_onion", "amount": "1대", "optional": true}],
+    "steps": [
+      {"text": "닭을 끓는 물에 5분 데쳐 기름과 불순물을 빼고 찬물에 헹군다.", "timer_sec": 300},
+      {"text": "감자, 당근은 큼직하게, 양파는 4등분, 대파는 4cm 길이로 썬다."},
+      {"text": "고추장 2큰술, 고춧가루 3큰술, 간장 4큰술, 설탕 2큰술, 다진 마늘 1.5큰술을 섞어 양념장을 만든다."},
+      {"text": "냄비에 닭, 물 4컵, 양념장 절반을 넣고 센 불로 끓이다 끓어오르면 중불로 15분 끓인다.", "timer_sec": 900},
+      {"text": "감자, 당근과 나머지 양념장을 넣는다."},
+      {"text": "중불에서 감자가 익을 때까지 15분 더 끓인다. 중간중간 국물을 끼얹어 양념이 고루 배게 한다.", "timer_sec": 900},
+      {"text": "양파를 넣고 국물이 자작해질 때까지 10분 졸인다.", "timer_sec": 600},
+      {"text": "대파를 넣고 한소끔 끓여 불을 끈다."}
+    ],
+    "tip": "감자를 일찍 넣으면 부서지니 닭이 어느 정도 익은 뒤 넣으세요." },
+
+  { "id": "bulgogi", "title": "소불고기", "emoji": "🥩", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "side", "servings": "2~3인분",
+    "ingredients": [{"id": "beef", "amount": "300g"}, {"id": "onion", "amount": "1/2개"}, {"id": "soy_sauce", "amount": "3큰술"}, {"id": "sugar", "amount": "1.5큰술"}, {"id": "minced_garlic", "amount": "1큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "pepper", "amount": "약간"}, {"id": "green_onion", "amount": "1/2대", "optional": true}, {"id": "carrot", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "불고기용 소고기를 키친타월로 눌러 핏물을 닦는다."},
+      {"text": "간장 3큰술, 설탕 1.5큰술, 다진 마늘 1큰술, 참기름 1큰술, 후추, 물 3큰술을 섞어 양념을 만든다(배나 사과를 갈아 넣으면 고기가 연해진다)."},
+      {"text": "고기와 채 썬 양파, 당근을 양념에 버무려 20분 이상 재운다.", "timer_sec": 1200},
+      {"text": "팬을 센 불로 달궈 재운 고기를 넣고 5분간 볶는다. 국물이 너무 많으면 졸인다.", "timer_sec": 300},
+      {"text": "어슷 썬 대파를 넣고 섞어 마무리한다."}
+    ],
+    "tip": "양념을 넉넉히 만들어 당면을 넣으면 '뚝배기 불고기'가 돼요." },
+
+  { "id": "teriyaki-chicken", "title": "데리야끼 치킨", "emoji": "🍗", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "chicken", "amount": "2덩이"}, {"id": "soy_sauce", "amount": "3큰술"}, {"id": "sugar", "amount": "1.5큰술"}, {"id": "mirin", "amount": "2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "닭다리살의 두꺼운 부분에 칼집을 넣어 두께를 고르게 하고 키친타월로 물기를 닦는다."},
+      {"text": "간장 3큰술, 설탕 1.5큰술, 맛술 2큰술, 다진 마늘 1/2큰술, 물 3큰술을 섞어 데리야끼 소스를 만든다."},
+      {"text": "팬에 식용유를 조금 두르고 중불에서 닭 껍질 쪽이 아래로 가게 올려 7분간 바삭하게 굽는다. 뒤집개로 눌러 주면 껍질이 고르게 익는다.", "timer_sec": 420},
+      {"text": "뒤집어서 뚜껑을 덮고 약불로 5분, 속까지 익힌다. 팬에 나온 기름은 키친타월로 닦아 낸다.", "timer_sec": 300},
+      {"text": "소스를 붓고 숟가락으로 끼얹어 가며 윤기가 날 때까지 3분 졸인다.", "timer_sec": 180},
+      {"text": "한입 크기로 썰어 밥 위에 올리고 남은 소스를 뿌린 뒤 송송 썬 파를 올린다."}
+    ],
+    "tip": "닭가슴살로 만들면 더 담백해요. 다만 금방 퍽퍽해지니 굽는 시간을 줄이세요." },
+
+  { "id": "braised-potato", "title": "감자조림", "emoji": "🥔", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "반찬 3~4회분",
+    "ingredients": [{"id": "potato", "amount": "2개"}, {"id": "soy_sauce", "amount": "3큰술"}, {"id": "sugar", "amount": "1.5큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "oligosaccharide", "amount": "1큰술", "optional": true}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "감자 2개를 2cm 크기로 깍둑 썰어 찬물에 2번 헹궈 전분을 뺀다."},
+      {"text": "팬에 식용유 1큰술을 두르고 중불에서 감자를 2분 볶아 겉면을 코팅한다.", "timer_sec": 120},
+      {"text": "물 1컵, 간장 3큰술, 설탕 1.5큰술을 넣고 뚜껑을 덮어 10분 끓인다.", "timer_sec": 600},
+      {"text": "감자가 익으면 뚜껑을 열고 국물이 거의 없어질 때까지 5분 졸인다. 감자가 부서지지 않게 팬을 흔들어 섞는다.", "timer_sec": 300},
+      {"text": "올리고당 1큰술을 넣어 윤기를 내고 깨를 뿌린다."}
+    ],
+    "tip": "알감자를 껍질째 쓰면 더 쫀득하고 모양도 예뻐요." },
+
+  { "id": "braised-tofu", "title": "두부조림", "emoji": "🧈", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "tofu", "amount": "1모"}, {"id": "soy_sauce", "amount": "3큰술"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "두부 1모를 1cm 두께로 썰어 키친타월로 물기를 뺀다."},
+      {"text": "팬에 식용유 2큰술을 두르고 중불에서 두부를 앞뒤로 3분씩 노릇하게 부친다.", "timer_sec": 360},
+      {"text": "간장 3큰술, 고춧가루 1큰술, 설탕 1/2큰술, 다진 마늘 1/2큰술, 물 1/2컵을 섞어 양념장을 만든다."},
+      {"text": "부친 두부 위에 양념장을 고루 붓고 중약불에서 숟가락으로 양념을 끼얹어 가며 5분 졸인다.", "timer_sec": 300},
+      {"text": "송송 썬 파를 올리고 불을 끈다."}
+    ],
+    "tip": "두부를 부치지 않고 바로 졸이면 더 부드러운 두부조림이 돼요." },
+
+  { "id": "soy-braised-eggs", "title": "계란장조림", "emoji": "🥚", "image": "", "time_min": 35, "difficulty": "normal", "meal_type": "side", "servings": "8개",
+    "ingredients": [{"id": "egg", "amount": "8개"}, {"id": "soy_sauce", "amount": "1/2컵"}, {"id": "sugar", "amount": "3큰술"}, {"id": "chili", "amount": "2개", "optional": true}, {"id": "minced_garlic", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "냄비에 계란을 넣고 잠길 만큼 물을 부어, 끓기 시작하면 10분 삶아 완숙을 만든다.", "timer_sec": 600},
+      {"text": "찬물에 담가 식힌 뒤 껍질을 깨끗하게 벗긴다."},
+      {"text": "냄비에 물 1.5컵, 간장 1/2컵, 설탕 3큰술, 고추, 마늘을 넣고 끓인다."},
+      {"text": "계란을 넣고 중약불에서 20분간 굴려 가며 색이 고루 배도록 졸인다. 식힌 뒤 국물째 냉장 보관한다.", "timer_sec": 1200}
+    ],
+    "tip": "꽈리고추나 메추리알, 소고기를 함께 넣으면 더 풍성한 장조림이 돼요." },
+
+  { "id": "gimbap", "title": "기본 김밥", "emoji": "🍙", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "rice", "servings": "4줄",
+    "ingredients": [{"id": "rice", "amount": "2공기"}, {"id": "laver", "amount": "4장"}, {"id": "egg", "amount": "3개"}, {"id": "ham", "amount": "4줄"}, {"id": "carrot", "amount": "1/2개"}, {"id": "cucumber", "amount": "1/2개"}, {"id": "salt", "amount": "약간"}, {"id": "sesame_oil", "amount": "2큰술"}, {"id": "cooking_oil", "amount": "2큰술"}, {"id": "pickled_radish", "amount": "4줄", "optional": true}],
+    "steps": [
+      {"text": "따뜻한 밥 2공기에 소금 1/2작은술, 참기름 2큰술, 깨를 넣고 섞어 한 김 식힌다."},
+      {"text": "계란 3개를 풀어 기름 두른 팬에 두툼하게 부친 뒤 1cm 폭으로 길게 썬다.", "timer_sec": 300},
+      {"text": "당근은 가늘게 채 썰어 소금을 넣고 볶고, 햄은 길게 썰어 팬에 굽는다.", "timer_sec": 240},
+      {"text": "오이는 길게 4등분해 씨를 빼고 소금에 10분 절여 물기를 닦는다."},
+      {"text": "김발 위에 김(거친 면이 위로)을 놓고 밥을 김의 2/3까지 얇게 편 뒤, 계란·햄·당근·오이·단무지를 가운데 나란히 올린다."},
+      {"text": "김발로 재료를 감싸 꾹꾹 누르며 단단하게 만다. 겉에 참기름을 바르고, 칼에도 참기름을 묻혀 1.5cm 두께로 썬다."}
+    ],
+    "tip": "밥을 너무 두껍게 펴면 터지기 쉬워요. 밥은 얇게, 재료는 가운데에 몰아 올리세요." },
+
+  { "id": "candied-sweet-potato", "title": "고구마 맛탕", "emoji": "🍠", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "snack", "servings": "2~3인분",
+    "ingredients": [{"id": "sweet_potato", "amount": "2개"}, {"id": "sugar", "amount": "4큰술"}, {"id": "cooking_oil", "amount": "1컵"}, {"id": "sesame", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "고구마를 껍질째 한입 크기로 돌려 썰어 찬물에 10분 담가 전분을 뺀다."},
+      {"text": "키친타월로 물기를 완전히 닦고 160도 기름에 8분간 노릇하게 튀긴다(에어프라이어 180도 15분도 가능).", "timer_sec": 480},
+      {"text": "다른 팬에 기름 1큰술과 설탕 4큰술을 넣고 약불에서 젓지 말고 녹인다. 설탕이 갈색 시럽이 되면 된다.", "timer_sec": 180},
+      {"text": "튀긴 고구마를 넣고 시럽이 고루 묻도록 빠르게 버무린다."},
+      {"text": "깨를 뿌리고 서로 달라붙지 않게 기름 바른 접시에 하나씩 떨어뜨려 식힌다. 찬물을 살짝 뿌리면 시럽이 바삭하게 굳는다."}
+    ],
+    "tip": "설탕 시럽을 저으면 결정이 생겨 하얗게 굳어요. 녹을 때까지 팬만 흔드세요." },
+
+  { "id": "potato-salad", "title": "감자 샐러드", "emoji": "🥗", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "2~3인분",
+    "ingredients": [{"id": "potato", "amount": "2개"}, {"id": "egg", "amount": "2개"}, {"id": "mayonnaise", "amount": "4큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "cucumber", "amount": "1/3개", "optional": true}, {"id": "canned_corn", "amount": "3큰술", "optional": true}, {"id": "carrot", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "감자 2개는 껍질을 벗겨 큼직하게 썰고, 계란 2개와 함께 냄비에 넣어 15분 삶는다. 계란은 10분 뒤 먼저 건진다.", "timer_sec": 900},
+      {"text": "감자가 뜨거울 때 포크로 곱게 으깬다. 계란도 껍질을 벗겨 잘게 다진다."},
+      {"text": "오이와 당근은 잘게 썰어 소금에 5분 절인 뒤 물기를 꼭 짠다."},
+      {"text": "감자가 식으면 모든 재료와 마요네즈 4큰술, 설탕 1/2큰술, 소금, 후추를 넣고 섞는다."}
+    ],
+    "tip": "감자가 뜨거울 때 마요네즈를 넣으면 기름이 분리되니 식힌 뒤 섞으세요." },
+
+  { "id": "budae-jjigae", "title": "부대찌개", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "2~3인분",
+    "ingredients": [{"id": "ham", "amount": "1/2캔"}, {"id": "sausage", "amount": "5개"}, {"id": "kimchi", "amount": "1컵"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "gochujang", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "ramen", "amount": "1/2개", "optional": true}, {"id": "tofu", "amount": "1/3모", "optional": true}, {"id": "onion", "amount": "1/4개", "optional": true}, {"id": "cheese", "amount": "1장", "optional": true}],
+    "steps": [
+      {"text": "햄은 도톰하게, 소시지는 어슷하게, 김치와 두부는 한입 크기로, 양파는 채 썬다."},
+      {"text": "고춧가루 1큰술, 고추장 1큰술, 간장 1큰술, 다진 마늘 1/2큰술을 섞어 양념장을 만든다."},
+      {"text": "넓은 냄비에 재료를 종류별로 둘러 담고 가운데 양념장을 올린다."},
+      {"text": "물 3컵을 붓고 센 불에서 10분 끓인다.", "timer_sec": 600},
+      {"text": "라면사리와 치즈를 올리고 면이 익을 때까지 3분 더 끓인다.", "timer_sec": 180}
+    ],
+    "tip": "물 대신 사골 육수를 쓰면 식당 맛이 나요. 베이크드빈스를 넣어도 맛있어요." },
+
+  { "id": "pajeon", "title": "해물파전", "emoji": "🥞", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "2장",
+    "ingredients": [{"id": "green_onion", "amount": "1단"}, {"id": "flour", "amount": "1컵"}, {"id": "egg", "amount": "1개"}, {"id": "cooking_oil", "amount": "3큰술"}, {"id": "salt", "amount": "약간"}, {"id": "squid", "amount": "1/2마리", "optional": true}, {"id": "shrimp", "amount": "한 줌", "optional": true}],
+    "steps": [
+      {"text": "쪽파(또는 대파)를 다듬어 팬 길이에 맞게 자른다. 오징어·새우가 있으면 잘게 썬다."},
+      {"text": "밀가루 1컵, 찬물 3/4컵, 소금 2꼬집을 섞어 묽은 반죽을 만든다."},
+      {"text": "팬에 식용유를 넉넉히 두르고 중불에서 파를 가지런히 깔고 반죽을 얇게 끼얹는다."},
+      {"text": "해물을 고루 올리고 계란을 풀어 위에 둘러 붓는다."},
+      {"text": "바닥이 노릇해지면 뒤집어 뒤집개로 눌러 가며 앞뒤로 총 10분 부친다. 가장자리에 기름을 더 두르면 바삭해진다.", "timer_sec": 600}
+    ],
+    "tip": "반죽은 파가 보일 정도로 적게 써야 파전 맛이 살아요. 초간장을 곁들이세요." },
+
+  { "id": "squid-stir-fry", "title": "오징어볶음", "emoji": "🦑", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "squid", "amount": "1마리"}, {"id": "onion", "amount": "1/2개"}, {"id": "gochujang", "amount": "1.5큰술"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "sugar", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "cooking_oil", "amount": "1큰술"}, {"id": "cabbage", "amount": "한 줌", "optional": true}, {"id": "carrot", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "오징어 내장과 다리를 정리해 몸통 안쪽에 격자 칼집을 내고 1cm 폭으로 썬다. 다리는 5cm 길이로 썬다."},
+      {"text": "고추장 1.5큰술, 고춧가루 1큰술, 설탕 1큰술, 간장 1큰술, 다진 마늘 1/2큰술을 섞어 양념을 만든다."},
+      {"text": "팬에 식용유를 두르고 센 불에서 양파, 양배추, 당근을 2분 볶는다.", "timer_sec": 120},
+      {"text": "오징어와 양념을 넣고 센 불에서 3분간 빠르게 볶는다.", "timer_sec": 180},
+      {"text": "오징어가 하얗게 변하고 동그랗게 말리면 바로 불을 끈다. 오래 볶으면 질겨진다."}
+    ],
+    "tip": "소면을 삶아 곁들이면 오징어볶음 국수로 먹을 수 있어요." },
+
+  { "id": "beef-radish-soup", "title": "소고기무국", "emoji": "🍲", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "side", "servings": "3~4인분",
+    "ingredients": [{"id": "beef", "amount": "150g"}, {"id": "radish", "amount": "1/4개"}, {"id": "soy_sauce", "amount": "2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "sesame_oil", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "무 1/4개를 3cm 크기로 납작하게(나박) 썬다. 소고기는 한입 크기로 썬다."},
+      {"text": "냄비에 참기름 1큰술을 두르고 중불에서 소고기를 볶아 겉면을 익힌다(약 3분).", "timer_sec": 180},
+      {"text": "무를 넣고 국간장 1큰술을 둘러 무가 투명해질 때까지 3분 볶는다.", "timer_sec": 180},
+      {"text": "물 5컵을 붓고 끓어오르면 중약불로 줄여 20분 끓인다. 위에 뜨는 거품은 걷어 낸다.", "timer_sec": 1200},
+      {"text": "다진 마늘을 넣고 남은 간장과 소금으로 간한 뒤 송송 썬 파를 넣는다."}
+    ],
+    "tip": "무에서 단맛이 우러나와 따로 육수를 내지 않아도 깊은 맛이 나요." },
+
+  { "id": "donggeurangttaeng", "title": "동그랑땡", "emoji": "🥩", "image": "", "time_min": 40, "difficulty": "hard", "meal_type": "side", "servings": "20개 정도",
+    "ingredients": [{"id": "pork", "amount": "300g"}, {"id": "tofu", "amount": "1/2모"}, {"id": "onion", "amount": "1/2개"}, {"id": "egg", "amount": "2개"}, {"id": "flour", "amount": "1/2컵"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "cooking_oil", "amount": "3큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "carrot", "amount": "약간", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "두부를 면보나 키친타월에 싸서 물기를 최대한 꽉 짠다."},
+      {"text": "양파, 당근, 대파를 최대한 잘게 다진다."},
+      {"text": "볼에 다진 돼지고기, 두부, 채소, 다진 마늘, 소금 1/2작은술, 후추를 넣고 5분간 끈기가 생길 때까지 치댄다.", "timer_sec": 300},
+      {"text": "한 숟가락씩 떠서 지름 4cm, 두께 1cm 정도로 동글납작하게 빚는다."},
+      {"text": "밀가루를 앞뒤로 얇게 묻히고 여분은 털어 낸다."},
+      {"text": "계란 2개를 풀어 반죽을 담가 계란옷을 입힌다."},
+      {"text": "팬에 식용유를 두르고 중약불에서 앞뒤로 5분씩 노릇하게, 속까지 익도록 부친다.", "timer_sec": 600},
+      {"text": "키친타월 위에 올려 기름을 뺀다. 남은 반죽은 빚은 채로 냉동해 두면 편하다."}
+    ],
+    "tip": "불이 세면 겉만 타고 속이 덜 익어요. 중약불로 천천히 부치세요." },
+
+  { "id": "pancakes", "title": "핫케이크", "emoji": "🥞", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "snack", "servings": "4장",
+    "ingredients": [{"id": "flour", "amount": "1컵"}, {"id": "egg", "amount": "1개"}, {"id": "milk", "amount": "150ml"}, {"id": "sugar", "amount": "2큰술"}, {"id": "butter", "amount": "1큰술"}, {"id": "banana", "amount": "1개", "optional": true}, {"id": "honey", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "볼에 계란 1개, 우유 150ml, 설탕 2큰술, 녹인 버터 1큰술을 넣고 잘 섞는다."},
+      {"text": "밀가루 1컵을 체에 쳐 넣고 날가루가 보이지 않을 정도로만 가볍게 섞는다(너무 많이 섞으면 질겨진다). 베이킹파우더가 있으면 1작은술 넣는다."},
+      {"text": "약불로 달군 팬에 기름을 얇게 바르고 키친타월로 닦아 낸 뒤, 반죽을 한 국자 동그랗게 붓는다."},
+      {"text": "표면에 기포가 올라와 구멍이 생기면(약 2분) 뒤집어 1분 더 굽는다.", "timer_sec": 120},
+      {"text": "꿀이나 시럽, 바나나를 곁들인다."}
+    ],
+    "tip": "팬에 기름이 많으면 얼룩덜룩해져요. 기름을 닦아 내야 매끈한 갈색이 나요." },
+
+  { "id": "steak", "title": "소고기 스테이크", "emoji": "🥩", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "1인분",
+    "ingredients": [{"id": "beef", "amount": "200g"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}, {"id": "butter", "amount": "1큰술"}, {"id": "olive_oil", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "고기를 굽기 15분 전에 냉장고에서 꺼내 실온에 두고, 키친타월로 물기를 닦아 앞뒤로 소금·후추를 넉넉히 뿌린다.", "timer_sec": 900},
+      {"text": "팬을 센 불로 연기가 살짝 날 때까지 충분히 달군 뒤 올리브유를 두른다."},
+      {"text": "고기를 올리고 건드리지 않은 채 2분, 뒤집어서 2분 굽는다(2cm 두께 기준 미디엄).", "timer_sec": 240},
+      {"text": "불을 약하게 줄이고 버터와 마늘을 넣어, 녹은 버터를 숟가락으로 고기 위에 1분간 끼얹는다.", "timer_sec": 60},
+      {"text": "도마에 옮겨 5분 쉬게 한(레스팅) 뒤 결 반대 방향으로 썬다.", "timer_sec": 300}
+    ],
+    "tip": "레스팅을 해야 육즙이 빠지지 않아요. 굽는 시간만큼 쉬게 하세요." },
+
+  { "id": "kimchi-jjim", "title": "돼지고기 김치찜", "emoji": "🍲", "image": "", "time_min": 60, "difficulty": "hard", "meal_type": "side", "servings": "3~4인분",
+    "ingredients": [{"id": "kimchi", "amount": "1/4포기"}, {"id": "pork", "amount": "400g"}, {"id": "sugar", "amount": "1큰술"}, {"id": "minced_garlic", "amount": "1큰술"}, {"id": "gochugaru", "amount": "1큰술", "optional": true}, {"id": "onion", "amount": "1/2개", "optional": true}, {"id": "green_onion", "amount": "약간", "optional": true}],
+    "steps": [
+      {"text": "돼지고기(삼겹살이나 목살)를 5cm 크기로 큼직하게 썬다."},
+      {"text": "냄비 바닥에 양파를 두툼하게 썰어 깐다. 바닥이 눌어붙지 않게 해 준다."},
+      {"text": "김치를 썰지 않고 포기째 깔고, 그 위에 고기를 올린다."},
+      {"text": "설탕 1큰술, 다진 마늘 1큰술, 고춧가루 1큰술을 고기 위에 고루 뿌린다."},
+      {"text": "물 2컵과 김칫국물 1/2컵을 붓는다."},
+      {"text": "뚜껑을 덮고 센 불에서 끓어오르면 중약불로 줄인다.", "timer_sec": 600},
+      {"text": "40분간 뭉근하게 끓인다. 중간에 국물이 부족하면 물을 조금씩 더한다.", "timer_sec": 2400},
+      {"text": "김치가 흐물흐물하게 무르면 파를 올리고, 상에 내기 전에 가위로 김치와 고기를 먹기 좋게 자른다."}
+    ],
+    "tip": "묵은지를 쓸수록 깊은 맛이 나요. 남은 국물에 밥을 볶아 먹으면 별미예요." },
+
+  { "id": "potato-soup", "title": "감자 수프", "emoji": "🥣", "image": "", "time_min": 30, "difficulty": "normal", "meal_type": "snack", "servings": "2인분",
+    "ingredients": [{"id": "potato", "amount": "2개"}, {"id": "onion", "amount": "1/2개"}, {"id": "milk", "amount": "400ml"}, {"id": "butter", "amount": "1큰술"}, {"id": "salt", "amount": "약간"}, {"id": "pepper", "amount": "약간"}],
+    "steps": [
+      {"text": "감자 2개와 양파 1/2개의 껍질을 벗겨 얇게 썬다."},
+      {"text": "냄비에 버터 1큰술을 녹이고 약불에서 양파를 4분간 투명해질 때까지 볶는다(타지 않게).", "timer_sec": 240},
+      {"text": "감자와 물 1컵을 넣고 뚜껑을 덮어 감자가 으깨질 만큼 15분 끓인다.", "timer_sec": 900},
+      {"text": "우유 400ml를 붓고 핸드블렌더나 믹서로 곱게 간다. 없으면 포크로 최대한 으깬다."},
+      {"text": "다시 약불에 올려 저어 가며 3분 데우고 소금·후추로 간한다.", "timer_sec": 180}
+    ],
+    "tip": "빵을 찍어 먹어 보세요. 농도가 너무 진하면 우유를 더해 조절하세요." },
+
+  { "id": "jjageuli", "title": "돼지고기 짜글이", "emoji": "🍲", "image": "", "time_min": 25, "difficulty": "normal", "meal_type": "side", "servings": "2인분",
+    "ingredients": [{"id": "pork", "amount": "200g"}, {"id": "potato", "amount": "1개"}, {"id": "onion", "amount": "1/2개"}, {"id": "zucchini", "amount": "1/3개"}, {"id": "gochujang", "amount": "1큰술"}, {"id": "gochugaru", "amount": "1큰술"}, {"id": "soy_sauce", "amount": "1큰술"}, {"id": "sugar", "amount": "1/2큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "kimchi", "amount": "1/2컵", "optional": true}],
+    "steps": [
+      {"text": "돼지고기, 감자, 양파, 애호박을 1.5cm 크기로 깍둑 썬다."},
+      {"text": "냄비에 돼지고기를 넣고 중불에서 볶다가 겉이 익으면 고추장 1큰술, 고춧가루 1큰술, 간장 1큰술, 설탕 1/2큰술, 다진 마늘을 넣어 3분 볶는다.", "timer_sec": 180},
+      {"text": "감자와 물 1.5컵을 넣고 10분 끓인다.", "timer_sec": 600},
+      {"text": "양파, 애호박(과 김치)을 넣고 국물이 자작해질 때까지 7분 졸인다.", "timer_sec": 420}
+    ],
+    "tip": "찌개보다 국물이 적은 '자글자글' 요리예요. 밥에 비벼 먹기 좋아요." },
+
+  { "id": "spinach-doenjang-soup", "title": "시금치 된장국", "emoji": "🍲", "image": "", "time_min": 20, "difficulty": "normal", "meal_type": "side", "servings": "2~3인분",
+    "ingredients": [{"id": "spinach", "amount": "1/2단"}, {"id": "doenjang", "amount": "1.5큰술"}, {"id": "minced_garlic", "amount": "1/2큰술"}, {"id": "green_onion", "amount": "약간", "optional": true}, {"id": "tofu", "amount": "1/3모", "optional": true}],
+    "steps": [
+      {"text": "시금치 뿌리를 다듬고 흙을 깨끗이 씻어 먹기 좋은 길이로 자른다."},
+      {"text": "냄비에 물 4컵(쌀뜨물이면 더 좋다)을 붓고 된장 1.5큰술을 체에 걸러 풀어 7분 끓인다.", "timer_sec": 420},
+      {"text": "시금치, 두부, 다진 마늘을 넣고 5분 끓인다.", "timer_sec": 300},
+      {"text": "송송 썬 파를 넣고 불을 끈다."}
+    ],
+    "tip": "시금치 대신 아욱이나 배춧잎을 넣어도 맛있어요." }
 ]

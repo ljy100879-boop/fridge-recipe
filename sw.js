@@ -1,5 +1,5 @@
 // 네트워크 우선, 실패하면 캐시. 레시피 데이터가 바뀌어도 온라인이면 항상 최신을 받는다.
-const CACHE = 'fridge-recipe-v2';
+const CACHE = 'fridge-recipe-v3';
 const APP_SHELL = [
   './',
   './index.html',

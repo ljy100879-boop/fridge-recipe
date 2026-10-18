@@ -16,6 +16,11 @@ const TIME_OPTIONS = [[null, '전체'], [10, '10분 이하'], [20, '20분 이하
 const DIFFICULTY_OPTIONS = [[null, '전체'], ['easy', '쉬움'], ['normal', '보통'], ['hard', '어려움']];
 const MEAL_OPTIONS = [[null, '전체'], ['rice', '밥'], ['noodle', '면'], ['side', '반찬'], ['snack', '간식']];
 const SHOPPING_SEARCH_URL = 'https://search.shopping.naver.com/search/all?query=';
+// 다른 사이트의 레시피·사진은 복제하지 않고 검색 결과로만 연결한다 (PRD 저작권 원칙).
+const MORE_RECIPE_LINKS = [
+  ['▶ 유튜브 영상', (title) => `https://www.youtube.com/results?search_query=${encodeURIComponent(`${title} 레시피`)}`],
+  ['📖 만개의레시피', (title) => `https://www.10000recipe.com/recipe/list.html?q=${encodeURIComponent(title)}`],
+];
 
 const MOBILE = matchMedia('(max-width: 767px)');
 
@@ -556,7 +561,7 @@ function renderDetail(recipe) {
     <div class="detail-bar">${favButton(recipe, 'label')}<button type="button" class="close" data-close aria-label="상세 닫기">×</button></div>
     ${thumb(recipe, 'detail-hero')}
     <h2 id="detail-title" class="detail-title">${esc(recipe.title)}</h2>
-    <p class="meta">${recipeMeta(recipe)}</p>
+    <p class="meta">${recipeMeta(recipe)}${recipe.servings ? `<span class="meta-item">${esc(recipe.servings)}</span>` : ''}</p>
     ${status}
     <h3 class="section-title">재료</h3>
     <ul class="ingredient-list">${recipe.ingredients.map((item) => ingredientRow(item, inputIds)).join('')}</ul>
@@ -567,6 +572,12 @@ function renderDetail(recipe) {
         ? `<button type="button" class="timer" data-step="${i}" data-sec="${step.timer_sec}" aria-pressed="false">⏱ ${formatDuration(step.timer_sec)} 타이머</button>`
         : ''}</li>`)
       .join('')}</ol>
+    ${recipe.tip ? `<div class="tip"><strong>💡 팁</strong><p>${esc(recipe.tip)}</p></div>` : ''}
+    <h3 class="section-title">더 자세히 보기</h3>
+    <div class="more-links">${MORE_RECIPE_LINKS
+      .map(([label, url]) => `<a class="btn btn-ghost more-link" href="${url(recipe.title)}" target="_blank" rel="noopener noreferrer">${label}<span class="sr-only"> (새 창)</span></a>`)
+      .join('')}</div>
+    <p class="note">다른 사이트의 검색 결과로 연결돼요.</p>
   </div>`;
   els.detail.querySelectorAll('[data-fav]').forEach(renderFavButtonState);
 }

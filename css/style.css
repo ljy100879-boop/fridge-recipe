@@ -762,6 +762,21 @@ code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; }
   font-variant-numeric: tabular-nums;
 }
 
+.tip {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--warn-soft);
+  border-left: 4px solid var(--warn);
+}
+
+.tip strong { color: var(--warn); font-size: 0.9rem; }
+
+.more-links { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.more-link { display: inline-flex; align-items: center; text-decoration: none; }
+
 .timer.running { background: var(--accent); color: #fff; }
 
 .timer.done { border-color: var(--ready); background: var(--ready-soft); color: var(--ready); }
