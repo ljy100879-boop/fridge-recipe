@@ -15,6 +15,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 헤드리스로 테스트: `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --virtual-time-budget=5000 --dump-dom http://127.0.0.1:8000/tests/`
 - 데이터 검증: `python scripts/validate_data.py` — 재료 id 참조, 동의어 중복, 레시피 100개 이상·"15분 이하·쉬움" 70% 이상을 검사한다. `data/*.json`을 고치면 항상 실행할 것.
 
+## 배포
+
+GitHub Pages (공개 저장소 `ljy100879-boop/fridge-recipe`, `main` 브랜치 루트). `main`에 푸시하면 1~2분 뒤 https://ljy100879-boop.github.io/fridge-recipe/ 에 반영된다. PRD 문서는 `.gitignore`로 제외되어 있으니 올리지 말 것. 서비스 워커가 네트워크 우선이라 배포 후 캐시 버전을 올리지 않아도 최신 파일이 내려간다.
+
 ## 코드 구조
 
 기준 문서는 `냉장고 레시피 추천 사이트 PRD.md`.
