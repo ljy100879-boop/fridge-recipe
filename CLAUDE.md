@@ -27,6 +27,10 @@ GitHub Pages (공개 저장소 `ljy100879-boop/fridge-recipe`, `main` 브랜치 
 - `js/dictionary.js` — 동의어 해석(`resolve`)과 자동완성(`search`). 한 글자 동의어(파·무·김 등)는 부분 일치에 쓰지 않는다
 - `js/app.js` — 상태(`state`)와 렌더링·이벤트 전부. 상태 변경 후 해당 `render*()`를 다시 호출하는 단순 구조 (프레임워크 없음)
 - `js/storage.js` — localStorage 래퍼 (실패해도 앱이 동작해야 함)
+- `js/recent.js` — 최근 재료 조합 기록 규칙 `mergeRecent` (직전 조합에 재료를 더하면 교체, 지우는 중이면 기록 안 함)
+- F5는 구현됨: 즐겨찾기(localStorage), 최근 조합(localStorage), "꼭 쓰기" 핀(`state.pinned`, 저장하지 않음 → `rankRecipes`의 `pinnedIds`)
+- 부족 재료의 장보기 링크는 네이버 쇼핑 검색으로 연결한다 (`SHOPPING_SEARCH_URL`)
+- 상세 창 안에서 즐겨찾기를 바꿀 때는 `renderDetail`을 다시 부르지 말 것 (진행 중인 타이머가 초기화된다). 버튼만 `renderFavButtonState`로 갱신한다
 - `sw.js` — 네트워크 우선 서비스 워커. 앱 파일을 추가·이름 변경하면 `APP_SHELL` 목록과 `CACHE` 버전도 갱신
 - 사전에 없는 재료/조미료는 `custom:이름` id로 저장되며 매칭에는 쓰이지 않는다
 - 레시피에는 PRD 스키마 외에 사진 대신 쓰는 `emoji` 필드가 있다 (`image`가 비어 있으면 emoji 표시). `optional`·`timer_sec`는 생략하면 false/없음

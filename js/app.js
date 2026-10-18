@@ -1,6 +1,9 @@
 import { createDictionary } from './dictionary.js';
-import { rankRecipes } from './matcher.js';
-import { loadSeasonings, saveSeasonings } from './storage.js';
+import { matchRecipe, rankRecipes, SORTS } from './matcher.js';
+import { mergeRecent } from './recent.js';
+import {
+  loadFavorites, loadRecentInputs, loadSeasonings, saveFavorites, saveRecentInputs, saveSeasonings,
+} from './storage.js';
 
 const BASIC_SEASONINGS = ['salt', 'sugar', 'pepper', 'soy_sauce', 'cooking_oil'];
 const SEASONING_CATEGORIES = ['기본', '한식', '양식·기타'];
@@ -12,6 +15,7 @@ const SORT_OPTIONS = [['recommended', '추천순'], ['fast', '빠른 순'], ['ea
 const TIME_OPTIONS = [[null, '전체'], [10, '10분 이하'], [20, '20분 이하'], [30, '30분 이하']];
 const DIFFICULTY_OPTIONS = [[null, '전체'], ['easy', '쉬움'], ['normal', '보통'], ['hard', '어려움']];
 const MEAL_OPTIONS = [[null, '전체'], ['rice', '밥'], ['noodle', '면'], ['side', '반찬'], ['snack', '간식']];
+const SHOPPING_SEARCH_URL = 'https://search.shopping.naver.com/search/all?query=';
 
 const MOBILE = matchMedia('(max-width: 767px)');
 
@@ -25,6 +29,8 @@ const els = {
   customSeasoningForm: $('custom-seasoning-form'),
   customSeasoningInput: $('custom-seasoning-input'),
   ingredientPanel: $('ingredient-panel'),
+  clearInputs: $('clear-inputs'),
+  pinHint: $('pin-hint'),
   inputChips: $('input-chips'),
   input: $('ingredient-input'),
   suggestions: $('suggestions'),
@@ -33,6 +39,8 @@ const els = {
   timeFilter: $('time-filter'),
   difficultyFilter: $('difficulty-filter'),
   mealFilter: $('meal-filter'),
+  viewTabs: $('view-tabs'),
+  favCount: $('fav-count'),
   toolbar: $('toolbar'),
   resultGroups: $('result-groups'),
   detail: $('detail'),
@@ -47,6 +55,10 @@ let recipeById = new Map();
 const state = {
   seasonings: new Set(),
   inputs: [], // 입력 순서 유지. 사전에 없는 재료는 'custom:이름'
+  pinned: new Set(), // "꼭 써야 하는 재료" (이번 방문 동안만 유지)
+  favorites: new Set(),
+  recent: [], // 최근 재료 조합 (id 배열의 배열, 최신이 앞)
+  view: 'search', // 'search' | 'favorites'
   filters: { maxTime: null, difficulty: null, mealType: null },
   sort: 'recommended',
   showMore: false,
@@ -72,10 +84,14 @@ function nameOf(id) {
 }
 
 // 받침 유무에 따라 조사를 고른다. 예: josa('간장', '은', '는') → '간장은'
-function josa(word, withBatchim, withoutBatchim) {
+function particle(word, withBatchim, withoutBatchim) {
   const code = word.charCodeAt(word.length - 1);
   const hasBatchim = code >= 0xac00 && code <= 0xd7a3 && (code - 0xac00) % 28 !== 0;
-  return word + (hasBatchim ? withBatchim : withoutBatchim);
+  return hasBatchim ? withBatchim : withoutBatchim;
+}
+
+function josa(word, withBatchim, withoutBatchim) {
+  return word + particle(word, withBatchim, withoutBatchim);
 }
 
 function formatDuration(sec) {
@@ -133,12 +149,44 @@ function addFromText(text) {
 
 function removeIngredient(id) {
   state.inputs = state.inputs.filter((x) => x !== id);
+  state.pinned.delete(id);
   update();
 }
 
-function update() {
+function togglePin(id) {
+  if (state.pinned.has(id)) state.pinned.delete(id);
+  else state.pinned.add(id);
   state.showMore = false;
   renderInputs();
+  renderResults();
+}
+
+function setInputs(ids) {
+  state.inputs = [...ids];
+  state.pinned.clear();
+  update();
+}
+
+function toggleFavorite(id) {
+  const on = !state.favorites.has(id);
+  if (on) state.favorites.add(id);
+  else state.favorites.delete(id);
+  saveFavorites(state.favorites);
+  showToast(on ? '즐겨찾기에 저장했어요.' : '즐겨찾기에서 뺐어요.');
+  // 상세 창의 타이머가 초기화되지 않도록 다시 그리지 않고 버튼만 바꾼다.
+  els.detail.querySelectorAll(`[data-fav="${CSS.escape(id)}"]`).forEach(renderFavButtonState);
+  renderViewTabs();
+  renderResults();
+}
+
+// 재료 입력이 바뀌면 검색 화면으로 돌아가고, 최근 조합에 기록한다.
+function update() {
+  state.showMore = false;
+  state.view = 'search';
+  state.recent = mergeRecent(state.recent, state.inputs.filter((id) => !isCustom(id)));
+  saveRecentInputs(state.recent);
+  renderInputs();
+  renderViewTabs();
   renderResults();
 }
 
@@ -184,13 +232,21 @@ function renderInputs() {
   els.inputChips.innerHTML = state.inputs
     .map((id) => {
       const name = nameOf(id);
-      const unknown = isCustom(id);
-      return `<li class="chip input-chip${unknown ? ' unknown' : ''}"${unknown ? ' title="재료 사전에 없어 검색에 반영되지 않아요"' : ''}>
-        <span>${esc(name)}${unknown ? ' <small>(사전에 없음)</small>' : ''}</span>
+      if (isCustom(id)) {
+        return `<li class="chip input-chip unknown" title="재료 사전에 없어 검색에 반영되지 않아요">
+          <span>${esc(name)} <small>(사전에 없음)</small></span>
+          <button type="button" class="chip-remove" data-remove="${esc(id)}" aria-label="${esc(name)} 삭제">×</button></li>`;
+      }
+      const pinned = state.pinned.has(id);
+      return `<li class="chip input-chip${pinned ? ' pinned' : ''}">
+        <button type="button" class="chip-pin" data-pin="${esc(id)}" aria-pressed="${pinned}" aria-label="${esc(name)} 꼭 쓰기">📌</button>
+        <span>${esc(name)}${pinned ? ' <small>꼭</small>' : ''}</span>
         <button type="button" class="chip-remove" data-remove="${esc(id)}" aria-label="${esc(name)} 삭제">×</button></li>`;
     })
     .join('');
   els.inputChips.hidden = state.inputs.length === 0;
+  els.clearInputs.hidden = state.inputs.length < 2;
+  els.pinHint.hidden = !state.inputs.some((id) => !isCustom(id)) || state.pinned.size > 0;
 
   els.quickChips.innerHTML = QUICK_INGREDIENTS.filter((id) => !state.inputs.includes(id))
     .map((id) => `<button type="button" class="chip quick" data-quick="${id}">+ ${esc(nameOf(id))}</button>`)
@@ -312,19 +368,77 @@ function thumb(recipe, className) {
     : `<div class="${className}" aria-hidden="true">${esc(recipe.emoji ?? '🍽️')}</div>`;
 }
 
+// 카드용(하트 아이콘)과 상세용(글자 포함) 두 모양이 있다. data-style로 구분해 상태만 바꿔 그린다.
+function favButton(recipe, style) {
+  return `<button type="button" class="fav-btn fav-${style}" data-fav="${esc(recipe.id)}" data-style="${style}"
+    aria-label="${esc(recipe.title)} 즐겨찾기"></button>`;
+}
+
+function renderFavButtonState(button) {
+  const on = state.favorites.has(button.dataset.fav);
+  button.setAttribute('aria-pressed', String(on));
+  button.textContent = button.dataset.style === 'label' ? (on ? '♥ 저장됨' : '♡ 즐겨찾기') : on ? '♥' : '♡';
+}
+
 function card(match) {
   const { recipe, missing, usedInputs } = match;
   const missingLine = missing.length
     ? `<p class="line missing-line"><span class="line-label">부족</span> ${esc(missing.map(nameOf).join(', '))}</p>`
     : `<p class="line ready-line"><span class="line-label">재료</span> 모두 있음</p>`;
-  return `<li><button type="button" class="card" data-recipe="${esc(recipe.id)}">
+  const usedLine = usedInputs.length
+    ? `<p class="line"><span class="line-label">사용</span> ${esc(usedInputs.map(nameOf).join(', '))}</p>`
+    : '';
+  return `<li class="card-item"><button type="button" class="card" data-recipe="${esc(recipe.id)}">
     ${thumb(recipe, 'thumb')}
     <div class="card-body">
       <h3 class="card-title">${esc(recipe.title)}</h3>
       <p class="meta">${recipeMeta(recipe)}</p>
-      <p class="line"><span class="line-label">사용</span> ${esc(usedInputs.map(nameOf).join(', '))}</p>
+      ${usedLine}
       ${missingLine}
-    </div></button></li>`;
+    </div></button>${favButton(recipe, 'icon')}</li>`;
+}
+
+function renderViewTabs() {
+  els.viewTabs.querySelectorAll('[data-view]').forEach((btn) => {
+    btn.setAttribute('aria-pressed', String(btn.dataset.view === state.view));
+  });
+  els.favCount.textContent = state.favorites.size ? `${state.favorites.size}` : '';
+}
+
+function welcome() {
+  const recent = state.recent.length
+    ? `<div class="recent">
+        <h3>최근 입력한 재료</h3>
+        <div class="recent-list">${state.recent
+          .map((combo, i) => `<button type="button" class="chip recent-chip" data-recent="${i}">${esc(combo.map(nameOf).join(' · '))}</button>`)
+          .join('')}</div>
+      </div>`
+    : '';
+  return `<div class="empty welcome">
+    <p class="empty-emoji" aria-hidden="true">🥚🧅🍚</p>
+    <h2>냉장고에 뭐가 있나요?</h2>
+    <p>재료를 입력하면 <strong>그 재료만으로 만들 수 있는 레시피</strong>부터 보여드려요.</p>
+    <button type="button" class="btn btn-primary" data-example="egg,onion,rice">예시로 해보기: 계란 · 양파 · 밥</button>
+    ${recent}
+  </div>`;
+}
+
+// 즐겨찾기는 지금 입력한 재료 기준으로 부족 재료가 적은 순 → 추천순으로 보여준다.
+function renderFavorites() {
+  const inputIds = new Set(state.inputs.filter((id) => !isCustom(id)));
+  const matches = [...state.favorites]
+    .map((id) => recipeById.get(id))
+    .filter(Boolean)
+    .map((recipe) => matchRecipe(recipe, inputIds, state.seasonings))
+    .sort((a, b) => a.missing.length - b.missing.length || SORTS.recommended(a, b));
+
+  els.resultGroups.innerHTML = matches.length
+    ? group('group-fav', '즐겨찾기', inputIds.size ? '지금 입력한 재료로 만들기 쉬운 순서예요.' : '', matches)
+    : `<div class="empty">
+        <p class="empty-emoji" aria-hidden="true">♡</p>
+        <h2>아직 즐겨찾기한 레시피가 없어요</h2>
+        <p>레시피 카드나 상세 화면의 ♡를 눌러 저장해 보세요.</p>
+      </div>`;
 }
 
 function group(className, title, desc, matches) {
@@ -339,37 +453,49 @@ function hasActiveFilters() {
 }
 
 function renderResults() {
+  renderResultGroups();
+  els.resultGroups.querySelectorAll('[data-fav]').forEach(renderFavButtonState);
+}
+
+function renderResultGroups() {
   const knownInputs = state.inputs.filter((id) => !isCustom(id));
-  els.toolbar.hidden = knownInputs.length === 0;
+  els.toolbar.hidden = state.view !== 'search' || knownInputs.length === 0;
+
+  if (state.view === 'favorites') {
+    renderFavorites();
+    return;
+  }
 
   if (!knownInputs.length) {
-    els.resultGroups.innerHTML = `<div class="empty welcome">
-      <p class="empty-emoji" aria-hidden="true">🥚🧅🍚</p>
-      <h2>냉장고에 뭐가 있나요?</h2>
-      <p>재료를 입력하면 <strong>그 재료만으로 만들 수 있는 레시피</strong>부터 보여드려요.</p>
-      <button type="button" class="btn btn-primary" data-example="egg,onion,rice">예시로 해보기: 계란 · 양파 · 밥</button>
-    </div>`;
+    els.resultGroups.innerHTML = welcome();
     return;
   }
 
   const { ready, oneMissing, more } = rankRecipes(recipes, {
     inputIds: new Set(knownInputs),
     seasoningIds: state.seasonings,
+    pinnedIds: state.pinned,
     filters: state.filters,
     sort: state.sort,
   });
 
+  const pinNames = [...state.pinned].map(nameOf);
+  const pinNotice = pinNames.length
+    ? `<p class="pin-notice">📌 <strong>${esc(pinNames.join(', '))}</strong>${particle(pinNames[pinNames.length - 1], '을', '를')} 꼭 쓰는 레시피만 보여드려요.</p>`
+    : '';
+
   if (!ready.length && !oneMissing.length && !more.length) {
-    els.resultGroups.innerHTML = `<div class="empty">
-      <h2>조건에 맞는 레시피가 없어요</h2>
-      ${hasActiveFilters()
-        ? '<p>필터를 넓혀 보세요.</p><button type="button" class="btn btn-soft" data-reset-filters>필터 초기화</button>'
-        : '<p>다른 재료를 더 입력해 보세요.</p>'}
-    </div>`;
+    let advice = '<p>다른 재료를 더 입력해 보세요.</p>';
+    if (hasActiveFilters()) {
+      advice = '<p>필터를 넓혀 보세요.</p><button type="button" class="btn btn-soft" data-reset-filters>필터 초기화</button>';
+    } else if (state.pinned.size) {
+      advice = '<p>📌 고정을 풀면 더 많은 레시피가 보여요.</p><button type="button" class="btn btn-soft" data-clear-pins>고정 모두 풀기</button>';
+    }
+    els.resultGroups.innerHTML = `${pinNotice}<div class="empty"><h2>조건에 맞는 레시피가 없어요</h2>${advice}</div>`;
     return;
   }
 
-  const parts = [];
+  const parts = [pinNotice];
   if (ready.length) {
     parts.push(group('group-ready', '지금 바로 가능', '', ready));
   } else {
@@ -411,8 +537,10 @@ function ingredientRow(item, inputIds) {
     .map((id) => ({ id, owned: inputIds.has(id) || state.seasonings.has(id) }))
     .sort((a, b) => Number(b.owned) - Number(a.owned))
     .map(({ id, owned: o }) => `${esc(nameOf(id))}${o ? ' <strong>(있음)</strong>' : ''}`);
+  const shop = `<a class="shop-link" href="${SHOPPING_SEARCH_URL}${encodeURIComponent(ing.name)}" target="_blank" rel="noopener noreferrer">🛒 ${esc(ing.name)} 장보기<span class="sr-only"> (새 창)</span></a>`;
   return `<li class="missing"><span class="mark">부족</span><span class="ing-name">${esc(ing.name)}</span>${amount}
-    ${subs.length ? `<p class="subs">대체 가능: ${subs.join(', ')}</p>` : ''}</li>`;
+    ${subs.length ? `<p class="subs">대체 가능: ${subs.join(', ')}</p>` : ''}
+    <p class="subs">${shop}</p></li>`;
 }
 
 function renderDetail(recipe) {
@@ -425,7 +553,7 @@ function renderDetail(recipe) {
     : `<p class="status status-missing">재료 ${missingCount}개가 부족해요</p>`;
 
   els.detail.innerHTML = `<div class="detail-inner">
-    <div class="detail-bar"><button type="button" class="close" data-close aria-label="상세 닫기">×</button></div>
+    <div class="detail-bar">${favButton(recipe, 'label')}<button type="button" class="close" data-close aria-label="상세 닫기">×</button></div>
     ${thumb(recipe, 'detail-hero')}
     <h2 id="detail-title" class="detail-title">${esc(recipe.title)}</h2>
     <p class="meta">${recipeMeta(recipe)}</p>
@@ -440,6 +568,7 @@ function renderDetail(recipe) {
         : ''}</li>`)
       .join('')}</ol>
   </div>`;
+  els.detail.querySelectorAll('[data-fav]').forEach(renderFavButtonState);
 }
 
 function openDetail(id) {
@@ -457,7 +586,8 @@ function openDetail(id) {
 }
 
 function closeDetail() {
-  if (!state.openRecipeId) return;
+  const id = state.openRecipeId;
+  if (!id) return;
   state.openRecipeId = null;
   for (const interval of timers.values()) clearInterval(interval);
   timers.clear();
@@ -465,7 +595,11 @@ function closeDetail() {
   els.detailBackdrop.hidden = true;
   document.body.classList.remove('detail-open');
   releaseWakeLock();
-  lastFocused?.focus?.();
+  // 상세에서 즐겨찾기를 바꾸면 카드 목록이 다시 그려져 원래 버튼이 사라질 수 있다.
+  const target = lastFocused?.isConnected
+    ? lastFocused
+    : els.resultGroups.querySelector(`[data-recipe="${CSS.escape(id)}"]`);
+  target?.focus?.();
 }
 
 // 조리 중 화면 꺼짐 방지. 지원하지 않는 브라우저에서는 조용히 넘어간다.
@@ -613,11 +747,30 @@ function bindEvents() {
   });
 
   els.inputChips.addEventListener('click', (e) => {
+    const pin = e.target.closest('[data-pin]');
+    if (pin) {
+      togglePin(pin.dataset.pin);
+      els.inputChips.querySelector(`[data-pin="${CSS.escape(pin.dataset.pin)}"]`)?.focus();
+      return;
+    }
     const btn = e.target.closest('[data-remove]');
     if (btn) {
       removeIngredient(btn.dataset.remove);
       els.input.focus();
     }
+  });
+
+  els.clearInputs.addEventListener('click', () => {
+    setInputs([]);
+    els.input.focus();
+  });
+
+  els.viewTabs.addEventListener('click', (e) => {
+    const tab = e.target.closest('[data-view]');
+    if (!tab || tab.dataset.view === state.view) return;
+    state.view = tab.dataset.view;
+    renderViewTabs();
+    renderResults();
   });
 
   els.quickChips.addEventListener('click', (e) => {
@@ -639,6 +792,24 @@ function bindEvents() {
   });
 
   els.resultGroups.addEventListener('click', (e) => {
+    const fav = e.target.closest('[data-fav]');
+    if (fav) {
+      toggleFavorite(fav.dataset.fav);
+      // 다시 그려진 같은 버튼으로 포커스를 돌려 키보드 사용자가 위치를 잃지 않게 한다.
+      els.resultGroups.querySelector(`[data-fav="${CSS.escape(fav.dataset.fav)}"]`)?.focus();
+      return;
+    }
+    const recent = e.target.closest('[data-recent]');
+    if (recent) {
+      setInputs(state.recent[Number(recent.dataset.recent)] ?? []);
+      return;
+    }
+    if (e.target.closest('[data-clear-pins]')) {
+      state.pinned.clear();
+      renderInputs();
+      renderResults();
+      return;
+    }
     const cardBtn = e.target.closest('[data-recipe]');
     if (cardBtn) return openDetail(cardBtn.dataset.recipe);
     if (e.target.closest('[data-show-more]')) {
@@ -662,6 +833,8 @@ function bindEvents() {
 
   els.detail.addEventListener('click', (e) => {
     if (e.target.closest('[data-close]')) return closeDetail();
+    const fav = e.target.closest('[data-fav]');
+    if (fav) return toggleFavorite(fav.dataset.fav);
     const timer = e.target.closest('.timer');
     if (timer) toggleTimer(timer);
   });
@@ -691,6 +864,7 @@ async function fetchJson(url) {
 function renderAll() {
   renderSeasonings();
   renderInputs();
+  renderViewTabs();
   renderControls();
   renderResults();
 }
@@ -710,6 +884,11 @@ async function init() {
 
   const saved = loadSeasonings();
   state.seasonings = new Set(saved ?? []);
+  // 데이터가 바뀌어 사라진 레시피·재료는 저장 기록에서 걸러낸다.
+  state.favorites = new Set(loadFavorites().filter((id) => recipeById.has(id)));
+  state.recent = loadRecentInputs()
+    .map((combo) => combo.filter((id) => dict.get(id)))
+    .filter((combo) => combo.length);
   // 첫 방문(저장된 조미료 없음)이면 휴대폰에서도 조미료 패널을 펼쳐 먼저 설정하게 한다.
   setSeasoningPanelOpen(saved == null);
 

@@ -42,11 +42,15 @@
       </section>
 
       <section class="panel ingredient-panel" id="ingredient-panel" aria-labelledby="ingredient-title">
-        <h2 class="panel-heading">
-          <span class="step-badge" aria-hidden="true">2</span>
-          <span id="ingredient-title" class="panel-title">냉장고 재료</span>
-        </h2>
+        <div class="panel-head">
+          <h2 class="panel-heading">
+            <span class="step-badge" aria-hidden="true">2</span>
+            <span id="ingredient-title" class="panel-title">냉장고 재료</span>
+          </h2>
+          <button type="button" class="text-btn" id="clear-inputs" hidden>전체 지우기</button>
+        </div>
         <ul class="chip-list input-chips" id="input-chips" aria-label="입력한 재료"></ul>
+        <p class="pin-hint" id="pin-hint" hidden>📌를 누르면 그 재료를 <strong>꼭 쓰는</strong> 레시피만 보여요.</p>
         <div class="combobox">
           <label class="sr-only" for="ingredient-input">재료 입력</label>
           <input type="text" id="ingredient-input" placeholder="재료 입력 (예: 계란, 양파)" autocomplete="off"
@@ -61,6 +65,10 @@
     </aside>
 
     <main class="results" id="results" aria-live="polite">
+      <div class="view-tabs" id="view-tabs" role="group" aria-label="보기 전환">
+        <button type="button" class="view-tab" data-view="search" aria-pressed="true">레시피 찾기</button>
+        <button type="button" class="view-tab" data-view="favorites" aria-pressed="false">♥ 즐겨찾기 <span class="count" id="fav-count"></span></button>
+      </div>
       <div class="toolbar" id="toolbar" hidden>
         <div class="control-group" role="group" aria-label="정렬">
           <span class="control-label">정렬</span>

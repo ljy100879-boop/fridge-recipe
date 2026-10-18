@@ -2,6 +2,8 @@
 
 const KEYS = {
   seasonings: 'mySeasonings',
+  recentInputs: 'recentInputs',
+  favorites: 'favorites',
 };
 
 function read(key, fallback) {
@@ -29,4 +31,22 @@ export function loadSeasonings() {
 
 export function saveSeasonings(ids) {
   write(KEYS.seasonings, [...ids]);
+}
+
+export function loadRecentInputs() {
+  const value = read(KEYS.recentInputs, []);
+  return Array.isArray(value) ? value.filter(Array.isArray) : [];
+}
+
+export function saveRecentInputs(combos) {
+  write(KEYS.recentInputs, combos);
+}
+
+export function loadFavorites() {
+  const value = read(KEYS.favorites, []);
+  return Array.isArray(value) ? value : [];
+}
+
+export function saveFavorites(ids) {
+  write(KEYS.favorites, [...ids]);
 }

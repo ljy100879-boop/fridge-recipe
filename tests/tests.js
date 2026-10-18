@@ -1,5 +1,6 @@
 import { createDictionary, normalize } from '../js/dictionary.js';
 import { easeScore, matchRecipe, rankRecipes, stepsScore, timeScore } from '../js/matcher.js';
+import { mergeRecent } from '../js/recent.js';
 
 const tests = [];
 const test = (name, fn) => tests.push({ name, fn });
@@ -156,6 +157,38 @@ test('자동완성: 앞부분 일치 우선, 제외 목록 반영', () => {
   assertEqual(dict.search('파').map((x) => x.ingredient.id), ['green_onion', 'onion']);
   assertEqual(dict.search('파', { exclude: new Set(['green_onion']) }).map((x) => x.ingredient.id), ['onion']);
   assertEqual(dict.search('진간')[0].ingredient.type, 'seasoning');
+});
+
+// ---------- 최근 재료 조합 ----------
+
+test('최근 조합: 재료를 하나씩 추가하면 직전 기록을 교체한다', () => {
+  let recent = [];
+  recent = mergeRecent(recent, ['egg']);
+  recent = mergeRecent(recent, ['egg', 'onion']);
+  recent = mergeRecent(recent, ['egg', 'onion', 'rice']);
+  assertEqual(recent, [['egg', 'onion', 'rice']]);
+});
+
+test('최근 조합: 재료를 지우는 중에는 기록하지 않는다', () => {
+  const recent = mergeRecent([['egg', 'onion', 'rice']], ['egg', 'onion']);
+  assertEqual(recent, [['egg', 'onion', 'rice']]);
+});
+
+test('최근 조합: 새 조합은 앞에 쌓이고, 같은 조합은 맨 앞으로, 최대 5개', () => {
+  let recent = [['tofu'], ['kimchi'], ['egg']];
+  recent = mergeRecent(recent, ['potato']);
+  assertEqual(recent, [['potato'], ['tofu'], ['kimchi'], ['egg']]);
+  recent = mergeRecent(recent, ['kimchi']);
+  assertEqual(recent[0], ['kimchi']);
+  assertEqual(recent.length, 4);
+  for (const id of ['a', 'b', 'c', 'd']) recent = mergeRecent(recent, [id]);
+  assertEqual(recent.length, 5);
+  assertEqual(recent[0], ['d']);
+});
+
+test('최근 조합: 순서만 다른 같은 조합은 중복으로 보고, 빈 조합은 무시', () => {
+  assertEqual(mergeRecent([['rice', 'egg'], ['tofu']], ['egg', 'rice']), [['egg', 'rice'], ['tofu']]);
+  assertEqual(mergeRecent([['tofu']], []), [['tofu']]);
 });
 
 // ---------- 실제 데이터 시나리오 ----------
