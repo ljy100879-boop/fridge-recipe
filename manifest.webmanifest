@@ -1,0 +1,14 @@
+{
+  "name": "냉장고 레시피",
+  "short_name": "냉장고 레시피",
+  "description": "집에 있는 재료만으로 만들 수 있는 쉽고 빠른 레시피",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf5",
+  "theme_color": "#f26b3a",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>냉장고 레시피</title>
+  <meta name="description" content="집에 있는 재료만으로 만들 수 있는 쉽고 빠른 레시피를 찾아드려요.">
+  <meta name="theme-color" content="#f26b3a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="냉장고 레시피">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo"><span aria-hidden="true">🧊</span> 냉장고 레시피</h1>
+    <p class="tagline">있는 재료로, 지금 바로.</p>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <section class="panel seasoning-panel" aria-labelledby="seasoning-title">
+        <button type="button" class="panel-toggle" id="seasoning-toggle" aria-expanded="true" aria-controls="seasoning-body">
+          <span class="step-badge" aria-hidden="true">1</span>
+          <span id="seasoning-title" class="panel-title">집에 있는 조미료</span>
+          <span class="seasoning-count" id="seasoning-count"></span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+        <div class="panel-body" id="seasoning-body">
+          <p class="hint" id="seasoning-hint">체크한 조미료는 부족한 재료로 세지 않아요. 한 번만 설정하면 다음에도 기억해요.</p>
+          <button type="button" class="btn btn-soft" id="select-basic">기본 조미료 전체 선택</button>
+          <div id="seasoning-groups"></div>
+          <form class="custom-seasoning" id="custom-seasoning-form" autocomplete="off">
+            <label class="sr-only" for="custom-seasoning-input">직접 추가할 조미료</label>
+            <input type="text" id="custom-seasoning-input" placeholder="목록에 없는 조미료" maxlength="20">
+            <button type="submit" class="btn btn-ghost">+ 직접 추가</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel ingredient-panel" id="ingredient-panel" aria-labelledby="ingredient-title">
+        <h2 class="panel-heading">
+          <span class="step-badge" aria-hidden="true">2</span>
+          <span id="ingredient-title" class="panel-title">냉장고 재료</span>
+        </h2>
+        <ul class="chip-list input-chips" id="input-chips" aria-label="입력한 재료"></ul>
+        <div class="combobox">
+          <label class="sr-only" for="ingredient-input">재료 입력</label>
+          <input type="text" id="ingredient-input" placeholder="재료 입력 (예: 계란, 양파)" autocomplete="off"
+                 role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" enterkeyhint="done">
+          <ul class="suggestions" id="suggestions" role="listbox" aria-label="재료 추천" hidden></ul>
+        </div>
+        <div class="quick-add" aria-label="자주 쓰는 재료 빠른 추가">
+          <span class="quick-label">빠른 추가</span>
+          <div class="quick-chips" id="quick-chips"></div>
+        </div>
+      </section>
+    </aside>
+
+    <main class="results" id="results" aria-live="polite">
+      <div class="toolbar" id="toolbar" hidden>
+        <div class="control-group" role="group" aria-label="정렬">
+          <span class="control-label">정렬</span>
+          <div class="segmented" id="sort-control"></div>
+        </div>
+        <div class="control-group" role="group" aria-label="조리시간 필터">
+          <span class="control-label">시간</span>
+          <div class="segmented" id="time-filter"></div>
+        </div>
+        <div class="control-group" role="group" aria-label="난이도 필터">
+          <span class="control-label">난이도</span>
+          <div class="segmented" id="difficulty-filter"></div>
+        </div>
+        <div class="control-group" role="group" aria-label="식사 유형 필터">
+          <span class="control-label">유형</span>
+          <div class="segmented" id="meal-filter"></div>
+        </div>
+      </div>
+      <div id="result-groups"></div>
+    </main>
+  </div>
+
+  <div class="detail-backdrop" id="detail-backdrop" hidden></div>
+  <aside class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" hidden></aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
