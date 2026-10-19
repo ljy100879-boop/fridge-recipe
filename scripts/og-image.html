@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- 공유 미리보기 이미지(icons/og-image.png, 1200×630)의 원본. 다시 만들려면:
+     "/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --hide-scrollbars --window-size=1200,630 --screenshot=icons/og-image.png scripts/og-image.html -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #fffaf5;
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    color: #2b2420;
+    display: flex; align-items: center; gap: 72px; padding: 0 96px;
+  }
+  .icon { width: 300px; height: 300px; flex-shrink: 0; filter: drop-shadow(0 18px 36px rgb(242 107 58 / 28%)); }
+  h1 { font-size: 92px; font-weight: 800; letter-spacing: -3px; line-height: 1.1; }
+  .tagline { font-size: 44px; font-weight: 700; color: #b8441a; margin-top: 18px; letter-spacing: -1px; }
+  .desc { font-size: 30px; color: #6f6259; margin-top: 30px; line-height: 1.5; }
+  .chips { display: flex; gap: 12px; margin-top: 34px; }
+  .chip { background: #fff0e8; color: #b8441a; font-size: 24px; font-weight: 700; padding: 10px 22px; border-radius: 999px; }
+</style>
+</head>
+<body>
+  <img class="icon" src="../icons/icon.svg" alt="">
+  <div>
+    <h1>냉장고 레시피</h1>
+    <p class="tagline">있는 재료로, 지금 바로.</p>
+    <p class="desc">집에 있는 재료만 넣으면<br>쉽고 빠른 요리를 먼저 찾아드려요.</p>
+    <div class="chips">
+      <span class="chip">레시피 100개+</span>
+      <span class="chip">대부분 15분 이내</span>
+      <span class="chip">회원가입 없음</span>
+    </div>
+  </div>
+</body>
+</html>
