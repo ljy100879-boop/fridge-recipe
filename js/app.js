@@ -205,8 +205,9 @@ function seasoningChip(id, label) {
 
 function renderSeasonings() {
   const groups = SEASONING_CATEGORIES.map((category) => {
+    // chip: false인 조미료는 기본 칩에서 숨기고, 체크된 경우에만 보여 준다 (입력·직접 추가로 체크 가능)
     const chips = dict.seasonings
-      .filter((s) => s.category === category)
+      .filter((s) => s.category === category && (s.chip !== false || state.seasonings.has(s.id)))
       .map((s) => seasoningChip(s.id, s.name))
       .join('');
     return `<div class="seasoning-group"><h3>${esc(category)}</h3><div class="chip-row">${chips}</div></div>`;
